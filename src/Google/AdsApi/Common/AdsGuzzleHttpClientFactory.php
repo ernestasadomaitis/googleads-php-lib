@@ -47,7 +47,7 @@ final class AdsGuzzleHttpClientFactory implements GuzzleHttpClientFactory
     public function __construct(
         LoggerInterface $logger,
         GuzzleLogMessageFormatter $messageFormatter,
-        Client $httpClient = null
+        ?Client $httpClient = null
     ) {
         $this->logger = $logger;
         $this->messageFormatter = $messageFormatter;
