@@ -241,7 +241,7 @@ class AdsSoapClient extends SoapClient
         $this->logSoapCall($methodName, $soapFault);
     }
 
-    private function logSoapCall($methodName, SoapFault $soapFault = null)
+    private function logSoapCall($methodName, ?SoapFault $soapFault = null)
     {
         $summary = $this->soapLogMessageFormatter->formatSummary(
             $this->serviceDescriptor->getServiceName(),
