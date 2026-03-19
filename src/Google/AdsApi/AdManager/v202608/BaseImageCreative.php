@@ -1,12 +1,12 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202505;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-abstract class BaseImageCreative extends \Google\AdsApi\AdManager\v202608\HasDestinationUrlCreative
+abstract class BaseImageCreative extends \Google\AdsApi\AdManager\v202505\HasDestinationUrlCreative
 {
 
     /**
@@ -15,7 +15,7 @@ abstract class BaseImageCreative extends \Google\AdsApi\AdManager\v202608\HasDes
     protected $overrideSize = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\CreativeAsset $primaryImageAsset
+     * @var \Google\AdsApi\AdManager\v202505\CreativeAsset $primaryImageAsset
      */
     protected $primaryImageAsset = null;
 
@@ -23,24 +23,22 @@ abstract class BaseImageCreative extends \Google\AdsApi\AdManager\v202608\HasDes
      * @param int $advertiserId
      * @param int $id
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202608\Size $size
+     * @param \Google\AdsApi\AdManager\v202505\Size $size
      * @param string $previewUrl
      * @param string[] $policyLabels
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202608\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @param string $thirdPartyDataDeclarationStatus
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202505\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      * @param boolean $adBadgingEnabled
-     * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
      * @param string $destinationUrl
      * @param string $destinationUrlType
      * @param boolean $overrideSize
-     * @param \Google\AdsApi\AdManager\v202608\CreativeAsset $primaryImageAsset
+     * @param \Google\AdsApi\AdManager\v202505\CreativeAsset $primaryImageAsset
      */
-    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, array $policyLabels = null, array $appliedLabels = null, $lastModifiedDateTime = null, array $customFieldValues = null, $thirdPartyDataDeclaration = null, $thirdPartyDataDeclarationStatus = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $destinationUrl = null, $destinationUrlType = null, $overrideSize = null, $primaryImageAsset = null)
+    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, ?array $policyLabels = null, ?array $appliedLabels = null, $lastModifiedDateTime = null, ?array $customFieldValues = null, $thirdPartyDataDeclaration = null, $adBadgingEnabled = null, $destinationUrl = null, $destinationUrlType = null, $overrideSize = null, $primaryImageAsset = null)
     {
-      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $thirdPartyDataDeclarationStatus, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent, $destinationUrl, $destinationUrlType);
+      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $adBadgingEnabled, $destinationUrl, $destinationUrlType);
       $this->overrideSize = $overrideSize;
       $this->primaryImageAsset = $primaryImageAsset;
     }
@@ -55,7 +53,7 @@ abstract class BaseImageCreative extends \Google\AdsApi\AdManager\v202608\HasDes
 
     /**
      * @param boolean $overrideSize
-     * @return \Google\AdsApi\AdManager\v202608\BaseImageCreative
+     * @return \Google\AdsApi\AdManager\v202505\BaseImageCreative
      */
     public function setOverrideSize($overrideSize)
     {
@@ -64,7 +62,7 @@ abstract class BaseImageCreative extends \Google\AdsApi\AdManager\v202608\HasDes
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\CreativeAsset
+     * @return \Google\AdsApi\AdManager\v202505\CreativeAsset
      */
     public function getPrimaryImageAsset()
     {
@@ -72,8 +70,8 @@ abstract class BaseImageCreative extends \Google\AdsApi\AdManager\v202608\HasDes
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\CreativeAsset $primaryImageAsset
-     * @return \Google\AdsApi\AdManager\v202608\BaseImageCreative
+     * @param \Google\AdsApi\AdManager\v202505\CreativeAsset $primaryImageAsset
+     * @return \Google\AdsApi\AdManager\v202505\BaseImageCreative
      */
     public function setPrimaryImageAsset($primaryImageAsset)
     {

@@ -1,21 +1,21 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202605;
+namespace Google\AdsApi\AdManager\v202505;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-class LineItem extends \Google\AdsApi\AdManager\v202605\LineItemSummary
+class LineItem extends \Google\AdsApi\AdManager\v202505\LineItemSummary
 {
 
     /**
-     * @var \Google\AdsApi\AdManager\v202605\Targeting $targeting
+     * @var \Google\AdsApi\AdManager\v202505\Targeting $targeting
      */
     protected $targeting = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202605\CreativeTargeting[] $creativeTargetings
+     * @var \Google\AdsApi\AdManager\v202505\CreativeTargeting[] $creativeTargetings
      */
     protected $creativeTargetings = null;
 
@@ -25,28 +25,28 @@ class LineItem extends \Google\AdsApi\AdManager\v202605\LineItemSummary
      * @param string $name
      * @param string $externalId
      * @param string $orderName
-     * @param \Google\AdsApi\AdManager\v202605\DateTime $startDateTime
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $startDateTime
      * @param string $startDateTimeType
-     * @param \Google\AdsApi\AdManager\v202605\DateTime $endDateTime
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $endDateTime
      * @param int $autoExtensionDays
      * @param boolean $unlimitedEndDateTime
      * @param string $creativeRotationType
      * @param string $deliveryRateType
      * @param string $deliveryForecastSource
-     * @param \Google\AdsApi\AdManager\v202605\CustomPacingCurve $customPacingCurve
+     * @param \Google\AdsApi\AdManager\v202505\CustomPacingCurve $customPacingCurve
      * @param string $roadblockingType
      * @param string $skippableAdType
-     * @param \Google\AdsApi\AdManager\v202605\FrequencyCap[] $frequencyCaps
+     * @param \Google\AdsApi\AdManager\v202505\FrequencyCap[] $frequencyCaps
      * @param string $lineItemType
      * @param int $priority
-     * @param \Google\AdsApi\AdManager\v202605\Money $costPerUnit
-     * @param \Google\AdsApi\AdManager\v202605\Money $valueCostPerUnit
+     * @param \Google\AdsApi\AdManager\v202505\Money $costPerUnit
+     * @param \Google\AdsApi\AdManager\v202505\Money $valueCostPerUnit
      * @param string $costType
      * @param string $discountType
      * @param float $discount
      * @param int $contractedUnitsBought
-     * @param \Google\AdsApi\AdManager\v202605\CreativePlaceholder[] $creativePlaceholders
-     * @param \Google\AdsApi\AdManager\v202605\LineItemActivityAssociation[] $activityAssociations
+     * @param \Google\AdsApi\AdManager\v202505\CreativePlaceholder[] $creativePlaceholders
+     * @param \Google\AdsApi\AdManager\v202505\LineItemActivityAssociation[] $activityAssociations
      * @param string $environmentType
      * @param string[] $allowedFormats
      * @param string $companionDeliveryOption
@@ -54,49 +54,48 @@ class LineItem extends \Google\AdsApi\AdManager\v202605\LineItemSummary
      * @param boolean $skipInventoryCheck
      * @param boolean $skipCrossSellingRuleWarningChecks
      * @param boolean $reserveAtCreation
-     * @param \Google\AdsApi\AdManager\v202605\Stats $stats
-     * @param \Google\AdsApi\AdManager\v202605\DeliveryIndicator $deliveryIndicator
-     * @param \Google\AdsApi\AdManager\v202605\DeliveryData $deliveryData
-     * @param \Google\AdsApi\AdManager\v202605\Money $budget
+     * @param \Google\AdsApi\AdManager\v202505\Stats $stats
+     * @param \Google\AdsApi\AdManager\v202505\DeliveryIndicator $deliveryIndicator
+     * @param \Google\AdsApi\AdManager\v202505\DeliveryData $deliveryData
+     * @param \Google\AdsApi\AdManager\v202505\Money $budget
      * @param string $status
      * @param string $reservationStatus
      * @param boolean $isArchived
      * @param string $webPropertyCode
-     * @param \Google\AdsApi\AdManager\v202605\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202605\AppliedLabel[] $effectiveAppliedLabels
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[] $effectiveAppliedLabels
      * @param boolean $disableSameAdvertiserCompetitiveExclusion
      * @param string $lastModifiedByApp
      * @param string $notes
      * @param string $competitiveConstraintScope
-     * @param \Google\AdsApi\AdManager\v202605\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202605\DateTime $creationDateTime
-     * @param \Google\AdsApi\AdManager\v202605\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $creationDateTime
+     * @param \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[] $customFieldValues
      * @param boolean $isMissingCreatives
      * @param string $programmaticCreativeSource
-     * @param \Google\AdsApi\AdManager\v202605\ThirdPartyMeasurementSettings $thirdPartyMeasurementSettings
+     * @param \Google\AdsApi\AdManager\v202505\ThirdPartyMeasurementSettings $thirdPartyMeasurementSettings
      * @param boolean $youtubeKidsRestricted
      * @param int $videoMaxDuration
-     * @param \Google\AdsApi\AdManager\v202605\Goal $primaryGoal
-     * @param \Google\AdsApi\AdManager\v202605\Goal[] $secondaryGoals
-     * @param \Google\AdsApi\AdManager\v202605\GrpSettings $grpSettings
-     * @param \Google\AdsApi\AdManager\v202605\LineItemDealInfoDto $dealInfo
+     * @param \Google\AdsApi\AdManager\v202505\Goal $primaryGoal
+     * @param \Google\AdsApi\AdManager\v202505\Goal[] $secondaryGoals
+     * @param \Google\AdsApi\AdManager\v202505\GrpSettings $grpSettings
+     * @param \Google\AdsApi\AdManager\v202505\LineItemDealInfoDto $dealInfo
      * @param int[] $viewabilityProviderCompanyIds
      * @param string $childContentEligibility
      * @param string $customVastExtension
      * @param boolean $repeatedCreativeServingEnabled
-     * @param int $deliveryAllocationProfileId
-     * @param \Google\AdsApi\AdManager\v202605\Targeting $targeting
-     * @param \Google\AdsApi\AdManager\v202605\CreativeTargeting[] $creativeTargetings
+     * @param \Google\AdsApi\AdManager\v202505\Targeting $targeting
+     * @param \Google\AdsApi\AdManager\v202505\CreativeTargeting[] $creativeTargetings
      */
-    public function __construct($orderId = null, $id = null, $name = null, $externalId = null, $orderName = null, $startDateTime = null, $startDateTimeType = null, $endDateTime = null, $autoExtensionDays = null, $unlimitedEndDateTime = null, $creativeRotationType = null, $deliveryRateType = null, $deliveryForecastSource = null, $customPacingCurve = null, $roadblockingType = null, $skippableAdType = null, array $frequencyCaps = null, $lineItemType = null, $priority = null, $costPerUnit = null, $valueCostPerUnit = null, $costType = null, $discountType = null, $discount = null, $contractedUnitsBought = null, array $creativePlaceholders = null, array $activityAssociations = null, $environmentType = null, array $allowedFormats = null, $companionDeliveryOption = null, $allowOverbook = null, $skipInventoryCheck = null, $skipCrossSellingRuleWarningChecks = null, $reserveAtCreation = null, $stats = null, $deliveryIndicator = null, $deliveryData = null, $budget = null, $status = null, $reservationStatus = null, $isArchived = null, $webPropertyCode = null, array $appliedLabels = null, array $effectiveAppliedLabels = null, $disableSameAdvertiserCompetitiveExclusion = null, $lastModifiedByApp = null, $notes = null, $competitiveConstraintScope = null, $lastModifiedDateTime = null, $creationDateTime = null, array $customFieldValues = null, $isMissingCreatives = null, $programmaticCreativeSource = null, $thirdPartyMeasurementSettings = null, $youtubeKidsRestricted = null, $videoMaxDuration = null, $primaryGoal = null, array $secondaryGoals = null, $grpSettings = null, $dealInfo = null, array $viewabilityProviderCompanyIds = null, $childContentEligibility = null, $customVastExtension = null, $repeatedCreativeServingEnabled = null, $deliveryAllocationProfileId = null, $targeting = null, array $creativeTargetings = null)
+    public function __construct($orderId = null, $id = null, $name = null, $externalId = null, $orderName = null, $startDateTime = null, $startDateTimeType = null, $endDateTime = null, $autoExtensionDays = null, $unlimitedEndDateTime = null, $creativeRotationType = null, $deliveryRateType = null, $deliveryForecastSource = null, $customPacingCurve = null, $roadblockingType = null, $skippableAdType = null, ?array $frequencyCaps = null, $lineItemType = null, $priority = null, $costPerUnit = null, $valueCostPerUnit = null, $costType = null, $discountType = null, $discount = null, $contractedUnitsBought = null, ?array $creativePlaceholders = null, ?array $activityAssociations = null, $environmentType = null, ?array $allowedFormats = null, $companionDeliveryOption = null, $allowOverbook = null, $skipInventoryCheck = null, $skipCrossSellingRuleWarningChecks = null, $reserveAtCreation = null, $stats = null, $deliveryIndicator = null, $deliveryData = null, $budget = null, $status = null, $reservationStatus = null, $isArchived = null, $webPropertyCode = null, ?array $appliedLabels = null, ?array $effectiveAppliedLabels = null, $disableSameAdvertiserCompetitiveExclusion = null, $lastModifiedByApp = null, $notes = null, $competitiveConstraintScope = null, $lastModifiedDateTime = null, $creationDateTime = null, ?array $customFieldValues = null, $isMissingCreatives = null, $programmaticCreativeSource = null, $thirdPartyMeasurementSettings = null, $youtubeKidsRestricted = null, $videoMaxDuration = null, $primaryGoal = null, ?array $secondaryGoals = null, $grpSettings = null, $dealInfo = null, ?array $viewabilityProviderCompanyIds = null, $childContentEligibility = null, $customVastExtension = null, $repeatedCreativeServingEnabled = null, $targeting = null, ?array $creativeTargetings = null)
     {
-      parent::__construct($orderId, $id, $name, $externalId, $orderName, $startDateTime, $startDateTimeType, $endDateTime, $autoExtensionDays, $unlimitedEndDateTime, $creativeRotationType, $deliveryRateType, $deliveryForecastSource, $customPacingCurve, $roadblockingType, $skippableAdType, $frequencyCaps, $lineItemType, $priority, $costPerUnit, $valueCostPerUnit, $costType, $discountType, $discount, $contractedUnitsBought, $creativePlaceholders, $activityAssociations, $environmentType, $allowedFormats, $companionDeliveryOption, $allowOverbook, $skipInventoryCheck, $skipCrossSellingRuleWarningChecks, $reserveAtCreation, $stats, $deliveryIndicator, $deliveryData, $budget, $status, $reservationStatus, $isArchived, $webPropertyCode, $appliedLabels, $effectiveAppliedLabels, $disableSameAdvertiserCompetitiveExclusion, $lastModifiedByApp, $notes, $competitiveConstraintScope, $lastModifiedDateTime, $creationDateTime, $customFieldValues, $isMissingCreatives, $programmaticCreativeSource, $thirdPartyMeasurementSettings, $youtubeKidsRestricted, $videoMaxDuration, $primaryGoal, $secondaryGoals, $grpSettings, $dealInfo, $viewabilityProviderCompanyIds, $childContentEligibility, $customVastExtension, $repeatedCreativeServingEnabled, $deliveryAllocationProfileId);
+      parent::__construct($orderId, $id, $name, $externalId, $orderName, $startDateTime, $startDateTimeType, $endDateTime, $autoExtensionDays, $unlimitedEndDateTime, $creativeRotationType, $deliveryRateType, $deliveryForecastSource, $customPacingCurve, $roadblockingType, $skippableAdType, $frequencyCaps, $lineItemType, $priority, $costPerUnit, $valueCostPerUnit, $costType, $discountType, $discount, $contractedUnitsBought, $creativePlaceholders, $activityAssociations, $environmentType, $allowedFormats, $companionDeliveryOption, $allowOverbook, $skipInventoryCheck, $skipCrossSellingRuleWarningChecks, $reserveAtCreation, $stats, $deliveryIndicator, $deliveryData, $budget, $status, $reservationStatus, $isArchived, $webPropertyCode, $appliedLabels, $effectiveAppliedLabels, $disableSameAdvertiserCompetitiveExclusion, $lastModifiedByApp, $notes, $competitiveConstraintScope, $lastModifiedDateTime, $creationDateTime, $customFieldValues, $isMissingCreatives, $programmaticCreativeSource, $thirdPartyMeasurementSettings, $youtubeKidsRestricted, $videoMaxDuration, $primaryGoal, $secondaryGoals, $grpSettings, $dealInfo, $viewabilityProviderCompanyIds, $childContentEligibility, $customVastExtension, $repeatedCreativeServingEnabled);
       $this->targeting = $targeting;
       $this->creativeTargetings = $creativeTargetings;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202605\Targeting
+     * @return \Google\AdsApi\AdManager\v202505\Targeting
      */
     public function getTargeting()
     {
@@ -104,8 +103,8 @@ class LineItem extends \Google\AdsApi\AdManager\v202605\LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202605\Targeting $targeting
-     * @return \Google\AdsApi\AdManager\v202605\LineItem
+     * @param \Google\AdsApi\AdManager\v202505\Targeting $targeting
+     * @return \Google\AdsApi\AdManager\v202505\LineItem
      */
     public function setTargeting($targeting)
     {
@@ -114,7 +113,7 @@ class LineItem extends \Google\AdsApi\AdManager\v202605\LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202605\CreativeTargeting[]
+     * @return \Google\AdsApi\AdManager\v202505\CreativeTargeting[]
      */
     public function getCreativeTargetings()
     {
@@ -122,10 +121,10 @@ class LineItem extends \Google\AdsApi\AdManager\v202605\LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202605\CreativeTargeting[]|null $creativeTargetings
-     * @return \Google\AdsApi\AdManager\v202605\LineItem
+     * @param \Google\AdsApi\AdManager\v202505\CreativeTargeting[]|null $creativeTargetings
+     * @return \Google\AdsApi\AdManager\v202505\LineItem
      */
-    public function setCreativeTargetings(array $creativeTargetings = null)
+    public function setCreativeTargetings(?array $creativeTargetings = null)
     {
       $this->creativeTargetings = $creativeTargetings;
       return $this;

@@ -1,12 +1,12 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202605;
+namespace Google\AdsApi\AdManager\v202508;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-class VastRedirectCreative extends \Google\AdsApi\AdManager\v202605\Creative
+class VastRedirectCreative extends \Google\AdsApi\AdManager\v202508\Creative
 {
 
     /**
@@ -30,7 +30,7 @@ class VastRedirectCreative extends \Google\AdsApi\AdManager\v202605\Creative
     protected $companionCreativeIds = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202605\ConversionEvent_TrackingUrlsMapEntry[] $trackingUrls
+     * @var \Google\AdsApi\AdManager\v202508\ConversionEvent_TrackingUrlsMapEntry[] $trackingUrls
      */
     protected $trackingUrls = null;
 
@@ -58,29 +58,28 @@ class VastRedirectCreative extends \Google\AdsApi\AdManager\v202605\Creative
      * @param int $advertiserId
      * @param int $id
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202605\Size $size
+     * @param \Google\AdsApi\AdManager\v202508\Size $size
      * @param string $previewUrl
      * @param string[] $policyLabels
-     * @param \Google\AdsApi\AdManager\v202605\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202605\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202605\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202605\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @param string $thirdPartyDataDeclarationStatus
+     * @param \Google\AdsApi\AdManager\v202508\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202508\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202508\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202508\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      * @param boolean $adBadgingEnabled
      * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
      * @param string $vastXmlUrl
      * @param string $vastRedirectType
      * @param int $duration
      * @param int[] $companionCreativeIds
-     * @param \Google\AdsApi\AdManager\v202605\ConversionEvent_TrackingUrlsMapEntry[] $trackingUrls
+     * @param \Google\AdsApi\AdManager\v202508\ConversionEvent_TrackingUrlsMapEntry[] $trackingUrls
      * @param string $vastPreviewUrl
      * @param string $sslScanResult
      * @param string $sslManualOverride
      * @param boolean $isAudio
      */
-    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, array $policyLabels = null, array $appliedLabels = null, $lastModifiedDateTime = null, array $customFieldValues = null, $thirdPartyDataDeclaration = null, $thirdPartyDataDeclarationStatus = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $vastXmlUrl = null, $vastRedirectType = null, $duration = null, array $companionCreativeIds = null, array $trackingUrls = null, $vastPreviewUrl = null, $sslScanResult = null, $sslManualOverride = null, $isAudio = null)
+    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, ?array $policyLabels = null, ?array $appliedLabels = null, $lastModifiedDateTime = null, ?array $customFieldValues = null, $thirdPartyDataDeclaration = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $vastXmlUrl = null, $vastRedirectType = null, $duration = null, ?array $companionCreativeIds = null, ?array $trackingUrls = null, $vastPreviewUrl = null, $sslScanResult = null, $sslManualOverride = null, $isAudio = null)
     {
-      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $thirdPartyDataDeclarationStatus, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent);
+      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent);
       $this->vastXmlUrl = $vastXmlUrl;
       $this->vastRedirectType = $vastRedirectType;
       $this->duration = $duration;
@@ -102,7 +101,7 @@ class VastRedirectCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param string $vastXmlUrl
-     * @return \Google\AdsApi\AdManager\v202605\VastRedirectCreative
+     * @return \Google\AdsApi\AdManager\v202508\VastRedirectCreative
      */
     public function setVastXmlUrl($vastXmlUrl)
     {
@@ -120,7 +119,7 @@ class VastRedirectCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param string $vastRedirectType
-     * @return \Google\AdsApi\AdManager\v202605\VastRedirectCreative
+     * @return \Google\AdsApi\AdManager\v202508\VastRedirectCreative
      */
     public function setVastRedirectType($vastRedirectType)
     {
@@ -138,7 +137,7 @@ class VastRedirectCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param int $duration
-     * @return \Google\AdsApi\AdManager\v202605\VastRedirectCreative
+     * @return \Google\AdsApi\AdManager\v202508\VastRedirectCreative
      */
     public function setDuration($duration)
     {
@@ -156,16 +155,16 @@ class VastRedirectCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param int[]|null $companionCreativeIds
-     * @return \Google\AdsApi\AdManager\v202605\VastRedirectCreative
+     * @return \Google\AdsApi\AdManager\v202508\VastRedirectCreative
      */
-    public function setCompanionCreativeIds(array $companionCreativeIds = null)
+    public function setCompanionCreativeIds(?array $companionCreativeIds = null)
     {
       $this->companionCreativeIds = $companionCreativeIds;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202605\ConversionEvent_TrackingUrlsMapEntry[]
+     * @return \Google\AdsApi\AdManager\v202508\ConversionEvent_TrackingUrlsMapEntry[]
      */
     public function getTrackingUrls()
     {
@@ -173,10 +172,10 @@ class VastRedirectCreative extends \Google\AdsApi\AdManager\v202605\Creative
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202605\ConversionEvent_TrackingUrlsMapEntry[]|null $trackingUrls
-     * @return \Google\AdsApi\AdManager\v202605\VastRedirectCreative
+     * @param \Google\AdsApi\AdManager\v202508\ConversionEvent_TrackingUrlsMapEntry[]|null $trackingUrls
+     * @return \Google\AdsApi\AdManager\v202508\VastRedirectCreative
      */
-    public function setTrackingUrls(array $trackingUrls = null)
+    public function setTrackingUrls(?array $trackingUrls = null)
     {
       $this->trackingUrls = $trackingUrls;
       return $this;
@@ -192,7 +191,7 @@ class VastRedirectCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param string $vastPreviewUrl
-     * @return \Google\AdsApi\AdManager\v202605\VastRedirectCreative
+     * @return \Google\AdsApi\AdManager\v202508\VastRedirectCreative
      */
     public function setVastPreviewUrl($vastPreviewUrl)
     {
@@ -210,7 +209,7 @@ class VastRedirectCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param string $sslScanResult
-     * @return \Google\AdsApi\AdManager\v202605\VastRedirectCreative
+     * @return \Google\AdsApi\AdManager\v202508\VastRedirectCreative
      */
     public function setSslScanResult($sslScanResult)
     {
@@ -228,7 +227,7 @@ class VastRedirectCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param string $sslManualOverride
-     * @return \Google\AdsApi\AdManager\v202605\VastRedirectCreative
+     * @return \Google\AdsApi\AdManager\v202508\VastRedirectCreative
      */
     public function setSslManualOverride($sslManualOverride)
     {
@@ -246,7 +245,7 @@ class VastRedirectCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param boolean $isAudio
-     * @return \Google\AdsApi\AdManager\v202605\VastRedirectCreative
+     * @return \Google\AdsApi\AdManager\v202508\VastRedirectCreative
      */
     public function setIsAudio($isAudio)
     {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202505;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-class VodStreamCreateRequest extends \Google\AdsApi\AdManager\v202608\StreamCreateRequest
+class VodStreamCreateRequest extends \Google\AdsApi\AdManager\v202505\StreamCreateRequest
 {
 
     /**
@@ -30,11 +30,6 @@ class VodStreamCreateRequest extends \Google\AdsApi\AdManager\v202608\StreamCrea
     protected $contentName = null;
 
     /**
-     * @var string $podServingSessionTitle
-     */
-    protected $podServingSessionTitle = null;
-
-    /**
      * @var int[] $cuePoints
      */
     protected $cuePoints = null;
@@ -47,17 +42,15 @@ class VodStreamCreateRequest extends \Google\AdsApi\AdManager\v202608\StreamCrea
      * @param string $videoId
      * @param int $contentId
      * @param string $contentName
-     * @param string $podServingSessionTitle
      * @param int[] $cuePoints
      */
-    public function __construct($url = null, $userAgent = null, $reportingType = null, $contentSourceId = null, $videoId = null, $contentId = null, $contentName = null, $podServingSessionTitle = null, array $cuePoints = null)
+    public function __construct($url = null, $userAgent = null, $reportingType = null, $contentSourceId = null, $videoId = null, $contentId = null, $contentName = null, ?array $cuePoints = null)
     {
       parent::__construct($url, $userAgent, $reportingType);
       $this->contentSourceId = $contentSourceId;
       $this->videoId = $videoId;
       $this->contentId = $contentId;
       $this->contentName = $contentName;
-      $this->podServingSessionTitle = $podServingSessionTitle;
       $this->cuePoints = $cuePoints;
     }
 
@@ -71,7 +64,7 @@ class VodStreamCreateRequest extends \Google\AdsApi\AdManager\v202608\StreamCrea
 
     /**
      * @param int $contentSourceId
-     * @return \Google\AdsApi\AdManager\v202608\VodStreamCreateRequest
+     * @return \Google\AdsApi\AdManager\v202505\VodStreamCreateRequest
      */
     public function setContentSourceId($contentSourceId)
     {
@@ -90,7 +83,7 @@ class VodStreamCreateRequest extends \Google\AdsApi\AdManager\v202608\StreamCrea
 
     /**
      * @param string $videoId
-     * @return \Google\AdsApi\AdManager\v202608\VodStreamCreateRequest
+     * @return \Google\AdsApi\AdManager\v202505\VodStreamCreateRequest
      */
     public function setVideoId($videoId)
     {
@@ -108,7 +101,7 @@ class VodStreamCreateRequest extends \Google\AdsApi\AdManager\v202608\StreamCrea
 
     /**
      * @param int $contentId
-     * @return \Google\AdsApi\AdManager\v202608\VodStreamCreateRequest
+     * @return \Google\AdsApi\AdManager\v202505\VodStreamCreateRequest
      */
     public function setContentId($contentId)
     {
@@ -127,29 +120,11 @@ class VodStreamCreateRequest extends \Google\AdsApi\AdManager\v202608\StreamCrea
 
     /**
      * @param string $contentName
-     * @return \Google\AdsApi\AdManager\v202608\VodStreamCreateRequest
+     * @return \Google\AdsApi\AdManager\v202505\VodStreamCreateRequest
      */
     public function setContentName($contentName)
     {
       $this->contentName = $contentName;
-      return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getPodServingSessionTitle()
-    {
-      return $this->podServingSessionTitle;
-    }
-
-    /**
-     * @param string $podServingSessionTitle
-     * @return \Google\AdsApi\AdManager\v202608\VodStreamCreateRequest
-     */
-    public function setPodServingSessionTitle($podServingSessionTitle)
-    {
-      $this->podServingSessionTitle = $podServingSessionTitle;
       return $this;
     }
 
@@ -163,9 +138,9 @@ class VodStreamCreateRequest extends \Google\AdsApi\AdManager\v202608\StreamCrea
 
     /**
      * @param int[]|null $cuePoints
-     * @return \Google\AdsApi\AdManager\v202608\VodStreamCreateRequest
+     * @return \Google\AdsApi\AdManager\v202505\VodStreamCreateRequest
      */
-    public function setCuePoints(array $cuePoints = null)
+    public function setCuePoints(?array $cuePoints = null)
     {
       $this->cuePoints = $cuePoints;
       return $this;

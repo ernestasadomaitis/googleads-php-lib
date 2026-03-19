@@ -1,6 +1,6 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202508;
 
 
 /**
@@ -35,7 +35,7 @@ class LineItemSummary
     protected $orderName = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\DateTime $startDateTime
+     * @var \Google\AdsApi\AdManager\v202508\DateTime $startDateTime
      */
     protected $startDateTime = null;
 
@@ -45,7 +45,7 @@ class LineItemSummary
     protected $startDateTimeType = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\DateTime $endDateTime
+     * @var \Google\AdsApi\AdManager\v202508\DateTime $endDateTime
      */
     protected $endDateTime = null;
 
@@ -75,7 +75,7 @@ class LineItemSummary
     protected $deliveryForecastSource = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\CustomPacingCurve $customPacingCurve
+     * @var \Google\AdsApi\AdManager\v202508\CustomPacingCurve $customPacingCurve
      */
     protected $customPacingCurve = null;
 
@@ -90,7 +90,7 @@ class LineItemSummary
     protected $skippableAdType = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\FrequencyCap[] $frequencyCaps
+     * @var \Google\AdsApi\AdManager\v202508\FrequencyCap[] $frequencyCaps
      */
     protected $frequencyCaps = null;
 
@@ -105,12 +105,12 @@ class LineItemSummary
     protected $priority = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\Money $costPerUnit
+     * @var \Google\AdsApi\AdManager\v202508\Money $costPerUnit
      */
     protected $costPerUnit = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\Money $valueCostPerUnit
+     * @var \Google\AdsApi\AdManager\v202508\Money $valueCostPerUnit
      */
     protected $valueCostPerUnit = null;
 
@@ -135,12 +135,12 @@ class LineItemSummary
     protected $contractedUnitsBought = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\CreativePlaceholder[] $creativePlaceholders
+     * @var \Google\AdsApi\AdManager\v202508\CreativePlaceholder[] $creativePlaceholders
      */
     protected $creativePlaceholders = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\LineItemActivityAssociation[] $activityAssociations
+     * @var \Google\AdsApi\AdManager\v202508\LineItemActivityAssociation[] $activityAssociations
      */
     protected $activityAssociations = null;
 
@@ -180,22 +180,22 @@ class LineItemSummary
     protected $reserveAtCreation = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\Stats $stats
+     * @var \Google\AdsApi\AdManager\v202508\Stats $stats
      */
     protected $stats = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\DeliveryIndicator $deliveryIndicator
+     * @var \Google\AdsApi\AdManager\v202508\DeliveryIndicator $deliveryIndicator
      */
     protected $deliveryIndicator = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\DeliveryData $deliveryData
+     * @var \Google\AdsApi\AdManager\v202508\DeliveryData $deliveryData
      */
     protected $deliveryData = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\Money $budget
+     * @var \Google\AdsApi\AdManager\v202508\Money $budget
      */
     protected $budget = null;
 
@@ -220,12 +220,12 @@ class LineItemSummary
     protected $webPropertyCode = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
+     * @var \Google\AdsApi\AdManager\v202508\AppliedLabel[] $appliedLabels
      */
     protected $appliedLabels = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\AppliedLabel[] $effectiveAppliedLabels
+     * @var \Google\AdsApi\AdManager\v202508\AppliedLabel[] $effectiveAppliedLabels
      */
     protected $effectiveAppliedLabels = null;
 
@@ -250,17 +250,17 @@ class LineItemSummary
     protected $competitiveConstraintScope = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
+     * @var \Google\AdsApi\AdManager\v202508\DateTime $lastModifiedDateTime
      */
     protected $lastModifiedDateTime = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\DateTime $creationDateTime
+     * @var \Google\AdsApi\AdManager\v202508\DateTime $creationDateTime
      */
     protected $creationDateTime = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[] $customFieldValues
+     * @var \Google\AdsApi\AdManager\v202508\BaseCustomFieldValue[] $customFieldValues
      */
     protected $customFieldValues = null;
 
@@ -275,7 +275,7 @@ class LineItemSummary
     protected $programmaticCreativeSource = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\ThirdPartyMeasurementSettings $thirdPartyMeasurementSettings
+     * @var \Google\AdsApi\AdManager\v202508\ThirdPartyMeasurementSettings $thirdPartyMeasurementSettings
      */
     protected $thirdPartyMeasurementSettings = null;
 
@@ -290,22 +290,22 @@ class LineItemSummary
     protected $videoMaxDuration = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\Goal $primaryGoal
+     * @var \Google\AdsApi\AdManager\v202508\Goal $primaryGoal
      */
     protected $primaryGoal = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\Goal[] $secondaryGoals
+     * @var \Google\AdsApi\AdManager\v202508\Goal[] $secondaryGoals
      */
     protected $secondaryGoals = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\GrpSettings $grpSettings
+     * @var \Google\AdsApi\AdManager\v202508\GrpSettings $grpSettings
      */
     protected $grpSettings = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\LineItemDealInfoDto $dealInfo
+     * @var \Google\AdsApi\AdManager\v202508\LineItemDealInfoDto $dealInfo
      */
     protected $dealInfo = null;
 
@@ -330,38 +330,33 @@ class LineItemSummary
     protected $repeatedCreativeServingEnabled = null;
 
     /**
-     * @var int $deliveryAllocationProfileId
-     */
-    protected $deliveryAllocationProfileId = null;
-
-    /**
      * @param int $orderId
      * @param int $id
      * @param string $name
      * @param string $externalId
      * @param string $orderName
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $startDateTime
+     * @param \Google\AdsApi\AdManager\v202508\DateTime $startDateTime
      * @param string $startDateTimeType
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $endDateTime
+     * @param \Google\AdsApi\AdManager\v202508\DateTime $endDateTime
      * @param int $autoExtensionDays
      * @param boolean $unlimitedEndDateTime
      * @param string $creativeRotationType
      * @param string $deliveryRateType
      * @param string $deliveryForecastSource
-     * @param \Google\AdsApi\AdManager\v202608\CustomPacingCurve $customPacingCurve
+     * @param \Google\AdsApi\AdManager\v202508\CustomPacingCurve $customPacingCurve
      * @param string $roadblockingType
      * @param string $skippableAdType
-     * @param \Google\AdsApi\AdManager\v202608\FrequencyCap[] $frequencyCaps
+     * @param \Google\AdsApi\AdManager\v202508\FrequencyCap[] $frequencyCaps
      * @param string $lineItemType
      * @param int $priority
-     * @param \Google\AdsApi\AdManager\v202608\Money $costPerUnit
-     * @param \Google\AdsApi\AdManager\v202608\Money $valueCostPerUnit
+     * @param \Google\AdsApi\AdManager\v202508\Money $costPerUnit
+     * @param \Google\AdsApi\AdManager\v202508\Money $valueCostPerUnit
      * @param string $costType
      * @param string $discountType
      * @param float $discount
      * @param int $contractedUnitsBought
-     * @param \Google\AdsApi\AdManager\v202608\CreativePlaceholder[] $creativePlaceholders
-     * @param \Google\AdsApi\AdManager\v202608\LineItemActivityAssociation[] $activityAssociations
+     * @param \Google\AdsApi\AdManager\v202508\CreativePlaceholder[] $creativePlaceholders
+     * @param \Google\AdsApi\AdManager\v202508\LineItemActivityAssociation[] $activityAssociations
      * @param string $environmentType
      * @param string[] $allowedFormats
      * @param string $companionDeliveryOption
@@ -369,39 +364,38 @@ class LineItemSummary
      * @param boolean $skipInventoryCheck
      * @param boolean $skipCrossSellingRuleWarningChecks
      * @param boolean $reserveAtCreation
-     * @param \Google\AdsApi\AdManager\v202608\Stats $stats
-     * @param \Google\AdsApi\AdManager\v202608\DeliveryIndicator $deliveryIndicator
-     * @param \Google\AdsApi\AdManager\v202608\DeliveryData $deliveryData
-     * @param \Google\AdsApi\AdManager\v202608\Money $budget
+     * @param \Google\AdsApi\AdManager\v202508\Stats $stats
+     * @param \Google\AdsApi\AdManager\v202508\DeliveryIndicator $deliveryIndicator
+     * @param \Google\AdsApi\AdManager\v202508\DeliveryData $deliveryData
+     * @param \Google\AdsApi\AdManager\v202508\Money $budget
      * @param string $status
      * @param string $reservationStatus
      * @param boolean $isArchived
      * @param string $webPropertyCode
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $effectiveAppliedLabels
+     * @param \Google\AdsApi\AdManager\v202508\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202508\AppliedLabel[] $effectiveAppliedLabels
      * @param boolean $disableSameAdvertiserCompetitiveExclusion
      * @param string $lastModifiedByApp
      * @param string $notes
      * @param string $competitiveConstraintScope
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $creationDateTime
-     * @param \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202508\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202508\DateTime $creationDateTime
+     * @param \Google\AdsApi\AdManager\v202508\BaseCustomFieldValue[] $customFieldValues
      * @param boolean $isMissingCreatives
      * @param string $programmaticCreativeSource
-     * @param \Google\AdsApi\AdManager\v202608\ThirdPartyMeasurementSettings $thirdPartyMeasurementSettings
+     * @param \Google\AdsApi\AdManager\v202508\ThirdPartyMeasurementSettings $thirdPartyMeasurementSettings
      * @param boolean $youtubeKidsRestricted
      * @param int $videoMaxDuration
-     * @param \Google\AdsApi\AdManager\v202608\Goal $primaryGoal
-     * @param \Google\AdsApi\AdManager\v202608\Goal[] $secondaryGoals
-     * @param \Google\AdsApi\AdManager\v202608\GrpSettings $grpSettings
-     * @param \Google\AdsApi\AdManager\v202608\LineItemDealInfoDto $dealInfo
+     * @param \Google\AdsApi\AdManager\v202508\Goal $primaryGoal
+     * @param \Google\AdsApi\AdManager\v202508\Goal[] $secondaryGoals
+     * @param \Google\AdsApi\AdManager\v202508\GrpSettings $grpSettings
+     * @param \Google\AdsApi\AdManager\v202508\LineItemDealInfoDto $dealInfo
      * @param int[] $viewabilityProviderCompanyIds
      * @param string $childContentEligibility
      * @param string $customVastExtension
      * @param boolean $repeatedCreativeServingEnabled
-     * @param int $deliveryAllocationProfileId
      */
-    public function __construct($orderId = null, $id = null, $name = null, $externalId = null, $orderName = null, $startDateTime = null, $startDateTimeType = null, $endDateTime = null, $autoExtensionDays = null, $unlimitedEndDateTime = null, $creativeRotationType = null, $deliveryRateType = null, $deliveryForecastSource = null, $customPacingCurve = null, $roadblockingType = null, $skippableAdType = null, array $frequencyCaps = null, $lineItemType = null, $priority = null, $costPerUnit = null, $valueCostPerUnit = null, $costType = null, $discountType = null, $discount = null, $contractedUnitsBought = null, array $creativePlaceholders = null, array $activityAssociations = null, $environmentType = null, array $allowedFormats = null, $companionDeliveryOption = null, $allowOverbook = null, $skipInventoryCheck = null, $skipCrossSellingRuleWarningChecks = null, $reserveAtCreation = null, $stats = null, $deliveryIndicator = null, $deliveryData = null, $budget = null, $status = null, $reservationStatus = null, $isArchived = null, $webPropertyCode = null, array $appliedLabels = null, array $effectiveAppliedLabels = null, $disableSameAdvertiserCompetitiveExclusion = null, $lastModifiedByApp = null, $notes = null, $competitiveConstraintScope = null, $lastModifiedDateTime = null, $creationDateTime = null, array $customFieldValues = null, $isMissingCreatives = null, $programmaticCreativeSource = null, $thirdPartyMeasurementSettings = null, $youtubeKidsRestricted = null, $videoMaxDuration = null, $primaryGoal = null, array $secondaryGoals = null, $grpSettings = null, $dealInfo = null, array $viewabilityProviderCompanyIds = null, $childContentEligibility = null, $customVastExtension = null, $repeatedCreativeServingEnabled = null, $deliveryAllocationProfileId = null)
+    public function __construct($orderId = null, $id = null, $name = null, $externalId = null, $orderName = null, $startDateTime = null, $startDateTimeType = null, $endDateTime = null, $autoExtensionDays = null, $unlimitedEndDateTime = null, $creativeRotationType = null, $deliveryRateType = null, $deliveryForecastSource = null, $customPacingCurve = null, $roadblockingType = null, $skippableAdType = null, ?array $frequencyCaps = null, $lineItemType = null, $priority = null, $costPerUnit = null, $valueCostPerUnit = null, $costType = null, $discountType = null, $discount = null, $contractedUnitsBought = null, ?array $creativePlaceholders = null, ?array $activityAssociations = null, $environmentType = null, ?array $allowedFormats = null, $companionDeliveryOption = null, $allowOverbook = null, $skipInventoryCheck = null, $skipCrossSellingRuleWarningChecks = null, $reserveAtCreation = null, $stats = null, $deliveryIndicator = null, $deliveryData = null, $budget = null, $status = null, $reservationStatus = null, $isArchived = null, $webPropertyCode = null, ?array $appliedLabels = null, ?array $effectiveAppliedLabels = null, $disableSameAdvertiserCompetitiveExclusion = null, $lastModifiedByApp = null, $notes = null, $competitiveConstraintScope = null, $lastModifiedDateTime = null, $creationDateTime = null, ?array $customFieldValues = null, $isMissingCreatives = null, $programmaticCreativeSource = null, $thirdPartyMeasurementSettings = null, $youtubeKidsRestricted = null, $videoMaxDuration = null, $primaryGoal = null, ?array $secondaryGoals = null, $grpSettings = null, $dealInfo = null, ?array $viewabilityProviderCompanyIds = null, $childContentEligibility = null, $customVastExtension = null, $repeatedCreativeServingEnabled = null)
     {
       $this->orderId = $orderId;
       $this->id = $id;
@@ -467,7 +461,6 @@ class LineItemSummary
       $this->childContentEligibility = $childContentEligibility;
       $this->customVastExtension = $customVastExtension;
       $this->repeatedCreativeServingEnabled = $repeatedCreativeServingEnabled;
-      $this->deliveryAllocationProfileId = $deliveryAllocationProfileId;
     }
 
     /**
@@ -480,7 +473,7 @@ class LineItemSummary
 
     /**
      * @param int $orderId
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setOrderId($orderId)
     {
@@ -499,7 +492,7 @@ class LineItemSummary
 
     /**
      * @param int $id
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setId($id)
     {
@@ -518,7 +511,7 @@ class LineItemSummary
 
     /**
      * @param string $name
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setName($name)
     {
@@ -536,7 +529,7 @@ class LineItemSummary
 
     /**
      * @param string $externalId
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setExternalId($externalId)
     {
@@ -554,7 +547,7 @@ class LineItemSummary
 
     /**
      * @param string $orderName
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setOrderName($orderName)
     {
@@ -563,7 +556,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\DateTime
+     * @return \Google\AdsApi\AdManager\v202508\DateTime
      */
     public function getStartDateTime()
     {
@@ -571,8 +564,8 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $startDateTime
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\DateTime $startDateTime
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setStartDateTime($startDateTime)
     {
@@ -590,7 +583,7 @@ class LineItemSummary
 
     /**
      * @param string $startDateTimeType
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setStartDateTimeType($startDateTimeType)
     {
@@ -599,7 +592,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\DateTime
+     * @return \Google\AdsApi\AdManager\v202508\DateTime
      */
     public function getEndDateTime()
     {
@@ -607,8 +600,8 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $endDateTime
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\DateTime $endDateTime
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setEndDateTime($endDateTime)
     {
@@ -626,7 +619,7 @@ class LineItemSummary
 
     /**
      * @param int $autoExtensionDays
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setAutoExtensionDays($autoExtensionDays)
     {
@@ -644,7 +637,7 @@ class LineItemSummary
 
     /**
      * @param boolean $unlimitedEndDateTime
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setUnlimitedEndDateTime($unlimitedEndDateTime)
     {
@@ -662,7 +655,7 @@ class LineItemSummary
 
     /**
      * @param string $creativeRotationType
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setCreativeRotationType($creativeRotationType)
     {
@@ -680,7 +673,7 @@ class LineItemSummary
 
     /**
      * @param string $deliveryRateType
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setDeliveryRateType($deliveryRateType)
     {
@@ -698,7 +691,7 @@ class LineItemSummary
 
     /**
      * @param string $deliveryForecastSource
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setDeliveryForecastSource($deliveryForecastSource)
     {
@@ -707,7 +700,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\CustomPacingCurve
+     * @return \Google\AdsApi\AdManager\v202508\CustomPacingCurve
      */
     public function getCustomPacingCurve()
     {
@@ -715,8 +708,8 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\CustomPacingCurve $customPacingCurve
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\CustomPacingCurve $customPacingCurve
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setCustomPacingCurve($customPacingCurve)
     {
@@ -734,7 +727,7 @@ class LineItemSummary
 
     /**
      * @param string $roadblockingType
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setRoadblockingType($roadblockingType)
     {
@@ -752,7 +745,7 @@ class LineItemSummary
 
     /**
      * @param string $skippableAdType
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setSkippableAdType($skippableAdType)
     {
@@ -761,7 +754,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\FrequencyCap[]
+     * @return \Google\AdsApi\AdManager\v202508\FrequencyCap[]
      */
     public function getFrequencyCaps()
     {
@@ -769,10 +762,10 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\FrequencyCap[]|null $frequencyCaps
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\FrequencyCap[]|null $frequencyCaps
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
-    public function setFrequencyCaps(array $frequencyCaps = null)
+    public function setFrequencyCaps(?array $frequencyCaps = null)
     {
       $this->frequencyCaps = $frequencyCaps;
       return $this;
@@ -788,7 +781,7 @@ class LineItemSummary
 
     /**
      * @param string $lineItemType
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setLineItemType($lineItemType)
     {
@@ -806,7 +799,7 @@ class LineItemSummary
 
     /**
      * @param int $priority
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setPriority($priority)
     {
@@ -815,7 +808,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\Money
+     * @return \Google\AdsApi\AdManager\v202508\Money
      */
     public function getCostPerUnit()
     {
@@ -823,8 +816,8 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\Money $costPerUnit
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\Money $costPerUnit
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setCostPerUnit($costPerUnit)
     {
@@ -833,7 +826,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\Money
+     * @return \Google\AdsApi\AdManager\v202508\Money
      */
     public function getValueCostPerUnit()
     {
@@ -841,8 +834,8 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\Money $valueCostPerUnit
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\Money $valueCostPerUnit
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setValueCostPerUnit($valueCostPerUnit)
     {
@@ -860,7 +853,7 @@ class LineItemSummary
 
     /**
      * @param string $costType
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setCostType($costType)
     {
@@ -878,7 +871,7 @@ class LineItemSummary
 
     /**
      * @param string $discountType
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setDiscountType($discountType)
     {
@@ -896,7 +889,7 @@ class LineItemSummary
 
     /**
      * @param float $discount
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setDiscount($discount)
     {
@@ -914,7 +907,7 @@ class LineItemSummary
 
     /**
      * @param int $contractedUnitsBought
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setContractedUnitsBought($contractedUnitsBought)
     {
@@ -924,7 +917,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\CreativePlaceholder[]
+     * @return \Google\AdsApi\AdManager\v202508\CreativePlaceholder[]
      */
     public function getCreativePlaceholders()
     {
@@ -932,17 +925,17 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\CreativePlaceholder[]|null $creativePlaceholders
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\CreativePlaceholder[]|null $creativePlaceholders
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
-    public function setCreativePlaceholders(array $creativePlaceholders = null)
+    public function setCreativePlaceholders(?array $creativePlaceholders = null)
     {
       $this->creativePlaceholders = $creativePlaceholders;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\LineItemActivityAssociation[]
+     * @return \Google\AdsApi\AdManager\v202508\LineItemActivityAssociation[]
      */
     public function getActivityAssociations()
     {
@@ -950,10 +943,10 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\LineItemActivityAssociation[]|null $activityAssociations
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\LineItemActivityAssociation[]|null $activityAssociations
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
-    public function setActivityAssociations(array $activityAssociations = null)
+    public function setActivityAssociations(?array $activityAssociations = null)
     {
       $this->activityAssociations = $activityAssociations;
       return $this;
@@ -969,7 +962,7 @@ class LineItemSummary
 
     /**
      * @param string $environmentType
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setEnvironmentType($environmentType)
     {
@@ -987,9 +980,9 @@ class LineItemSummary
 
     /**
      * @param string[]|null $allowedFormats
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
-    public function setAllowedFormats(array $allowedFormats = null)
+    public function setAllowedFormats(?array $allowedFormats = null)
     {
       $this->allowedFormats = $allowedFormats;
       return $this;
@@ -1005,7 +998,7 @@ class LineItemSummary
 
     /**
      * @param string $companionDeliveryOption
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setCompanionDeliveryOption($companionDeliveryOption)
     {
@@ -1023,7 +1016,7 @@ class LineItemSummary
 
     /**
      * @param boolean $allowOverbook
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setAllowOverbook($allowOverbook)
     {
@@ -1041,7 +1034,7 @@ class LineItemSummary
 
     /**
      * @param boolean $skipInventoryCheck
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setSkipInventoryCheck($skipInventoryCheck)
     {
@@ -1059,7 +1052,7 @@ class LineItemSummary
 
     /**
      * @param boolean $skipCrossSellingRuleWarningChecks
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setSkipCrossSellingRuleWarningChecks($skipCrossSellingRuleWarningChecks)
     {
@@ -1077,7 +1070,7 @@ class LineItemSummary
 
     /**
      * @param boolean $reserveAtCreation
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setReserveAtCreation($reserveAtCreation)
     {
@@ -1086,7 +1079,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\Stats
+     * @return \Google\AdsApi\AdManager\v202508\Stats
      */
     public function getStats()
     {
@@ -1094,8 +1087,8 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\Stats $stats
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\Stats $stats
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setStats($stats)
     {
@@ -1104,7 +1097,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\DeliveryIndicator
+     * @return \Google\AdsApi\AdManager\v202508\DeliveryIndicator
      */
     public function getDeliveryIndicator()
     {
@@ -1112,8 +1105,8 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\DeliveryIndicator $deliveryIndicator
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\DeliveryIndicator $deliveryIndicator
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setDeliveryIndicator($deliveryIndicator)
     {
@@ -1122,7 +1115,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\DeliveryData
+     * @return \Google\AdsApi\AdManager\v202508\DeliveryData
      */
     public function getDeliveryData()
     {
@@ -1130,8 +1123,8 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\DeliveryData $deliveryData
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\DeliveryData $deliveryData
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setDeliveryData($deliveryData)
     {
@@ -1140,7 +1133,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\Money
+     * @return \Google\AdsApi\AdManager\v202508\Money
      */
     public function getBudget()
     {
@@ -1148,8 +1141,8 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\Money $budget
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\Money $budget
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setBudget($budget)
     {
@@ -1167,7 +1160,7 @@ class LineItemSummary
 
     /**
      * @param string $status
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setStatus($status)
     {
@@ -1185,7 +1178,7 @@ class LineItemSummary
 
     /**
      * @param string $reservationStatus
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setReservationStatus($reservationStatus)
     {
@@ -1203,7 +1196,7 @@ class LineItemSummary
 
     /**
      * @param boolean $isArchived
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setIsArchived($isArchived)
     {
@@ -1221,7 +1214,7 @@ class LineItemSummary
 
     /**
      * @param string $webPropertyCode
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setWebPropertyCode($webPropertyCode)
     {
@@ -1230,7 +1223,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\AppliedLabel[]
+     * @return \Google\AdsApi\AdManager\v202508\AppliedLabel[]
      */
     public function getAppliedLabels()
     {
@@ -1238,17 +1231,17 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[]|null $appliedLabels
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\AppliedLabel[]|null $appliedLabels
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
-    public function setAppliedLabels(array $appliedLabels = null)
+    public function setAppliedLabels(?array $appliedLabels = null)
     {
       $this->appliedLabels = $appliedLabels;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\AppliedLabel[]
+     * @return \Google\AdsApi\AdManager\v202508\AppliedLabel[]
      */
     public function getEffectiveAppliedLabels()
     {
@@ -1256,10 +1249,10 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[]|null $effectiveAppliedLabels
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\AppliedLabel[]|null $effectiveAppliedLabels
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
-    public function setEffectiveAppliedLabels(array $effectiveAppliedLabels = null)
+    public function setEffectiveAppliedLabels(?array $effectiveAppliedLabels = null)
     {
       $this->effectiveAppliedLabels = $effectiveAppliedLabels;
       return $this;
@@ -1275,7 +1268,7 @@ class LineItemSummary
 
     /**
      * @param boolean $disableSameAdvertiserCompetitiveExclusion
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setDisableSameAdvertiserCompetitiveExclusion($disableSameAdvertiserCompetitiveExclusion)
     {
@@ -1293,7 +1286,7 @@ class LineItemSummary
 
     /**
      * @param string $lastModifiedByApp
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setLastModifiedByApp($lastModifiedByApp)
     {
@@ -1311,7 +1304,7 @@ class LineItemSummary
 
     /**
      * @param string $notes
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setNotes($notes)
     {
@@ -1329,7 +1322,7 @@ class LineItemSummary
 
     /**
      * @param string $competitiveConstraintScope
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setCompetitiveConstraintScope($competitiveConstraintScope)
     {
@@ -1338,7 +1331,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\DateTime
+     * @return \Google\AdsApi\AdManager\v202508\DateTime
      */
     public function getLastModifiedDateTime()
     {
@@ -1346,8 +1339,8 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\DateTime $lastModifiedDateTime
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setLastModifiedDateTime($lastModifiedDateTime)
     {
@@ -1356,7 +1349,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\DateTime
+     * @return \Google\AdsApi\AdManager\v202508\DateTime
      */
     public function getCreationDateTime()
     {
@@ -1364,8 +1357,8 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $creationDateTime
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\DateTime $creationDateTime
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setCreationDateTime($creationDateTime)
     {
@@ -1374,7 +1367,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[]
+     * @return \Google\AdsApi\AdManager\v202508\BaseCustomFieldValue[]
      */
     public function getCustomFieldValues()
     {
@@ -1382,10 +1375,10 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[]|null $customFieldValues
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\BaseCustomFieldValue[]|null $customFieldValues
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
-    public function setCustomFieldValues(array $customFieldValues = null)
+    public function setCustomFieldValues(?array $customFieldValues = null)
     {
       $this->customFieldValues = $customFieldValues;
       return $this;
@@ -1401,7 +1394,7 @@ class LineItemSummary
 
     /**
      * @param boolean $isMissingCreatives
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setIsMissingCreatives($isMissingCreatives)
     {
@@ -1419,7 +1412,7 @@ class LineItemSummary
 
     /**
      * @param string $programmaticCreativeSource
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setProgrammaticCreativeSource($programmaticCreativeSource)
     {
@@ -1428,7 +1421,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\ThirdPartyMeasurementSettings
+     * @return \Google\AdsApi\AdManager\v202508\ThirdPartyMeasurementSettings
      */
     public function getThirdPartyMeasurementSettings()
     {
@@ -1436,8 +1429,8 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\ThirdPartyMeasurementSettings $thirdPartyMeasurementSettings
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\ThirdPartyMeasurementSettings $thirdPartyMeasurementSettings
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setThirdPartyMeasurementSettings($thirdPartyMeasurementSettings)
     {
@@ -1455,7 +1448,7 @@ class LineItemSummary
 
     /**
      * @param boolean $youtubeKidsRestricted
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setYoutubeKidsRestricted($youtubeKidsRestricted)
     {
@@ -1473,7 +1466,7 @@ class LineItemSummary
 
     /**
      * @param int $videoMaxDuration
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setVideoMaxDuration($videoMaxDuration)
     {
@@ -1483,7 +1476,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\Goal
+     * @return \Google\AdsApi\AdManager\v202508\Goal
      */
     public function getPrimaryGoal()
     {
@@ -1491,8 +1484,8 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\Goal $primaryGoal
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\Goal $primaryGoal
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setPrimaryGoal($primaryGoal)
     {
@@ -1501,7 +1494,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\Goal[]
+     * @return \Google\AdsApi\AdManager\v202508\Goal[]
      */
     public function getSecondaryGoals()
     {
@@ -1509,17 +1502,17 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\Goal[]|null $secondaryGoals
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\Goal[]|null $secondaryGoals
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
-    public function setSecondaryGoals(array $secondaryGoals = null)
+    public function setSecondaryGoals(?array $secondaryGoals = null)
     {
       $this->secondaryGoals = $secondaryGoals;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\GrpSettings
+     * @return \Google\AdsApi\AdManager\v202508\GrpSettings
      */
     public function getGrpSettings()
     {
@@ -1527,8 +1520,8 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\GrpSettings $grpSettings
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\GrpSettings $grpSettings
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setGrpSettings($grpSettings)
     {
@@ -1537,7 +1530,7 @@ class LineItemSummary
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\LineItemDealInfoDto
+     * @return \Google\AdsApi\AdManager\v202508\LineItemDealInfoDto
      */
     public function getDealInfo()
     {
@@ -1545,8 +1538,8 @@ class LineItemSummary
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\LineItemDealInfoDto $dealInfo
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @param \Google\AdsApi\AdManager\v202508\LineItemDealInfoDto $dealInfo
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setDealInfo($dealInfo)
     {
@@ -1564,9 +1557,9 @@ class LineItemSummary
 
     /**
      * @param int[]|null $viewabilityProviderCompanyIds
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
-    public function setViewabilityProviderCompanyIds(array $viewabilityProviderCompanyIds = null)
+    public function setViewabilityProviderCompanyIds(?array $viewabilityProviderCompanyIds = null)
     {
       $this->viewabilityProviderCompanyIds = $viewabilityProviderCompanyIds;
       return $this;
@@ -1582,7 +1575,7 @@ class LineItemSummary
 
     /**
      * @param string $childContentEligibility
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setChildContentEligibility($childContentEligibility)
     {
@@ -1600,7 +1593,7 @@ class LineItemSummary
 
     /**
      * @param string $customVastExtension
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setCustomVastExtension($customVastExtension)
     {
@@ -1618,30 +1611,11 @@ class LineItemSummary
 
     /**
      * @param boolean $repeatedCreativeServingEnabled
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
+     * @return \Google\AdsApi\AdManager\v202508\LineItemSummary
      */
     public function setRepeatedCreativeServingEnabled($repeatedCreativeServingEnabled)
     {
       $this->repeatedCreativeServingEnabled = $repeatedCreativeServingEnabled;
-      return $this;
-    }
-
-    /**
-     * @return int
-     */
-    public function getDeliveryAllocationProfileId()
-    {
-      return $this->deliveryAllocationProfileId;
-    }
-
-    /**
-     * @param int $deliveryAllocationProfileId
-     * @return \Google\AdsApi\AdManager\v202608\LineItemSummary
-     */
-    public function setDeliveryAllocationProfileId($deliveryAllocationProfileId)
-    {
-      $this->deliveryAllocationProfileId = (!is_null($deliveryAllocationProfileId) && PHP_INT_SIZE === 4)
-          ? floatval($deliveryAllocationProfileId) : $deliveryAllocationProfileId;
       return $this;
     }
 

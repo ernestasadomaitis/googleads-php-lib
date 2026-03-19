@@ -1,12 +1,12 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202505;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-class Html5Creative extends \Google\AdsApi\AdManager\v202608\Creative
+class Html5Creative extends \Google\AdsApi\AdManager\v202505\Creative
 {
 
     /**
@@ -45,7 +45,7 @@ class Html5Creative extends \Google\AdsApi\AdManager\v202608\Creative
     protected $isSafeFrameCompatible = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\CreativeAsset $html5Asset
+     * @var \Google\AdsApi\AdManager\v202505\CreativeAsset $html5Asset
      */
     protected $html5Asset = null;
 
@@ -53,16 +53,14 @@ class Html5Creative extends \Google\AdsApi\AdManager\v202608\Creative
      * @param int $advertiserId
      * @param int $id
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202608\Size $size
+     * @param \Google\AdsApi\AdManager\v202505\Size $size
      * @param string $previewUrl
      * @param string[] $policyLabels
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202608\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @param string $thirdPartyDataDeclarationStatus
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202505\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      * @param boolean $adBadgingEnabled
-     * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
      * @param boolean $overrideSize
      * @param string[] $thirdPartyImpressionTrackingUrls
      * @param string $thirdPartyClickTrackingUrl
@@ -70,11 +68,11 @@ class Html5Creative extends \Google\AdsApi\AdManager\v202608\Creative
      * @param string $sslScanResult
      * @param string $sslManualOverride
      * @param boolean $isSafeFrameCompatible
-     * @param \Google\AdsApi\AdManager\v202608\CreativeAsset $html5Asset
+     * @param \Google\AdsApi\AdManager\v202505\CreativeAsset $html5Asset
      */
-    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, array $policyLabels = null, array $appliedLabels = null, $lastModifiedDateTime = null, array $customFieldValues = null, $thirdPartyDataDeclaration = null, $thirdPartyDataDeclarationStatus = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $overrideSize = null, array $thirdPartyImpressionTrackingUrls = null, $thirdPartyClickTrackingUrl = null, $lockedOrientation = null, $sslScanResult = null, $sslManualOverride = null, $isSafeFrameCompatible = null, $html5Asset = null)
+    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, ?array $policyLabels = null, ?array $appliedLabels = null, $lastModifiedDateTime = null, ?array $customFieldValues = null, $thirdPartyDataDeclaration = null, $adBadgingEnabled = null, $overrideSize = null, ?array $thirdPartyImpressionTrackingUrls = null, $thirdPartyClickTrackingUrl = null, $lockedOrientation = null, $sslScanResult = null, $sslManualOverride = null, $isSafeFrameCompatible = null, $html5Asset = null)
     {
-      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $thirdPartyDataDeclarationStatus, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent);
+      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $adBadgingEnabled);
       $this->overrideSize = $overrideSize;
       $this->thirdPartyImpressionTrackingUrls = $thirdPartyImpressionTrackingUrls;
       $this->thirdPartyClickTrackingUrl = $thirdPartyClickTrackingUrl;
@@ -95,7 +93,7 @@ class Html5Creative extends \Google\AdsApi\AdManager\v202608\Creative
 
     /**
      * @param boolean $overrideSize
-     * @return \Google\AdsApi\AdManager\v202608\Html5Creative
+     * @return \Google\AdsApi\AdManager\v202505\Html5Creative
      */
     public function setOverrideSize($overrideSize)
     {
@@ -113,9 +111,9 @@ class Html5Creative extends \Google\AdsApi\AdManager\v202608\Creative
 
     /**
      * @param string[]|null $thirdPartyImpressionTrackingUrls
-     * @return \Google\AdsApi\AdManager\v202608\Html5Creative
+     * @return \Google\AdsApi\AdManager\v202505\Html5Creative
      */
-    public function setThirdPartyImpressionTrackingUrls(array $thirdPartyImpressionTrackingUrls = null)
+    public function setThirdPartyImpressionTrackingUrls(?array $thirdPartyImpressionTrackingUrls = null)
     {
       $this->thirdPartyImpressionTrackingUrls = $thirdPartyImpressionTrackingUrls;
       return $this;
@@ -131,7 +129,7 @@ class Html5Creative extends \Google\AdsApi\AdManager\v202608\Creative
 
     /**
      * @param string $thirdPartyClickTrackingUrl
-     * @return \Google\AdsApi\AdManager\v202608\Html5Creative
+     * @return \Google\AdsApi\AdManager\v202505\Html5Creative
      */
     public function setThirdPartyClickTrackingUrl($thirdPartyClickTrackingUrl)
     {
@@ -149,7 +147,7 @@ class Html5Creative extends \Google\AdsApi\AdManager\v202608\Creative
 
     /**
      * @param string $lockedOrientation
-     * @return \Google\AdsApi\AdManager\v202608\Html5Creative
+     * @return \Google\AdsApi\AdManager\v202505\Html5Creative
      */
     public function setLockedOrientation($lockedOrientation)
     {
@@ -167,7 +165,7 @@ class Html5Creative extends \Google\AdsApi\AdManager\v202608\Creative
 
     /**
      * @param string $sslScanResult
-     * @return \Google\AdsApi\AdManager\v202608\Html5Creative
+     * @return \Google\AdsApi\AdManager\v202505\Html5Creative
      */
     public function setSslScanResult($sslScanResult)
     {
@@ -185,7 +183,7 @@ class Html5Creative extends \Google\AdsApi\AdManager\v202608\Creative
 
     /**
      * @param string $sslManualOverride
-     * @return \Google\AdsApi\AdManager\v202608\Html5Creative
+     * @return \Google\AdsApi\AdManager\v202505\Html5Creative
      */
     public function setSslManualOverride($sslManualOverride)
     {
@@ -203,7 +201,7 @@ class Html5Creative extends \Google\AdsApi\AdManager\v202608\Creative
 
     /**
      * @param boolean $isSafeFrameCompatible
-     * @return \Google\AdsApi\AdManager\v202608\Html5Creative
+     * @return \Google\AdsApi\AdManager\v202505\Html5Creative
      */
     public function setIsSafeFrameCompatible($isSafeFrameCompatible)
     {
@@ -212,7 +210,7 @@ class Html5Creative extends \Google\AdsApi\AdManager\v202608\Creative
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\CreativeAsset
+     * @return \Google\AdsApi\AdManager\v202505\CreativeAsset
      */
     public function getHtml5Asset()
     {
@@ -220,8 +218,8 @@ class Html5Creative extends \Google\AdsApi\AdManager\v202608\Creative
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\CreativeAsset $html5Asset
-     * @return \Google\AdsApi\AdManager\v202608\Html5Creative
+     * @param \Google\AdsApi\AdManager\v202505\CreativeAsset $html5Asset
+     * @return \Google\AdsApi\AdManager\v202505\Html5Creative
      */
     public function setHtml5Asset($html5Asset)
     {

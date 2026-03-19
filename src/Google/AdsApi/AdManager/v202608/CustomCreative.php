@@ -1,12 +1,12 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202505;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-class CustomCreative extends \Google\AdsApi\AdManager\v202608\HasDestinationUrlCreative
+class CustomCreative extends \Google\AdsApi\AdManager\v202505\HasDestinationUrlCreative
 {
 
     /**
@@ -15,7 +15,7 @@ class CustomCreative extends \Google\AdsApi\AdManager\v202608\HasDestinationUrlC
     protected $htmlSnippet = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\CustomCreativeAsset[] $customCreativeAssets
+     * @var \Google\AdsApi\AdManager\v202505\CustomCreativeAsset[] $customCreativeAssets
      */
     protected $customCreativeAssets = null;
 
@@ -53,20 +53,18 @@ class CustomCreative extends \Google\AdsApi\AdManager\v202608\HasDestinationUrlC
      * @param int $advertiserId
      * @param int $id
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202608\Size $size
+     * @param \Google\AdsApi\AdManager\v202505\Size $size
      * @param string $previewUrl
      * @param string[] $policyLabels
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202608\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @param string $thirdPartyDataDeclarationStatus
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202505\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      * @param boolean $adBadgingEnabled
-     * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
      * @param string $destinationUrl
      * @param string $destinationUrlType
      * @param string $htmlSnippet
-     * @param \Google\AdsApi\AdManager\v202608\CustomCreativeAsset[] $customCreativeAssets
+     * @param \Google\AdsApi\AdManager\v202505\CustomCreativeAsset[] $customCreativeAssets
      * @param boolean $isInterstitial
      * @param string $lockedOrientation
      * @param string $sslScanResult
@@ -74,9 +72,9 @@ class CustomCreative extends \Google\AdsApi\AdManager\v202608\HasDestinationUrlC
      * @param boolean $isSafeFrameCompatible
      * @param string[] $thirdPartyImpressionTrackingUrls
      */
-    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, array $policyLabels = null, array $appliedLabels = null, $lastModifiedDateTime = null, array $customFieldValues = null, $thirdPartyDataDeclaration = null, $thirdPartyDataDeclarationStatus = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $destinationUrl = null, $destinationUrlType = null, $htmlSnippet = null, array $customCreativeAssets = null, $isInterstitial = null, $lockedOrientation = null, $sslScanResult = null, $sslManualOverride = null, $isSafeFrameCompatible = null, array $thirdPartyImpressionTrackingUrls = null)
+    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, ?array $policyLabels = null, ?array $appliedLabels = null, $lastModifiedDateTime = null, ?array $customFieldValues = null, $thirdPartyDataDeclaration = null, $adBadgingEnabled = null, $destinationUrl = null, $destinationUrlType = null, $htmlSnippet = null, ?array $customCreativeAssets = null, $isInterstitial = null, $lockedOrientation = null, $sslScanResult = null, $sslManualOverride = null, $isSafeFrameCompatible = null, ?array $thirdPartyImpressionTrackingUrls = null)
     {
-      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $thirdPartyDataDeclarationStatus, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent, $destinationUrl, $destinationUrlType);
+      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $adBadgingEnabled, $destinationUrl, $destinationUrlType);
       $this->htmlSnippet = $htmlSnippet;
       $this->customCreativeAssets = $customCreativeAssets;
       $this->isInterstitial = $isInterstitial;
@@ -97,7 +95,7 @@ class CustomCreative extends \Google\AdsApi\AdManager\v202608\HasDestinationUrlC
 
     /**
      * @param string $htmlSnippet
-     * @return \Google\AdsApi\AdManager\v202608\CustomCreative
+     * @return \Google\AdsApi\AdManager\v202505\CustomCreative
      */
     public function setHtmlSnippet($htmlSnippet)
     {
@@ -106,7 +104,7 @@ class CustomCreative extends \Google\AdsApi\AdManager\v202608\HasDestinationUrlC
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\CustomCreativeAsset[]
+     * @return \Google\AdsApi\AdManager\v202505\CustomCreativeAsset[]
      */
     public function getCustomCreativeAssets()
     {
@@ -114,10 +112,10 @@ class CustomCreative extends \Google\AdsApi\AdManager\v202608\HasDestinationUrlC
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\CustomCreativeAsset[]|null $customCreativeAssets
-     * @return \Google\AdsApi\AdManager\v202608\CustomCreative
+     * @param \Google\AdsApi\AdManager\v202505\CustomCreativeAsset[]|null $customCreativeAssets
+     * @return \Google\AdsApi\AdManager\v202505\CustomCreative
      */
-    public function setCustomCreativeAssets(array $customCreativeAssets = null)
+    public function setCustomCreativeAssets(?array $customCreativeAssets = null)
     {
       $this->customCreativeAssets = $customCreativeAssets;
       return $this;
@@ -133,7 +131,7 @@ class CustomCreative extends \Google\AdsApi\AdManager\v202608\HasDestinationUrlC
 
     /**
      * @param boolean $isInterstitial
-     * @return \Google\AdsApi\AdManager\v202608\CustomCreative
+     * @return \Google\AdsApi\AdManager\v202505\CustomCreative
      */
     public function setIsInterstitial($isInterstitial)
     {
@@ -151,7 +149,7 @@ class CustomCreative extends \Google\AdsApi\AdManager\v202608\HasDestinationUrlC
 
     /**
      * @param string $lockedOrientation
-     * @return \Google\AdsApi\AdManager\v202608\CustomCreative
+     * @return \Google\AdsApi\AdManager\v202505\CustomCreative
      */
     public function setLockedOrientation($lockedOrientation)
     {
@@ -169,7 +167,7 @@ class CustomCreative extends \Google\AdsApi\AdManager\v202608\HasDestinationUrlC
 
     /**
      * @param string $sslScanResult
-     * @return \Google\AdsApi\AdManager\v202608\CustomCreative
+     * @return \Google\AdsApi\AdManager\v202505\CustomCreative
      */
     public function setSslScanResult($sslScanResult)
     {
@@ -187,7 +185,7 @@ class CustomCreative extends \Google\AdsApi\AdManager\v202608\HasDestinationUrlC
 
     /**
      * @param string $sslManualOverride
-     * @return \Google\AdsApi\AdManager\v202608\CustomCreative
+     * @return \Google\AdsApi\AdManager\v202505\CustomCreative
      */
     public function setSslManualOverride($sslManualOverride)
     {
@@ -205,7 +203,7 @@ class CustomCreative extends \Google\AdsApi\AdManager\v202608\HasDestinationUrlC
 
     /**
      * @param boolean $isSafeFrameCompatible
-     * @return \Google\AdsApi\AdManager\v202608\CustomCreative
+     * @return \Google\AdsApi\AdManager\v202505\CustomCreative
      */
     public function setIsSafeFrameCompatible($isSafeFrameCompatible)
     {
@@ -223,9 +221,9 @@ class CustomCreative extends \Google\AdsApi\AdManager\v202608\HasDestinationUrlC
 
     /**
      * @param string[]|null $thirdPartyImpressionTrackingUrls
-     * @return \Google\AdsApi\AdManager\v202608\CustomCreative
+     * @return \Google\AdsApi\AdManager\v202505\CustomCreative
      */
-    public function setThirdPartyImpressionTrackingUrls(array $thirdPartyImpressionTrackingUrls = null)
+    public function setThirdPartyImpressionTrackingUrls(?array $thirdPartyImpressionTrackingUrls = null)
     {
       $this->thirdPartyImpressionTrackingUrls = $thirdPartyImpressionTrackingUrls;
       return $this;

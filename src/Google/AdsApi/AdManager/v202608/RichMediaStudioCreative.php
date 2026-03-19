@@ -1,12 +1,12 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202505;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-class RichMediaStudioCreative extends \Google\AdsApi\AdManager\v202608\BaseRichMediaStudioCreative
+class RichMediaStudioCreative extends \Google\AdsApi\AdManager\v202505\BaseRichMediaStudioCreative
 {
 
     /**
@@ -23,16 +23,14 @@ class RichMediaStudioCreative extends \Google\AdsApi\AdManager\v202608\BaseRichM
      * @param int $advertiserId
      * @param int $id
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202608\Size $size
+     * @param \Google\AdsApi\AdManager\v202505\Size $size
      * @param string $previewUrl
      * @param string[] $policyLabels
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202608\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @param string $thirdPartyDataDeclarationStatus
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202505\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      * @param boolean $adBadgingEnabled
-     * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
      * @param int $studioCreativeId
      * @param string $creativeFormat
      * @param string $artworkType
@@ -47,15 +45,15 @@ class RichMediaStudioCreative extends \Google\AdsApi\AdManager\v202608\BaseRichM
      * @param string $requiredFlashPluginVersion
      * @param int $duration
      * @param string $billingAttribute
-     * @param \Google\AdsApi\AdManager\v202608\RichMediaStudioChildAssetProperty[] $richMediaStudioChildAssetProperties
+     * @param \Google\AdsApi\AdManager\v202505\RichMediaStudioChildAssetProperty[] $richMediaStudioChildAssetProperties
      * @param string $sslScanResult
      * @param string $sslManualOverride
      * @param string $lockedOrientation
      * @param boolean $isInterstitial
      */
-    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, array $policyLabels = null, array $appliedLabels = null, $lastModifiedDateTime = null, array $customFieldValues = null, $thirdPartyDataDeclaration = null, $thirdPartyDataDeclarationStatus = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $studioCreativeId = null, $creativeFormat = null, $artworkType = null, $totalFileSize = null, array $adTagKeys = null, array $customKeyValues = null, $surveyUrl = null, $allImpressionsUrl = null, $richMediaImpressionsUrl = null, $backupImageImpressionsUrl = null, $overrideCss = null, $requiredFlashPluginVersion = null, $duration = null, $billingAttribute = null, array $richMediaStudioChildAssetProperties = null, $sslScanResult = null, $sslManualOverride = null, $lockedOrientation = null, $isInterstitial = null)
+    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, ?array $policyLabels = null, ?array $appliedLabels = null, $lastModifiedDateTime = null, ?array $customFieldValues = null, $thirdPartyDataDeclaration = null, $adBadgingEnabled = null, $studioCreativeId = null, $creativeFormat = null, $artworkType = null, $totalFileSize = null, ?array $adTagKeys = null, ?array $customKeyValues = null, $surveyUrl = null, $allImpressionsUrl = null, $richMediaImpressionsUrl = null, $backupImageImpressionsUrl = null, $overrideCss = null, $requiredFlashPluginVersion = null, $duration = null, $billingAttribute = null, ?array $richMediaStudioChildAssetProperties = null, $sslScanResult = null, $sslManualOverride = null, $lockedOrientation = null, $isInterstitial = null)
     {
-      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $thirdPartyDataDeclarationStatus, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent, $studioCreativeId, $creativeFormat, $artworkType, $totalFileSize, $adTagKeys, $customKeyValues, $surveyUrl, $allImpressionsUrl, $richMediaImpressionsUrl, $backupImageImpressionsUrl, $overrideCss, $requiredFlashPluginVersion, $duration, $billingAttribute, $richMediaStudioChildAssetProperties, $sslScanResult, $sslManualOverride);
+      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $adBadgingEnabled, $studioCreativeId, $creativeFormat, $artworkType, $totalFileSize, $adTagKeys, $customKeyValues, $surveyUrl, $allImpressionsUrl, $richMediaImpressionsUrl, $backupImageImpressionsUrl, $overrideCss, $requiredFlashPluginVersion, $duration, $billingAttribute, $richMediaStudioChildAssetProperties, $sslScanResult, $sslManualOverride);
       $this->lockedOrientation = $lockedOrientation;
       $this->isInterstitial = $isInterstitial;
     }
@@ -70,7 +68,7 @@ class RichMediaStudioCreative extends \Google\AdsApi\AdManager\v202608\BaseRichM
 
     /**
      * @param string $lockedOrientation
-     * @return \Google\AdsApi\AdManager\v202608\RichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202505\RichMediaStudioCreative
      */
     public function setLockedOrientation($lockedOrientation)
     {
@@ -88,7 +86,7 @@ class RichMediaStudioCreative extends \Google\AdsApi\AdManager\v202608\BaseRichM
 
     /**
      * @param boolean $isInterstitial
-     * @return \Google\AdsApi\AdManager\v202608\RichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202505\RichMediaStudioCreative
      */
     public function setIsInterstitial($isInterstitial)
     {

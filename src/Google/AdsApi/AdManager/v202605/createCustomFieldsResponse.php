@@ -17,7 +17,7 @@ class createCustomFieldsResponse
     /**
      * @param \Google\AdsApi\AdManager\v202605\CustomField[] $rval
      */
-    public function __construct(array $rval = null)
+    public function __construct(?array $rval = null)
     {
       $this->rval = $rval;
     }
@@ -34,7 +34,7 @@ class createCustomFieldsResponse
      * @param \Google\AdsApi\AdManager\v202605\CustomField[]|null $rval
      * @return \Google\AdsApi\AdManager\v202605\createCustomFieldsResponse
      */
-    public function setRval(array $rval = null)
+    public function setRval(?array $rval = null)
     {
       $this->rval = $rval;
       return $this;

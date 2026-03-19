@@ -1,16 +1,16 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202605;
+namespace Google\AdsApi\AdManager\v202508;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-class AspectRatioImageCreative extends \Google\AdsApi\AdManager\v202605\HasDestinationUrlCreative
+class AspectRatioImageCreative extends \Google\AdsApi\AdManager\v202508\HasDestinationUrlCreative
 {
 
     /**
-     * @var \Google\AdsApi\AdManager\v202605\CreativeAsset[] $imageAssets
+     * @var \Google\AdsApi\AdManager\v202508\CreativeAsset[] $imageAssets
      */
     protected $imageAssets = null;
 
@@ -33,26 +33,25 @@ class AspectRatioImageCreative extends \Google\AdsApi\AdManager\v202605\HasDesti
      * @param int $advertiserId
      * @param int $id
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202605\Size $size
+     * @param \Google\AdsApi\AdManager\v202508\Size $size
      * @param string $previewUrl
      * @param string[] $policyLabels
-     * @param \Google\AdsApi\AdManager\v202605\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202605\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202605\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202605\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @param string $thirdPartyDataDeclarationStatus
+     * @param \Google\AdsApi\AdManager\v202508\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202508\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202508\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202508\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      * @param boolean $adBadgingEnabled
      * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
      * @param string $destinationUrl
      * @param string $destinationUrlType
-     * @param \Google\AdsApi\AdManager\v202605\CreativeAsset[] $imageAssets
+     * @param \Google\AdsApi\AdManager\v202508\CreativeAsset[] $imageAssets
      * @param string $altText
      * @param string[] $thirdPartyImpressionTrackingUrls
      * @param boolean $overrideSize
      */
-    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, array $policyLabels = null, array $appliedLabels = null, $lastModifiedDateTime = null, array $customFieldValues = null, $thirdPartyDataDeclaration = null, $thirdPartyDataDeclarationStatus = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $destinationUrl = null, $destinationUrlType = null, array $imageAssets = null, $altText = null, array $thirdPartyImpressionTrackingUrls = null, $overrideSize = null)
+    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, ?array $policyLabels = null, ?array $appliedLabels = null, $lastModifiedDateTime = null, ?array $customFieldValues = null, $thirdPartyDataDeclaration = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $destinationUrl = null, $destinationUrlType = null, ?array $imageAssets = null, $altText = null, ?array $thirdPartyImpressionTrackingUrls = null, $overrideSize = null)
     {
-      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $thirdPartyDataDeclarationStatus, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent, $destinationUrl, $destinationUrlType);
+      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent, $destinationUrl, $destinationUrlType);
       $this->imageAssets = $imageAssets;
       $this->altText = $altText;
       $this->thirdPartyImpressionTrackingUrls = $thirdPartyImpressionTrackingUrls;
@@ -60,7 +59,7 @@ class AspectRatioImageCreative extends \Google\AdsApi\AdManager\v202605\HasDesti
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202605\CreativeAsset[]
+     * @return \Google\AdsApi\AdManager\v202508\CreativeAsset[]
      */
     public function getImageAssets()
     {
@@ -68,10 +67,10 @@ class AspectRatioImageCreative extends \Google\AdsApi\AdManager\v202605\HasDesti
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202605\CreativeAsset[]|null $imageAssets
-     * @return \Google\AdsApi\AdManager\v202605\AspectRatioImageCreative
+     * @param \Google\AdsApi\AdManager\v202508\CreativeAsset[]|null $imageAssets
+     * @return \Google\AdsApi\AdManager\v202508\AspectRatioImageCreative
      */
-    public function setImageAssets(array $imageAssets = null)
+    public function setImageAssets(?array $imageAssets = null)
     {
       $this->imageAssets = $imageAssets;
       return $this;
@@ -87,7 +86,7 @@ class AspectRatioImageCreative extends \Google\AdsApi\AdManager\v202605\HasDesti
 
     /**
      * @param string $altText
-     * @return \Google\AdsApi\AdManager\v202605\AspectRatioImageCreative
+     * @return \Google\AdsApi\AdManager\v202508\AspectRatioImageCreative
      */
     public function setAltText($altText)
     {
@@ -105,9 +104,9 @@ class AspectRatioImageCreative extends \Google\AdsApi\AdManager\v202605\HasDesti
 
     /**
      * @param string[]|null $thirdPartyImpressionTrackingUrls
-     * @return \Google\AdsApi\AdManager\v202605\AspectRatioImageCreative
+     * @return \Google\AdsApi\AdManager\v202508\AspectRatioImageCreative
      */
-    public function setThirdPartyImpressionTrackingUrls(array $thirdPartyImpressionTrackingUrls = null)
+    public function setThirdPartyImpressionTrackingUrls(?array $thirdPartyImpressionTrackingUrls = null)
     {
       $this->thirdPartyImpressionTrackingUrls = $thirdPartyImpressionTrackingUrls;
       return $this;
@@ -123,7 +122,7 @@ class AspectRatioImageCreative extends \Google\AdsApi\AdManager\v202605\HasDesti
 
     /**
      * @param boolean $overrideSize
-     * @return \Google\AdsApi\AdManager\v202605\AspectRatioImageCreative
+     * @return \Google\AdsApi\AdManager\v202508\AspectRatioImageCreative
      */
     public function setOverrideSize($overrideSize)
     {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202505;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-class SetTopBoxCreative extends \Google\AdsApi\AdManager\v202608\BaseVideoCreative
+class SetTopBoxCreative extends \Google\AdsApi\AdManager\v202505\BaseVideoCreative
 {
 
     /**
@@ -25,12 +25,12 @@ class SetTopBoxCreative extends \Google\AdsApi\AdManager\v202608\BaseVideoCreati
     protected $availabilityRegionIds = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\DateTime $licenseWindowStartDateTime
+     * @var \Google\AdsApi\AdManager\v202505\DateTime $licenseWindowStartDateTime
      */
     protected $licenseWindowStartDateTime = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\DateTime $licenseWindowEndDateTime
+     * @var \Google\AdsApi\AdManager\v202505\DateTime $licenseWindowEndDateTime
      */
     protected $licenseWindowEndDateTime = null;
 
@@ -38,21 +38,19 @@ class SetTopBoxCreative extends \Google\AdsApi\AdManager\v202608\BaseVideoCreati
      * @param int $advertiserId
      * @param int $id
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202608\Size $size
+     * @param \Google\AdsApi\AdManager\v202505\Size $size
      * @param string $previewUrl
      * @param string[] $policyLabels
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202608\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @param string $thirdPartyDataDeclarationStatus
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202505\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      * @param boolean $adBadgingEnabled
-     * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
      * @param string $destinationUrl
      * @param string $destinationUrlType
      * @param int $duration
      * @param boolean $allowDurationOverride
-     * @param \Google\AdsApi\AdManager\v202608\ConversionEvent_TrackingUrlsMapEntry[] $trackingUrls
+     * @param \Google\AdsApi\AdManager\v202505\ConversionEvent_TrackingUrlsMapEntry[] $trackingUrls
      * @param int[] $companionCreativeIds
      * @param string $customParameters
      * @param string $adId
@@ -64,12 +62,12 @@ class SetTopBoxCreative extends \Google\AdsApi\AdManager\v202608\BaseVideoCreati
      * @param string $externalAssetId
      * @param string $providerId
      * @param string[] $availabilityRegionIds
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $licenseWindowStartDateTime
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $licenseWindowEndDateTime
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $licenseWindowStartDateTime
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $licenseWindowEndDateTime
      */
-    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, array $policyLabels = null, array $appliedLabels = null, $lastModifiedDateTime = null, array $customFieldValues = null, $thirdPartyDataDeclaration = null, $thirdPartyDataDeclarationStatus = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $destinationUrl = null, $destinationUrlType = null, $duration = null, $allowDurationOverride = null, array $trackingUrls = null, array $companionCreativeIds = null, $customParameters = null, $adId = null, $adIdType = null, $skippableAdType = null, $vastPreviewUrl = null, $sslScanResult = null, $sslManualOverride = null, $externalAssetId = null, $providerId = null, array $availabilityRegionIds = null, $licenseWindowStartDateTime = null, $licenseWindowEndDateTime = null)
+    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, ?array $policyLabels = null, ?array $appliedLabels = null, $lastModifiedDateTime = null, ?array $customFieldValues = null, $thirdPartyDataDeclaration = null, $adBadgingEnabled = null, $destinationUrl = null, $destinationUrlType = null, $duration = null, $allowDurationOverride = null, ?array $trackingUrls = null, ?array $companionCreativeIds = null, $customParameters = null, $adId = null, $adIdType = null, $skippableAdType = null, $vastPreviewUrl = null, $sslScanResult = null, $sslManualOverride = null, $externalAssetId = null, $providerId = null, ?array $availabilityRegionIds = null, $licenseWindowStartDateTime = null, $licenseWindowEndDateTime = null)
     {
-      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $thirdPartyDataDeclarationStatus, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent, $destinationUrl, $destinationUrlType, $duration, $allowDurationOverride, $trackingUrls, $companionCreativeIds, $customParameters, $adId, $adIdType, $skippableAdType, $vastPreviewUrl, $sslScanResult, $sslManualOverride);
+      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $adBadgingEnabled, $destinationUrl, $destinationUrlType, $duration, $allowDurationOverride, $trackingUrls, $companionCreativeIds, $customParameters, $adId, $adIdType, $skippableAdType, $vastPreviewUrl, $sslScanResult, $sslManualOverride);
       $this->externalAssetId = $externalAssetId;
       $this->providerId = $providerId;
       $this->availabilityRegionIds = $availabilityRegionIds;
@@ -87,7 +85,7 @@ class SetTopBoxCreative extends \Google\AdsApi\AdManager\v202608\BaseVideoCreati
 
     /**
      * @param string $externalAssetId
-     * @return \Google\AdsApi\AdManager\v202608\SetTopBoxCreative
+     * @return \Google\AdsApi\AdManager\v202505\SetTopBoxCreative
      */
     public function setExternalAssetId($externalAssetId)
     {
@@ -105,7 +103,7 @@ class SetTopBoxCreative extends \Google\AdsApi\AdManager\v202608\BaseVideoCreati
 
     /**
      * @param string $providerId
-     * @return \Google\AdsApi\AdManager\v202608\SetTopBoxCreative
+     * @return \Google\AdsApi\AdManager\v202505\SetTopBoxCreative
      */
     public function setProviderId($providerId)
     {
@@ -123,16 +121,16 @@ class SetTopBoxCreative extends \Google\AdsApi\AdManager\v202608\BaseVideoCreati
 
     /**
      * @param string[]|null $availabilityRegionIds
-     * @return \Google\AdsApi\AdManager\v202608\SetTopBoxCreative
+     * @return \Google\AdsApi\AdManager\v202505\SetTopBoxCreative
      */
-    public function setAvailabilityRegionIds(array $availabilityRegionIds = null)
+    public function setAvailabilityRegionIds(?array $availabilityRegionIds = null)
     {
       $this->availabilityRegionIds = $availabilityRegionIds;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\DateTime
+     * @return \Google\AdsApi\AdManager\v202505\DateTime
      */
     public function getLicenseWindowStartDateTime()
     {
@@ -140,8 +138,8 @@ class SetTopBoxCreative extends \Google\AdsApi\AdManager\v202608\BaseVideoCreati
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $licenseWindowStartDateTime
-     * @return \Google\AdsApi\AdManager\v202608\SetTopBoxCreative
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $licenseWindowStartDateTime
+     * @return \Google\AdsApi\AdManager\v202505\SetTopBoxCreative
      */
     public function setLicenseWindowStartDateTime($licenseWindowStartDateTime)
     {
@@ -150,7 +148,7 @@ class SetTopBoxCreative extends \Google\AdsApi\AdManager\v202608\BaseVideoCreati
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\DateTime
+     * @return \Google\AdsApi\AdManager\v202505\DateTime
      */
     public function getLicenseWindowEndDateTime()
     {
@@ -158,8 +156,8 @@ class SetTopBoxCreative extends \Google\AdsApi\AdManager\v202608\BaseVideoCreati
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $licenseWindowEndDateTime
-     * @return \Google\AdsApi\AdManager\v202608\SetTopBoxCreative
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $licenseWindowEndDateTime
+     * @return \Google\AdsApi\AdManager\v202505\SetTopBoxCreative
      */
     public function setLicenseWindowEndDateTime($licenseWindowEndDateTime)
     {

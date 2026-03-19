@@ -1,12 +1,12 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202605;
+namespace Google\AdsApi\AdManager\v202508;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202605\Creative
+abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202508\Creative
 {
 
     /**
@@ -80,7 +80,7 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
     protected $billingAttribute = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202605\RichMediaStudioChildAssetProperty[] $richMediaStudioChildAssetProperties
+     * @var \Google\AdsApi\AdManager\v202508\RichMediaStudioChildAssetProperty[] $richMediaStudioChildAssetProperties
      */
     protected $richMediaStudioChildAssetProperties = null;
 
@@ -98,14 +98,13 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
      * @param int $advertiserId
      * @param int $id
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202605\Size $size
+     * @param \Google\AdsApi\AdManager\v202508\Size $size
      * @param string $previewUrl
      * @param string[] $policyLabels
-     * @param \Google\AdsApi\AdManager\v202605\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202605\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202605\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202605\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @param string $thirdPartyDataDeclarationStatus
+     * @param \Google\AdsApi\AdManager\v202508\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202508\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202508\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202508\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      * @param boolean $adBadgingEnabled
      * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
      * @param int $studioCreativeId
@@ -122,13 +121,13 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
      * @param string $requiredFlashPluginVersion
      * @param int $duration
      * @param string $billingAttribute
-     * @param \Google\AdsApi\AdManager\v202605\RichMediaStudioChildAssetProperty[] $richMediaStudioChildAssetProperties
+     * @param \Google\AdsApi\AdManager\v202508\RichMediaStudioChildAssetProperty[] $richMediaStudioChildAssetProperties
      * @param string $sslScanResult
      * @param string $sslManualOverride
      */
-    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, array $policyLabels = null, array $appliedLabels = null, $lastModifiedDateTime = null, array $customFieldValues = null, $thirdPartyDataDeclaration = null, $thirdPartyDataDeclarationStatus = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $studioCreativeId = null, $creativeFormat = null, $artworkType = null, $totalFileSize = null, array $adTagKeys = null, array $customKeyValues = null, $surveyUrl = null, $allImpressionsUrl = null, $richMediaImpressionsUrl = null, $backupImageImpressionsUrl = null, $overrideCss = null, $requiredFlashPluginVersion = null, $duration = null, $billingAttribute = null, array $richMediaStudioChildAssetProperties = null, $sslScanResult = null, $sslManualOverride = null)
+    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, ?array $policyLabels = null, ?array $appliedLabels = null, $lastModifiedDateTime = null, ?array $customFieldValues = null, $thirdPartyDataDeclaration = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $studioCreativeId = null, $creativeFormat = null, $artworkType = null, $totalFileSize = null, ?array $adTagKeys = null, ?array $customKeyValues = null, $surveyUrl = null, $allImpressionsUrl = null, $richMediaImpressionsUrl = null, $backupImageImpressionsUrl = null, $overrideCss = null, $requiredFlashPluginVersion = null, $duration = null, $billingAttribute = null, ?array $richMediaStudioChildAssetProperties = null, $sslScanResult = null, $sslManualOverride = null)
     {
-      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $thirdPartyDataDeclarationStatus, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent);
+      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent);
       $this->studioCreativeId = $studioCreativeId;
       $this->creativeFormat = $creativeFormat;
       $this->artworkType = $artworkType;
@@ -158,7 +157,7 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
 
     /**
      * @param int $studioCreativeId
-     * @return \Google\AdsApi\AdManager\v202605\BaseRichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202508\BaseRichMediaStudioCreative
      */
     public function setStudioCreativeId($studioCreativeId)
     {
@@ -177,7 +176,7 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
 
     /**
      * @param string $creativeFormat
-     * @return \Google\AdsApi\AdManager\v202605\BaseRichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202508\BaseRichMediaStudioCreative
      */
     public function setCreativeFormat($creativeFormat)
     {
@@ -195,7 +194,7 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
 
     /**
      * @param string $artworkType
-     * @return \Google\AdsApi\AdManager\v202605\BaseRichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202508\BaseRichMediaStudioCreative
      */
     public function setArtworkType($artworkType)
     {
@@ -213,7 +212,7 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
 
     /**
      * @param int $totalFileSize
-     * @return \Google\AdsApi\AdManager\v202605\BaseRichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202508\BaseRichMediaStudioCreative
      */
     public function setTotalFileSize($totalFileSize)
     {
@@ -232,9 +231,9 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
 
     /**
      * @param string[]|null $adTagKeys
-     * @return \Google\AdsApi\AdManager\v202605\BaseRichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202508\BaseRichMediaStudioCreative
      */
-    public function setAdTagKeys(array $adTagKeys = null)
+    public function setAdTagKeys(?array $adTagKeys = null)
     {
       $this->adTagKeys = $adTagKeys;
       return $this;
@@ -250,9 +249,9 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
 
     /**
      * @param string[]|null $customKeyValues
-     * @return \Google\AdsApi\AdManager\v202605\BaseRichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202508\BaseRichMediaStudioCreative
      */
-    public function setCustomKeyValues(array $customKeyValues = null)
+    public function setCustomKeyValues(?array $customKeyValues = null)
     {
       $this->customKeyValues = $customKeyValues;
       return $this;
@@ -268,7 +267,7 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
 
     /**
      * @param string $surveyUrl
-     * @return \Google\AdsApi\AdManager\v202605\BaseRichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202508\BaseRichMediaStudioCreative
      */
     public function setSurveyUrl($surveyUrl)
     {
@@ -286,7 +285,7 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
 
     /**
      * @param string $allImpressionsUrl
-     * @return \Google\AdsApi\AdManager\v202605\BaseRichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202508\BaseRichMediaStudioCreative
      */
     public function setAllImpressionsUrl($allImpressionsUrl)
     {
@@ -304,7 +303,7 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
 
     /**
      * @param string $richMediaImpressionsUrl
-     * @return \Google\AdsApi\AdManager\v202605\BaseRichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202508\BaseRichMediaStudioCreative
      */
     public function setRichMediaImpressionsUrl($richMediaImpressionsUrl)
     {
@@ -322,7 +321,7 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
 
     /**
      * @param string $backupImageImpressionsUrl
-     * @return \Google\AdsApi\AdManager\v202605\BaseRichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202508\BaseRichMediaStudioCreative
      */
     public function setBackupImageImpressionsUrl($backupImageImpressionsUrl)
     {
@@ -340,7 +339,7 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
 
     /**
      * @param string $overrideCss
-     * @return \Google\AdsApi\AdManager\v202605\BaseRichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202508\BaseRichMediaStudioCreative
      */
     public function setOverrideCss($overrideCss)
     {
@@ -358,7 +357,7 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
 
     /**
      * @param string $requiredFlashPluginVersion
-     * @return \Google\AdsApi\AdManager\v202605\BaseRichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202508\BaseRichMediaStudioCreative
      */
     public function setRequiredFlashPluginVersion($requiredFlashPluginVersion)
     {
@@ -376,7 +375,7 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
 
     /**
      * @param int $duration
-     * @return \Google\AdsApi\AdManager\v202605\BaseRichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202508\BaseRichMediaStudioCreative
      */
     public function setDuration($duration)
     {
@@ -394,7 +393,7 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
 
     /**
      * @param string $billingAttribute
-     * @return \Google\AdsApi\AdManager\v202605\BaseRichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202508\BaseRichMediaStudioCreative
      */
     public function setBillingAttribute($billingAttribute)
     {
@@ -403,7 +402,7 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202605\RichMediaStudioChildAssetProperty[]
+     * @return \Google\AdsApi\AdManager\v202508\RichMediaStudioChildAssetProperty[]
      */
     public function getRichMediaStudioChildAssetProperties()
     {
@@ -411,10 +410,10 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202605\RichMediaStudioChildAssetProperty[]|null $richMediaStudioChildAssetProperties
-     * @return \Google\AdsApi\AdManager\v202605\BaseRichMediaStudioCreative
+     * @param \Google\AdsApi\AdManager\v202508\RichMediaStudioChildAssetProperty[]|null $richMediaStudioChildAssetProperties
+     * @return \Google\AdsApi\AdManager\v202508\BaseRichMediaStudioCreative
      */
-    public function setRichMediaStudioChildAssetProperties(array $richMediaStudioChildAssetProperties = null)
+    public function setRichMediaStudioChildAssetProperties(?array $richMediaStudioChildAssetProperties = null)
     {
       $this->richMediaStudioChildAssetProperties = $richMediaStudioChildAssetProperties;
       return $this;
@@ -430,7 +429,7 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
 
     /**
      * @param string $sslScanResult
-     * @return \Google\AdsApi\AdManager\v202605\BaseRichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202508\BaseRichMediaStudioCreative
      */
     public function setSslScanResult($sslScanResult)
     {
@@ -448,7 +447,7 @@ abstract class BaseRichMediaStudioCreative extends \Google\AdsApi\AdManager\v202
 
     /**
      * @param string $sslManualOverride
-     * @return \Google\AdsApi\AdManager\v202605\BaseRichMediaStudioCreative
+     * @return \Google\AdsApi\AdManager\v202508\BaseRichMediaStudioCreative
      */
     public function setSslManualOverride($sslManualOverride)
     {

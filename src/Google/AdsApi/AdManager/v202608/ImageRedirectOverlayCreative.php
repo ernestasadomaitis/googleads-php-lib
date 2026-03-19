@@ -1,16 +1,16 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202505;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-class ImageRedirectOverlayCreative extends \Google\AdsApi\AdManager\v202608\BaseImageRedirectCreative
+class ImageRedirectOverlayCreative extends \Google\AdsApi\AdManager\v202505\BaseImageRedirectCreative
 {
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\Size $assetSize
+     * @var \Google\AdsApi\AdManager\v202505\Size $assetSize
      */
     protected $assetSize = null;
 
@@ -25,7 +25,7 @@ class ImageRedirectOverlayCreative extends \Google\AdsApi\AdManager\v202608\Base
     protected $companionCreativeIds = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\ConversionEvent_TrackingUrlsMapEntry[] $trackingUrls
+     * @var \Google\AdsApi\AdManager\v202505\ConversionEvent_TrackingUrlsMapEntry[] $trackingUrls
      */
     protected $trackingUrls = null;
 
@@ -43,29 +43,27 @@ class ImageRedirectOverlayCreative extends \Google\AdsApi\AdManager\v202608\Base
      * @param int $advertiserId
      * @param int $id
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202608\Size $size
+     * @param \Google\AdsApi\AdManager\v202505\Size $size
      * @param string $previewUrl
      * @param string[] $policyLabels
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202608\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @param string $thirdPartyDataDeclarationStatus
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202505\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      * @param boolean $adBadgingEnabled
-     * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
      * @param string $destinationUrl
      * @param string $destinationUrlType
      * @param string $imageUrl
-     * @param \Google\AdsApi\AdManager\v202608\Size $assetSize
+     * @param \Google\AdsApi\AdManager\v202505\Size $assetSize
      * @param int $duration
      * @param int[] $companionCreativeIds
-     * @param \Google\AdsApi\AdManager\v202608\ConversionEvent_TrackingUrlsMapEntry[] $trackingUrls
+     * @param \Google\AdsApi\AdManager\v202505\ConversionEvent_TrackingUrlsMapEntry[] $trackingUrls
      * @param string $customParameters
      * @param string $vastPreviewUrl
      */
-    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, array $policyLabels = null, array $appliedLabels = null, $lastModifiedDateTime = null, array $customFieldValues = null, $thirdPartyDataDeclaration = null, $thirdPartyDataDeclarationStatus = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $destinationUrl = null, $destinationUrlType = null, $imageUrl = null, $assetSize = null, $duration = null, array $companionCreativeIds = null, array $trackingUrls = null, $customParameters = null, $vastPreviewUrl = null)
+    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, ?array $policyLabels = null, ?array $appliedLabels = null, $lastModifiedDateTime = null, ?array $customFieldValues = null, $thirdPartyDataDeclaration = null, $adBadgingEnabled = null, $destinationUrl = null, $destinationUrlType = null, $imageUrl = null, $assetSize = null, $duration = null, ?array $companionCreativeIds = null, ?array $trackingUrls = null, $customParameters = null, $vastPreviewUrl = null)
     {
-      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $thirdPartyDataDeclarationStatus, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent, $destinationUrl, $destinationUrlType, $imageUrl);
+      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $adBadgingEnabled, $destinationUrl, $destinationUrlType, $imageUrl);
       $this->assetSize = $assetSize;
       $this->duration = $duration;
       $this->companionCreativeIds = $companionCreativeIds;
@@ -75,7 +73,7 @@ class ImageRedirectOverlayCreative extends \Google\AdsApi\AdManager\v202608\Base
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\Size
+     * @return \Google\AdsApi\AdManager\v202505\Size
      */
     public function getAssetSize()
     {
@@ -83,8 +81,8 @@ class ImageRedirectOverlayCreative extends \Google\AdsApi\AdManager\v202608\Base
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\Size $assetSize
-     * @return \Google\AdsApi\AdManager\v202608\ImageRedirectOverlayCreative
+     * @param \Google\AdsApi\AdManager\v202505\Size $assetSize
+     * @return \Google\AdsApi\AdManager\v202505\ImageRedirectOverlayCreative
      */
     public function setAssetSize($assetSize)
     {
@@ -102,7 +100,7 @@ class ImageRedirectOverlayCreative extends \Google\AdsApi\AdManager\v202608\Base
 
     /**
      * @param int $duration
-     * @return \Google\AdsApi\AdManager\v202608\ImageRedirectOverlayCreative
+     * @return \Google\AdsApi\AdManager\v202505\ImageRedirectOverlayCreative
      */
     public function setDuration($duration)
     {
@@ -120,16 +118,16 @@ class ImageRedirectOverlayCreative extends \Google\AdsApi\AdManager\v202608\Base
 
     /**
      * @param int[]|null $companionCreativeIds
-     * @return \Google\AdsApi\AdManager\v202608\ImageRedirectOverlayCreative
+     * @return \Google\AdsApi\AdManager\v202505\ImageRedirectOverlayCreative
      */
-    public function setCompanionCreativeIds(array $companionCreativeIds = null)
+    public function setCompanionCreativeIds(?array $companionCreativeIds = null)
     {
       $this->companionCreativeIds = $companionCreativeIds;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\ConversionEvent_TrackingUrlsMapEntry[]
+     * @return \Google\AdsApi\AdManager\v202505\ConversionEvent_TrackingUrlsMapEntry[]
      */
     public function getTrackingUrls()
     {
@@ -137,10 +135,10 @@ class ImageRedirectOverlayCreative extends \Google\AdsApi\AdManager\v202608\Base
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\ConversionEvent_TrackingUrlsMapEntry[]|null $trackingUrls
-     * @return \Google\AdsApi\AdManager\v202608\ImageRedirectOverlayCreative
+     * @param \Google\AdsApi\AdManager\v202505\ConversionEvent_TrackingUrlsMapEntry[]|null $trackingUrls
+     * @return \Google\AdsApi\AdManager\v202505\ImageRedirectOverlayCreative
      */
-    public function setTrackingUrls(array $trackingUrls = null)
+    public function setTrackingUrls(?array $trackingUrls = null)
     {
       $this->trackingUrls = $trackingUrls;
       return $this;
@@ -156,7 +154,7 @@ class ImageRedirectOverlayCreative extends \Google\AdsApi\AdManager\v202608\Base
 
     /**
      * @param string $customParameters
-     * @return \Google\AdsApi\AdManager\v202608\ImageRedirectOverlayCreative
+     * @return \Google\AdsApi\AdManager\v202505\ImageRedirectOverlayCreative
      */
     public function setCustomParameters($customParameters)
     {
@@ -174,7 +172,7 @@ class ImageRedirectOverlayCreative extends \Google\AdsApi\AdManager\v202608\Base
 
     /**
      * @param string $vastPreviewUrl
-     * @return \Google\AdsApi\AdManager\v202608\ImageRedirectOverlayCreative
+     * @return \Google\AdsApi\AdManager\v202505\ImageRedirectOverlayCreative
      */
     public function setVastPreviewUrl($vastPreviewUrl)
     {

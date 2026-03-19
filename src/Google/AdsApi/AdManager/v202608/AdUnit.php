@@ -1,6 +1,6 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202508;
 
 
 /**
@@ -25,7 +25,7 @@ class AdUnit
     protected $hasChildren = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\AdUnitParent[] $parentPath
+     * @var \Google\AdsApi\AdManager\v202508\AdUnitParent[] $parentPath
      */
     protected $parentPath = null;
 
@@ -55,7 +55,7 @@ class AdUnit
     protected $adUnitCode = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\AdUnitSize[] $adUnitSizes
+     * @var \Google\AdsApi\AdManager\v202508\AdUnitSize[] $adUnitSizes
      */
     protected $adUnitSizes = null;
 
@@ -80,7 +80,7 @@ class AdUnit
     protected $explicitlyTargeted = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\AdSenseSettings $adSenseSettings
+     * @var \Google\AdsApi\AdManager\v202508\AdSenseSettings $adSenseSettings
      */
     protected $adSenseSettings = null;
 
@@ -90,22 +90,22 @@ class AdUnit
     protected $adSenseSettingsSource = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\LabelFrequencyCap[] $appliedLabelFrequencyCaps
+     * @var \Google\AdsApi\AdManager\v202508\LabelFrequencyCap[] $appliedLabelFrequencyCaps
      */
     protected $appliedLabelFrequencyCaps = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\LabelFrequencyCap[] $effectiveLabelFrequencyCaps
+     * @var \Google\AdsApi\AdManager\v202508\LabelFrequencyCap[] $effectiveLabelFrequencyCaps
      */
     protected $effectiveLabelFrequencyCaps = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
+     * @var \Google\AdsApi\AdManager\v202508\AppliedLabel[] $appliedLabels
      */
     protected $appliedLabels = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\AppliedLabel[] $effectiveAppliedLabels
+     * @var \Google\AdsApi\AdManager\v202508\AppliedLabel[] $effectiveAppliedLabels
      */
     protected $effectiveAppliedLabels = null;
 
@@ -120,7 +120,7 @@ class AdUnit
     protected $appliedTeamIds = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
+     * @var \Google\AdsApi\AdManager\v202508\DateTime $lastModifiedDateTime
      */
     protected $lastModifiedDateTime = null;
 
@@ -133,11 +133,6 @@ class AdUnit
      * @var int $refreshRate
      */
     protected $refreshRate = null;
-
-    /**
-     * @var string $refreshRateType
-     */
-    protected $refreshRateType = null;
 
     /**
      * @var string $externalSetTopBoxChannelId
@@ -158,34 +153,33 @@ class AdUnit
      * @param string $id
      * @param string $parentId
      * @param boolean $hasChildren
-     * @param \Google\AdsApi\AdManager\v202608\AdUnitParent[] $parentPath
+     * @param \Google\AdsApi\AdManager\v202508\AdUnitParent[] $parentPath
      * @param string $name
      * @param string $description
      * @param string $targetWindow
      * @param string $status
      * @param string $adUnitCode
-     * @param \Google\AdsApi\AdManager\v202608\AdUnitSize[] $adUnitSizes
+     * @param \Google\AdsApi\AdManager\v202508\AdUnitSize[] $adUnitSizes
      * @param boolean $isInterstitial
      * @param boolean $isNative
      * @param boolean $isFluid
      * @param boolean $explicitlyTargeted
-     * @param \Google\AdsApi\AdManager\v202608\AdSenseSettings $adSenseSettings
+     * @param \Google\AdsApi\AdManager\v202508\AdSenseSettings $adSenseSettings
      * @param string $adSenseSettingsSource
-     * @param \Google\AdsApi\AdManager\v202608\LabelFrequencyCap[] $appliedLabelFrequencyCaps
-     * @param \Google\AdsApi\AdManager\v202608\LabelFrequencyCap[] $effectiveLabelFrequencyCaps
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $effectiveAppliedLabels
+     * @param \Google\AdsApi\AdManager\v202508\LabelFrequencyCap[] $appliedLabelFrequencyCaps
+     * @param \Google\AdsApi\AdManager\v202508\LabelFrequencyCap[] $effectiveLabelFrequencyCaps
+     * @param \Google\AdsApi\AdManager\v202508\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202508\AppliedLabel[] $effectiveAppliedLabels
      * @param int[] $effectiveTeamIds
      * @param int[] $appliedTeamIds
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202508\DateTime $lastModifiedDateTime
      * @param string $smartSizeMode
      * @param int $refreshRate
-     * @param string $refreshRateType
      * @param string $externalSetTopBoxChannelId
      * @param boolean $isSetTopBoxEnabled
      * @param int $applicationId
      */
-    public function __construct($id = null, $parentId = null, $hasChildren = null, array $parentPath = null, $name = null, $description = null, $targetWindow = null, $status = null, $adUnitCode = null, array $adUnitSizes = null, $isInterstitial = null, $isNative = null, $isFluid = null, $explicitlyTargeted = null, $adSenseSettings = null, $adSenseSettingsSource = null, array $appliedLabelFrequencyCaps = null, array $effectiveLabelFrequencyCaps = null, array $appliedLabels = null, array $effectiveAppliedLabels = null, array $effectiveTeamIds = null, array $appliedTeamIds = null, $lastModifiedDateTime = null, $smartSizeMode = null, $refreshRate = null, $refreshRateType = null, $externalSetTopBoxChannelId = null, $isSetTopBoxEnabled = null, $applicationId = null)
+    public function __construct($id = null, $parentId = null, $hasChildren = null, ?array $parentPath = null, $name = null, $description = null, $targetWindow = null, $status = null, $adUnitCode = null, ?array $adUnitSizes = null, $isInterstitial = null, $isNative = null, $isFluid = null, $explicitlyTargeted = null, $adSenseSettings = null, $adSenseSettingsSource = null, ?array $appliedLabelFrequencyCaps = null, ?array $effectiveLabelFrequencyCaps = null, ?array $appliedLabels = null, ?array $effectiveAppliedLabels = null, ?array $effectiveTeamIds = null, ?array $appliedTeamIds = null, $lastModifiedDateTime = null, $smartSizeMode = null, $refreshRate = null, $externalSetTopBoxChannelId = null, $isSetTopBoxEnabled = null, $applicationId = null)
     {
       $this->id = $id;
       $this->parentId = $parentId;
@@ -212,7 +206,6 @@ class AdUnit
       $this->lastModifiedDateTime = $lastModifiedDateTime;
       $this->smartSizeMode = $smartSizeMode;
       $this->refreshRate = $refreshRate;
-      $this->refreshRateType = $refreshRateType;
       $this->externalSetTopBoxChannelId = $externalSetTopBoxChannelId;
       $this->isSetTopBoxEnabled = $isSetTopBoxEnabled;
       $this->applicationId = $applicationId;
@@ -228,7 +221,7 @@ class AdUnit
 
     /**
      * @param string $id
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setId($id)
     {
@@ -246,7 +239,7 @@ class AdUnit
 
     /**
      * @param string $parentId
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setParentId($parentId)
     {
@@ -264,7 +257,7 @@ class AdUnit
 
     /**
      * @param boolean $hasChildren
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setHasChildren($hasChildren)
     {
@@ -273,7 +266,7 @@ class AdUnit
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\AdUnitParent[]
+     * @return \Google\AdsApi\AdManager\v202508\AdUnitParent[]
      */
     public function getParentPath()
     {
@@ -281,10 +274,10 @@ class AdUnit
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\AdUnitParent[]|null $parentPath
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @param \Google\AdsApi\AdManager\v202508\AdUnitParent[]|null $parentPath
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
-    public function setParentPath(array $parentPath = null)
+    public function setParentPath(?array $parentPath = null)
     {
       $this->parentPath = $parentPath;
       return $this;
@@ -300,7 +293,7 @@ class AdUnit
 
     /**
      * @param string $name
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setName($name)
     {
@@ -318,7 +311,7 @@ class AdUnit
 
     /**
      * @param string $description
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setDescription($description)
     {
@@ -336,7 +329,7 @@ class AdUnit
 
     /**
      * @param string $targetWindow
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setTargetWindow($targetWindow)
     {
@@ -354,7 +347,7 @@ class AdUnit
 
     /**
      * @param string $status
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setStatus($status)
     {
@@ -372,7 +365,7 @@ class AdUnit
 
     /**
      * @param string $adUnitCode
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setAdUnitCode($adUnitCode)
     {
@@ -381,7 +374,7 @@ class AdUnit
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\AdUnitSize[]
+     * @return \Google\AdsApi\AdManager\v202508\AdUnitSize[]
      */
     public function getAdUnitSizes()
     {
@@ -389,10 +382,10 @@ class AdUnit
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\AdUnitSize[]|null $adUnitSizes
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @param \Google\AdsApi\AdManager\v202508\AdUnitSize[]|null $adUnitSizes
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
-    public function setAdUnitSizes(array $adUnitSizes = null)
+    public function setAdUnitSizes(?array $adUnitSizes = null)
     {
       $this->adUnitSizes = $adUnitSizes;
       return $this;
@@ -408,7 +401,7 @@ class AdUnit
 
     /**
      * @param boolean $isInterstitial
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setIsInterstitial($isInterstitial)
     {
@@ -426,7 +419,7 @@ class AdUnit
 
     /**
      * @param boolean $isNative
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setIsNative($isNative)
     {
@@ -444,7 +437,7 @@ class AdUnit
 
     /**
      * @param boolean $isFluid
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setIsFluid($isFluid)
     {
@@ -462,7 +455,7 @@ class AdUnit
 
     /**
      * @param boolean $explicitlyTargeted
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setExplicitlyTargeted($explicitlyTargeted)
     {
@@ -471,7 +464,7 @@ class AdUnit
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\AdSenseSettings
+     * @return \Google\AdsApi\AdManager\v202508\AdSenseSettings
      */
     public function getAdSenseSettings()
     {
@@ -479,8 +472,8 @@ class AdUnit
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\AdSenseSettings $adSenseSettings
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @param \Google\AdsApi\AdManager\v202508\AdSenseSettings $adSenseSettings
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setAdSenseSettings($adSenseSettings)
     {
@@ -498,7 +491,7 @@ class AdUnit
 
     /**
      * @param string $adSenseSettingsSource
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setAdSenseSettingsSource($adSenseSettingsSource)
     {
@@ -507,7 +500,7 @@ class AdUnit
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\LabelFrequencyCap[]
+     * @return \Google\AdsApi\AdManager\v202508\LabelFrequencyCap[]
      */
     public function getAppliedLabelFrequencyCaps()
     {
@@ -515,17 +508,17 @@ class AdUnit
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\LabelFrequencyCap[]|null $appliedLabelFrequencyCaps
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @param \Google\AdsApi\AdManager\v202508\LabelFrequencyCap[]|null $appliedLabelFrequencyCaps
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
-    public function setAppliedLabelFrequencyCaps(array $appliedLabelFrequencyCaps = null)
+    public function setAppliedLabelFrequencyCaps(?array $appliedLabelFrequencyCaps = null)
     {
       $this->appliedLabelFrequencyCaps = $appliedLabelFrequencyCaps;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\LabelFrequencyCap[]
+     * @return \Google\AdsApi\AdManager\v202508\LabelFrequencyCap[]
      */
     public function getEffectiveLabelFrequencyCaps()
     {
@@ -533,17 +526,17 @@ class AdUnit
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\LabelFrequencyCap[]|null $effectiveLabelFrequencyCaps
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @param \Google\AdsApi\AdManager\v202508\LabelFrequencyCap[]|null $effectiveLabelFrequencyCaps
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
-    public function setEffectiveLabelFrequencyCaps(array $effectiveLabelFrequencyCaps = null)
+    public function setEffectiveLabelFrequencyCaps(?array $effectiveLabelFrequencyCaps = null)
     {
       $this->effectiveLabelFrequencyCaps = $effectiveLabelFrequencyCaps;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\AppliedLabel[]
+     * @return \Google\AdsApi\AdManager\v202508\AppliedLabel[]
      */
     public function getAppliedLabels()
     {
@@ -551,17 +544,17 @@ class AdUnit
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[]|null $appliedLabels
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @param \Google\AdsApi\AdManager\v202508\AppliedLabel[]|null $appliedLabels
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
-    public function setAppliedLabels(array $appliedLabels = null)
+    public function setAppliedLabels(?array $appliedLabels = null)
     {
       $this->appliedLabels = $appliedLabels;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\AppliedLabel[]
+     * @return \Google\AdsApi\AdManager\v202508\AppliedLabel[]
      */
     public function getEffectiveAppliedLabels()
     {
@@ -569,10 +562,10 @@ class AdUnit
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[]|null $effectiveAppliedLabels
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @param \Google\AdsApi\AdManager\v202508\AppliedLabel[]|null $effectiveAppliedLabels
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
-    public function setEffectiveAppliedLabels(array $effectiveAppliedLabels = null)
+    public function setEffectiveAppliedLabels(?array $effectiveAppliedLabels = null)
     {
       $this->effectiveAppliedLabels = $effectiveAppliedLabels;
       return $this;
@@ -588,9 +581,9 @@ class AdUnit
 
     /**
      * @param int[]|null $effectiveTeamIds
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
-    public function setEffectiveTeamIds(array $effectiveTeamIds = null)
+    public function setEffectiveTeamIds(?array $effectiveTeamIds = null)
     {
       $this->effectiveTeamIds = $effectiveTeamIds;
       return $this;
@@ -606,16 +599,16 @@ class AdUnit
 
     /**
      * @param int[]|null $appliedTeamIds
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
-    public function setAppliedTeamIds(array $appliedTeamIds = null)
+    public function setAppliedTeamIds(?array $appliedTeamIds = null)
     {
       $this->appliedTeamIds = $appliedTeamIds;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\DateTime
+     * @return \Google\AdsApi\AdManager\v202508\DateTime
      */
     public function getLastModifiedDateTime()
     {
@@ -623,8 +616,8 @@ class AdUnit
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @param \Google\AdsApi\AdManager\v202508\DateTime $lastModifiedDateTime
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setLastModifiedDateTime($lastModifiedDateTime)
     {
@@ -642,7 +635,7 @@ class AdUnit
 
     /**
      * @param string $smartSizeMode
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setSmartSizeMode($smartSizeMode)
     {
@@ -660,29 +653,11 @@ class AdUnit
 
     /**
      * @param int $refreshRate
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setRefreshRate($refreshRate)
     {
       $this->refreshRate = $refreshRate;
-      return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getRefreshRateType()
-    {
-      return $this->refreshRateType;
-    }
-
-    /**
-     * @param string $refreshRateType
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
-     */
-    public function setRefreshRateType($refreshRateType)
-    {
-      $this->refreshRateType = $refreshRateType;
       return $this;
     }
 
@@ -696,7 +671,7 @@ class AdUnit
 
     /**
      * @param string $externalSetTopBoxChannelId
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setExternalSetTopBoxChannelId($externalSetTopBoxChannelId)
     {
@@ -714,7 +689,7 @@ class AdUnit
 
     /**
      * @param boolean $isSetTopBoxEnabled
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setIsSetTopBoxEnabled($isSetTopBoxEnabled)
     {
@@ -732,7 +707,7 @@ class AdUnit
 
     /**
      * @param int $applicationId
-     * @return \Google\AdsApi\AdManager\v202608\AdUnit
+     * @return \Google\AdsApi\AdManager\v202508\AdUnit
      */
     public function setApplicationId($applicationId)
     {

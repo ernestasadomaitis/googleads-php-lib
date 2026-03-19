@@ -1,12 +1,12 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202505;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-class InternalRedirectCreative extends \Google\AdsApi\AdManager\v202608\Creative
+class InternalRedirectCreative extends \Google\AdsApi\AdManager\v202505\Creative
 {
 
     /**
@@ -15,7 +15,7 @@ class InternalRedirectCreative extends \Google\AdsApi\AdManager\v202608\Creative
     protected $lockedOrientation = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\Size $assetSize
+     * @var \Google\AdsApi\AdManager\v202505\Size $assetSize
      */
     protected $assetSize = null;
 
@@ -53,18 +53,16 @@ class InternalRedirectCreative extends \Google\AdsApi\AdManager\v202608\Creative
      * @param int $advertiserId
      * @param int $id
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202608\Size $size
+     * @param \Google\AdsApi\AdManager\v202505\Size $size
      * @param string $previewUrl
      * @param string[] $policyLabels
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202608\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @param string $thirdPartyDataDeclarationStatus
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202505\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      * @param boolean $adBadgingEnabled
-     * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
      * @param string $lockedOrientation
-     * @param \Google\AdsApi\AdManager\v202608\Size $assetSize
+     * @param \Google\AdsApi\AdManager\v202505\Size $assetSize
      * @param string $internalRedirectUrl
      * @param boolean $overrideSize
      * @param boolean $isInterstitial
@@ -72,9 +70,9 @@ class InternalRedirectCreative extends \Google\AdsApi\AdManager\v202608\Creative
      * @param string $sslManualOverride
      * @param string[] $thirdPartyImpressionTrackingUrls
      */
-    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, array $policyLabels = null, array $appliedLabels = null, $lastModifiedDateTime = null, array $customFieldValues = null, $thirdPartyDataDeclaration = null, $thirdPartyDataDeclarationStatus = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $lockedOrientation = null, $assetSize = null, $internalRedirectUrl = null, $overrideSize = null, $isInterstitial = null, $sslScanResult = null, $sslManualOverride = null, array $thirdPartyImpressionTrackingUrls = null)
+    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, ?array $policyLabels = null, ?array $appliedLabels = null, $lastModifiedDateTime = null, ?array $customFieldValues = null, $thirdPartyDataDeclaration = null, $adBadgingEnabled = null, $lockedOrientation = null, $assetSize = null, $internalRedirectUrl = null, $overrideSize = null, $isInterstitial = null, $sslScanResult = null, $sslManualOverride = null, ?array $thirdPartyImpressionTrackingUrls = null)
     {
-      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $thirdPartyDataDeclarationStatus, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent);
+      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $adBadgingEnabled);
       $this->lockedOrientation = $lockedOrientation;
       $this->assetSize = $assetSize;
       $this->internalRedirectUrl = $internalRedirectUrl;
@@ -95,7 +93,7 @@ class InternalRedirectCreative extends \Google\AdsApi\AdManager\v202608\Creative
 
     /**
      * @param string $lockedOrientation
-     * @return \Google\AdsApi\AdManager\v202608\InternalRedirectCreative
+     * @return \Google\AdsApi\AdManager\v202505\InternalRedirectCreative
      */
     public function setLockedOrientation($lockedOrientation)
     {
@@ -104,7 +102,7 @@ class InternalRedirectCreative extends \Google\AdsApi\AdManager\v202608\Creative
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\Size
+     * @return \Google\AdsApi\AdManager\v202505\Size
      */
     public function getAssetSize()
     {
@@ -112,8 +110,8 @@ class InternalRedirectCreative extends \Google\AdsApi\AdManager\v202608\Creative
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\Size $assetSize
-     * @return \Google\AdsApi\AdManager\v202608\InternalRedirectCreative
+     * @param \Google\AdsApi\AdManager\v202505\Size $assetSize
+     * @return \Google\AdsApi\AdManager\v202505\InternalRedirectCreative
      */
     public function setAssetSize($assetSize)
     {
@@ -131,7 +129,7 @@ class InternalRedirectCreative extends \Google\AdsApi\AdManager\v202608\Creative
 
     /**
      * @param string $internalRedirectUrl
-     * @return \Google\AdsApi\AdManager\v202608\InternalRedirectCreative
+     * @return \Google\AdsApi\AdManager\v202505\InternalRedirectCreative
      */
     public function setInternalRedirectUrl($internalRedirectUrl)
     {
@@ -149,7 +147,7 @@ class InternalRedirectCreative extends \Google\AdsApi\AdManager\v202608\Creative
 
     /**
      * @param boolean $overrideSize
-     * @return \Google\AdsApi\AdManager\v202608\InternalRedirectCreative
+     * @return \Google\AdsApi\AdManager\v202505\InternalRedirectCreative
      */
     public function setOverrideSize($overrideSize)
     {
@@ -167,7 +165,7 @@ class InternalRedirectCreative extends \Google\AdsApi\AdManager\v202608\Creative
 
     /**
      * @param boolean $isInterstitial
-     * @return \Google\AdsApi\AdManager\v202608\InternalRedirectCreative
+     * @return \Google\AdsApi\AdManager\v202505\InternalRedirectCreative
      */
     public function setIsInterstitial($isInterstitial)
     {
@@ -185,7 +183,7 @@ class InternalRedirectCreative extends \Google\AdsApi\AdManager\v202608\Creative
 
     /**
      * @param string $sslScanResult
-     * @return \Google\AdsApi\AdManager\v202608\InternalRedirectCreative
+     * @return \Google\AdsApi\AdManager\v202505\InternalRedirectCreative
      */
     public function setSslScanResult($sslScanResult)
     {
@@ -203,7 +201,7 @@ class InternalRedirectCreative extends \Google\AdsApi\AdManager\v202608\Creative
 
     /**
      * @param string $sslManualOverride
-     * @return \Google\AdsApi\AdManager\v202608\InternalRedirectCreative
+     * @return \Google\AdsApi\AdManager\v202505\InternalRedirectCreative
      */
     public function setSslManualOverride($sslManualOverride)
     {
@@ -221,9 +219,9 @@ class InternalRedirectCreative extends \Google\AdsApi\AdManager\v202608\Creative
 
     /**
      * @param string[]|null $thirdPartyImpressionTrackingUrls
-     * @return \Google\AdsApi\AdManager\v202608\InternalRedirectCreative
+     * @return \Google\AdsApi\AdManager\v202505\InternalRedirectCreative
      */
-    public function setThirdPartyImpressionTrackingUrls(array $thirdPartyImpressionTrackingUrls = null)
+    public function setThirdPartyImpressionTrackingUrls(?array $thirdPartyImpressionTrackingUrls = null)
     {
       $this->thirdPartyImpressionTrackingUrls = $thirdPartyImpressionTrackingUrls;
       return $this;

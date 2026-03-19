@@ -17,7 +17,7 @@ class getSegmentPopulationResultsByIdsResponse
     /**
      * @param \Google\AdsApi\AdManager\v202605\SegmentPopulationResults[] $rval
      */
-    public function __construct(array $rval = null)
+    public function __construct(?array $rval = null)
     {
       $this->rval = $rval;
     }
@@ -34,7 +34,7 @@ class getSegmentPopulationResultsByIdsResponse
      * @param \Google\AdsApi\AdManager\v202605\SegmentPopulationResults[]|null $rval
      * @return \Google\AdsApi\AdManager\v202605\getSegmentPopulationResultsByIdsResponse
      */
-    public function setRval(array $rval = null)
+    public function setRval(?array $rval = null)
     {
       $this->rval = $rval;
       return $this;

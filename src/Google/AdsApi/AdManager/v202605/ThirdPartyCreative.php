@@ -1,12 +1,12 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202605;
+namespace Google\AdsApi\AdManager\v202505;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-class ThirdPartyCreative extends \Google\AdsApi\AdManager\v202605\Creative
+class ThirdPartyCreative extends \Google\AdsApi\AdManager\v202505\Creative
 {
 
     /**
@@ -53,16 +53,14 @@ class ThirdPartyCreative extends \Google\AdsApi\AdManager\v202605\Creative
      * @param int $advertiserId
      * @param int $id
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202605\Size $size
+     * @param \Google\AdsApi\AdManager\v202505\Size $size
      * @param string $previewUrl
      * @param string[] $policyLabels
-     * @param \Google\AdsApi\AdManager\v202605\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202605\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202605\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202605\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @param string $thirdPartyDataDeclarationStatus
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202505\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      * @param boolean $adBadgingEnabled
-     * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
      * @param string $snippet
      * @param string $expandedSnippet
      * @param string $sslScanResult
@@ -72,9 +70,9 @@ class ThirdPartyCreative extends \Google\AdsApi\AdManager\v202605\Creative
      * @param string[] $thirdPartyImpressionTrackingUrls
      * @param string $ampRedirectUrl
      */
-    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, array $policyLabels = null, array $appliedLabels = null, $lastModifiedDateTime = null, array $customFieldValues = null, $thirdPartyDataDeclaration = null, $thirdPartyDataDeclarationStatus = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $snippet = null, $expandedSnippet = null, $sslScanResult = null, $sslManualOverride = null, $lockedOrientation = null, $isSafeFrameCompatible = null, array $thirdPartyImpressionTrackingUrls = null, $ampRedirectUrl = null)
+    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, ?array $policyLabels = null, ?array $appliedLabels = null, $lastModifiedDateTime = null, ?array $customFieldValues = null, $thirdPartyDataDeclaration = null, $adBadgingEnabled = null, $snippet = null, $expandedSnippet = null, $sslScanResult = null, $sslManualOverride = null, $lockedOrientation = null, $isSafeFrameCompatible = null, ?array $thirdPartyImpressionTrackingUrls = null, $ampRedirectUrl = null)
     {
-      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $thirdPartyDataDeclarationStatus, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent);
+      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $adBadgingEnabled);
       $this->snippet = $snippet;
       $this->expandedSnippet = $expandedSnippet;
       $this->sslScanResult = $sslScanResult;
@@ -95,7 +93,7 @@ class ThirdPartyCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param string $snippet
-     * @return \Google\AdsApi\AdManager\v202605\ThirdPartyCreative
+     * @return \Google\AdsApi\AdManager\v202505\ThirdPartyCreative
      */
     public function setSnippet($snippet)
     {
@@ -113,7 +111,7 @@ class ThirdPartyCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param string $expandedSnippet
-     * @return \Google\AdsApi\AdManager\v202605\ThirdPartyCreative
+     * @return \Google\AdsApi\AdManager\v202505\ThirdPartyCreative
      */
     public function setExpandedSnippet($expandedSnippet)
     {
@@ -131,7 +129,7 @@ class ThirdPartyCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param string $sslScanResult
-     * @return \Google\AdsApi\AdManager\v202605\ThirdPartyCreative
+     * @return \Google\AdsApi\AdManager\v202505\ThirdPartyCreative
      */
     public function setSslScanResult($sslScanResult)
     {
@@ -149,7 +147,7 @@ class ThirdPartyCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param string $sslManualOverride
-     * @return \Google\AdsApi\AdManager\v202605\ThirdPartyCreative
+     * @return \Google\AdsApi\AdManager\v202505\ThirdPartyCreative
      */
     public function setSslManualOverride($sslManualOverride)
     {
@@ -167,7 +165,7 @@ class ThirdPartyCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param string $lockedOrientation
-     * @return \Google\AdsApi\AdManager\v202605\ThirdPartyCreative
+     * @return \Google\AdsApi\AdManager\v202505\ThirdPartyCreative
      */
     public function setLockedOrientation($lockedOrientation)
     {
@@ -185,7 +183,7 @@ class ThirdPartyCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param boolean $isSafeFrameCompatible
-     * @return \Google\AdsApi\AdManager\v202605\ThirdPartyCreative
+     * @return \Google\AdsApi\AdManager\v202505\ThirdPartyCreative
      */
     public function setIsSafeFrameCompatible($isSafeFrameCompatible)
     {
@@ -203,9 +201,9 @@ class ThirdPartyCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param string[]|null $thirdPartyImpressionTrackingUrls
-     * @return \Google\AdsApi\AdManager\v202605\ThirdPartyCreative
+     * @return \Google\AdsApi\AdManager\v202505\ThirdPartyCreative
      */
-    public function setThirdPartyImpressionTrackingUrls(array $thirdPartyImpressionTrackingUrls = null)
+    public function setThirdPartyImpressionTrackingUrls(?array $thirdPartyImpressionTrackingUrls = null)
     {
       $this->thirdPartyImpressionTrackingUrls = $thirdPartyImpressionTrackingUrls;
       return $this;
@@ -221,7 +219,7 @@ class ThirdPartyCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param string $ampRedirectUrl
-     * @return \Google\AdsApi\AdManager\v202605\ThirdPartyCreative
+     * @return \Google\AdsApi\AdManager\v202505\ThirdPartyCreative
      */
     public function setAmpRedirectUrl($ampRedirectUrl)
     {

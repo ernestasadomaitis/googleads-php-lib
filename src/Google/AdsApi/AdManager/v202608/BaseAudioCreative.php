@@ -1,12 +1,12 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202505;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-abstract class BaseAudioCreative extends \Google\AdsApi\AdManager\v202608\HasDestinationUrlCreative
+abstract class BaseAudioCreative extends \Google\AdsApi\AdManager\v202505\HasDestinationUrlCreative
 {
 
     /**
@@ -20,7 +20,7 @@ abstract class BaseAudioCreative extends \Google\AdsApi\AdManager\v202608\HasDes
     protected $allowDurationOverride = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\ConversionEvent_TrackingUrlsMapEntry[] $trackingUrls
+     * @var \Google\AdsApi\AdManager\v202505\ConversionEvent_TrackingUrlsMapEntry[] $trackingUrls
      */
     protected $trackingUrls = null;
 
@@ -68,21 +68,19 @@ abstract class BaseAudioCreative extends \Google\AdsApi\AdManager\v202608\HasDes
      * @param int $advertiserId
      * @param int $id
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202608\Size $size
+     * @param \Google\AdsApi\AdManager\v202505\Size $size
      * @param string $previewUrl
      * @param string[] $policyLabels
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202608\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @param string $thirdPartyDataDeclarationStatus
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202505\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      * @param boolean $adBadgingEnabled
-     * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
      * @param string $destinationUrl
      * @param string $destinationUrlType
      * @param int $duration
      * @param boolean $allowDurationOverride
-     * @param \Google\AdsApi\AdManager\v202608\ConversionEvent_TrackingUrlsMapEntry[] $trackingUrls
+     * @param \Google\AdsApi\AdManager\v202505\ConversionEvent_TrackingUrlsMapEntry[] $trackingUrls
      * @param int[] $companionCreativeIds
      * @param string $customParameters
      * @param string $adId
@@ -92,9 +90,9 @@ abstract class BaseAudioCreative extends \Google\AdsApi\AdManager\v202608\HasDes
      * @param string $sslScanResult
      * @param string $sslManualOverride
      */
-    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, array $policyLabels = null, array $appliedLabels = null, $lastModifiedDateTime = null, array $customFieldValues = null, $thirdPartyDataDeclaration = null, $thirdPartyDataDeclarationStatus = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $destinationUrl = null, $destinationUrlType = null, $duration = null, $allowDurationOverride = null, array $trackingUrls = null, array $companionCreativeIds = null, $customParameters = null, $adId = null, $adIdType = null, $skippableAdType = null, $vastPreviewUrl = null, $sslScanResult = null, $sslManualOverride = null)
+    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, ?array $policyLabels = null, ?array $appliedLabels = null, $lastModifiedDateTime = null, ?array $customFieldValues = null, $thirdPartyDataDeclaration = null, $adBadgingEnabled = null, $destinationUrl = null, $destinationUrlType = null, $duration = null, $allowDurationOverride = null, ?array $trackingUrls = null, ?array $companionCreativeIds = null, $customParameters = null, $adId = null, $adIdType = null, $skippableAdType = null, $vastPreviewUrl = null, $sslScanResult = null, $sslManualOverride = null)
     {
-      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $thirdPartyDataDeclarationStatus, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent, $destinationUrl, $destinationUrlType);
+      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $adBadgingEnabled, $destinationUrl, $destinationUrlType);
       $this->duration = $duration;
       $this->allowDurationOverride = $allowDurationOverride;
       $this->trackingUrls = $trackingUrls;
@@ -118,7 +116,7 @@ abstract class BaseAudioCreative extends \Google\AdsApi\AdManager\v202608\HasDes
 
     /**
      * @param int $duration
-     * @return \Google\AdsApi\AdManager\v202608\BaseAudioCreative
+     * @return \Google\AdsApi\AdManager\v202505\BaseAudioCreative
      */
     public function setDuration($duration)
     {
@@ -136,7 +134,7 @@ abstract class BaseAudioCreative extends \Google\AdsApi\AdManager\v202608\HasDes
 
     /**
      * @param boolean $allowDurationOverride
-     * @return \Google\AdsApi\AdManager\v202608\BaseAudioCreative
+     * @return \Google\AdsApi\AdManager\v202505\BaseAudioCreative
      */
     public function setAllowDurationOverride($allowDurationOverride)
     {
@@ -145,7 +143,7 @@ abstract class BaseAudioCreative extends \Google\AdsApi\AdManager\v202608\HasDes
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\ConversionEvent_TrackingUrlsMapEntry[]
+     * @return \Google\AdsApi\AdManager\v202505\ConversionEvent_TrackingUrlsMapEntry[]
      */
     public function getTrackingUrls()
     {
@@ -153,10 +151,10 @@ abstract class BaseAudioCreative extends \Google\AdsApi\AdManager\v202608\HasDes
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\ConversionEvent_TrackingUrlsMapEntry[]|null $trackingUrls
-     * @return \Google\AdsApi\AdManager\v202608\BaseAudioCreative
+     * @param \Google\AdsApi\AdManager\v202505\ConversionEvent_TrackingUrlsMapEntry[]|null $trackingUrls
+     * @return \Google\AdsApi\AdManager\v202505\BaseAudioCreative
      */
-    public function setTrackingUrls(array $trackingUrls = null)
+    public function setTrackingUrls(?array $trackingUrls = null)
     {
       $this->trackingUrls = $trackingUrls;
       return $this;
@@ -172,9 +170,9 @@ abstract class BaseAudioCreative extends \Google\AdsApi\AdManager\v202608\HasDes
 
     /**
      * @param int[]|null $companionCreativeIds
-     * @return \Google\AdsApi\AdManager\v202608\BaseAudioCreative
+     * @return \Google\AdsApi\AdManager\v202505\BaseAudioCreative
      */
-    public function setCompanionCreativeIds(array $companionCreativeIds = null)
+    public function setCompanionCreativeIds(?array $companionCreativeIds = null)
     {
       $this->companionCreativeIds = $companionCreativeIds;
       return $this;
@@ -190,7 +188,7 @@ abstract class BaseAudioCreative extends \Google\AdsApi\AdManager\v202608\HasDes
 
     /**
      * @param string $customParameters
-     * @return \Google\AdsApi\AdManager\v202608\BaseAudioCreative
+     * @return \Google\AdsApi\AdManager\v202505\BaseAudioCreative
      */
     public function setCustomParameters($customParameters)
     {
@@ -208,7 +206,7 @@ abstract class BaseAudioCreative extends \Google\AdsApi\AdManager\v202608\HasDes
 
     /**
      * @param string $adId
-     * @return \Google\AdsApi\AdManager\v202608\BaseAudioCreative
+     * @return \Google\AdsApi\AdManager\v202505\BaseAudioCreative
      */
     public function setAdId($adId)
     {
@@ -226,7 +224,7 @@ abstract class BaseAudioCreative extends \Google\AdsApi\AdManager\v202608\HasDes
 
     /**
      * @param string $adIdType
-     * @return \Google\AdsApi\AdManager\v202608\BaseAudioCreative
+     * @return \Google\AdsApi\AdManager\v202505\BaseAudioCreative
      */
     public function setAdIdType($adIdType)
     {
@@ -244,7 +242,7 @@ abstract class BaseAudioCreative extends \Google\AdsApi\AdManager\v202608\HasDes
 
     /**
      * @param string $skippableAdType
-     * @return \Google\AdsApi\AdManager\v202608\BaseAudioCreative
+     * @return \Google\AdsApi\AdManager\v202505\BaseAudioCreative
      */
     public function setSkippableAdType($skippableAdType)
     {
@@ -262,7 +260,7 @@ abstract class BaseAudioCreative extends \Google\AdsApi\AdManager\v202608\HasDes
 
     /**
      * @param string $vastPreviewUrl
-     * @return \Google\AdsApi\AdManager\v202608\BaseAudioCreative
+     * @return \Google\AdsApi\AdManager\v202505\BaseAudioCreative
      */
     public function setVastPreviewUrl($vastPreviewUrl)
     {
@@ -280,7 +278,7 @@ abstract class BaseAudioCreative extends \Google\AdsApi\AdManager\v202608\HasDes
 
     /**
      * @param string $sslScanResult
-     * @return \Google\AdsApi\AdManager\v202608\BaseAudioCreative
+     * @return \Google\AdsApi\AdManager\v202505\BaseAudioCreative
      */
     public function setSslScanResult($sslScanResult)
     {
@@ -298,7 +296,7 @@ abstract class BaseAudioCreative extends \Google\AdsApi\AdManager\v202608\HasDes
 
     /**
      * @param string $sslManualOverride
-     * @return \Google\AdsApi\AdManager\v202608\BaseAudioCreative
+     * @return \Google\AdsApi\AdManager\v202505\BaseAudioCreative
      */
     public function setSslManualOverride($sslManualOverride)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202505;
 
 
 /**
@@ -25,17 +25,17 @@ class LiveStreamEvent
     protected $status = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\DateTime $creationDateTime
+     * @var \Google\AdsApi\AdManager\v202505\DateTime $creationDateTime
      */
     protected $creationDateTime = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
+     * @var \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
      */
     protected $lastModifiedDateTime = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\DateTime $startDateTime
+     * @var \Google\AdsApi\AdManager\v202505\DateTime $startDateTime
      */
     protected $startDateTime = null;
 
@@ -45,7 +45,7 @@ class LiveStreamEvent
     protected $startDateTimeType = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\DateTime $endDateTime
+     * @var \Google\AdsApi\AdManager\v202505\DateTime $endDateTime
      */
     protected $endDateTime = null;
 
@@ -140,12 +140,12 @@ class LiveStreamEvent
     protected $sourceContentConfigurationIds = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\PrerollSettings $prerollSettings
+     * @var \Google\AdsApi\AdManager\v202505\PrerollSettings $prerollSettings
      */
     protected $prerollSettings = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\HlsSettings $hlsSettings
+     * @var \Google\AdsApi\AdManager\v202505\HlsSettings $hlsSettings
      */
     protected $hlsSettings = null;
 
@@ -175,7 +175,7 @@ class LiveStreamEvent
     protected $prefetchEnabled = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\PrefetchSettings $prefetchSettings
+     * @var \Google\AdsApi\AdManager\v202505\PrefetchSettings $prefetchSettings
      */
     protected $prefetchSettings = null;
 
@@ -188,11 +188,6 @@ class LiveStreamEvent
      * @var boolean $enableShortSegmentDropping
      */
     protected $enableShortSegmentDropping = null;
-
-    /**
-     * @var boolean $ebnMultiBreakSchedulingEnabled
-     */
-    protected $ebnMultiBreakSchedulingEnabled = null;
 
     /**
      * @var string $customAssetKey
@@ -225,7 +220,7 @@ class LiveStreamEvent
     protected $adServingFormat = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\LiveStreamConditioning $liveStreamConditioning
+     * @var \Google\AdsApi\AdManager\v202505\LiveStreamConditioning $liveStreamConditioning
      */
     protected $liveStreamConditioning = null;
 
@@ -233,11 +228,11 @@ class LiveStreamEvent
      * @param int $id
      * @param string $name
      * @param string $status
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $creationDateTime
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $startDateTime
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $creationDateTime
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $startDateTime
      * @param string $startDateTimeType
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $endDateTime
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $endDateTime
      * @param boolean $unlimitedEndDateTime
      * @param int $totalEstimatedConcurrentUsers
      * @param string[] $contentUrls
@@ -256,26 +251,25 @@ class LiveStreamEvent
      * @param int $defaultAdBreakDuration
      * @param int[] $streamCreateDaiAuthenticationKeyIds
      * @param int[] $sourceContentConfigurationIds
-     * @param \Google\AdsApi\AdManager\v202608\PrerollSettings $prerollSettings
-     * @param \Google\AdsApi\AdManager\v202608\HlsSettings $hlsSettings
+     * @param \Google\AdsApi\AdManager\v202505\PrerollSettings $prerollSettings
+     * @param \Google\AdsApi\AdManager\v202505\HlsSettings $hlsSettings
      * @param boolean $enableAllowlistedIps
      * @param string $dynamicAdInsertionType
      * @param boolean $enableRelativePlaylistDelivery
      * @param string $streamingFormat
      * @param boolean $prefetchEnabled
-     * @param \Google\AdsApi\AdManager\v202608\PrefetchSettings $prefetchSettings
+     * @param \Google\AdsApi\AdManager\v202505\PrefetchSettings $prefetchSettings
      * @param boolean $enableForceCloseAdBreaks
      * @param boolean $enableShortSegmentDropping
-     * @param boolean $ebnMultiBreakSchedulingEnabled
      * @param string $customAssetKey
      * @param int[] $daiEncodingProfileIds
      * @param int[] $segmentUrlAuthenticationKeyIds
      * @param string[] $adBreakMarkups
      * @param boolean $adBreakMarkupTypesEnabled
      * @param string $adServingFormat
-     * @param \Google\AdsApi\AdManager\v202608\LiveStreamConditioning $liveStreamConditioning
+     * @param \Google\AdsApi\AdManager\v202505\LiveStreamConditioning $liveStreamConditioning
      */
-    public function __construct($id = null, $name = null, $status = null, $creationDateTime = null, $lastModifiedDateTime = null, $startDateTime = null, $startDateTimeType = null, $endDateTime = null, $unlimitedEndDateTime = null, $totalEstimatedConcurrentUsers = null, array $contentUrls = null, array $adTags = null, $assetKey = null, $slateCreativeId = null, $dvrWindowSeconds = null, $enableDaiAuthenticationKeys = null, $adBreakFillType = null, $underfillAdBreakFillType = null, $adHolidayDuration = null, $enableMaxFillerDuration = null, $maxFillerDuration = null, $podServingSegmentDuration = null, $enableDurationlessAdBreaks = null, $defaultAdBreakDuration = null, array $streamCreateDaiAuthenticationKeyIds = null, array $sourceContentConfigurationIds = null, $prerollSettings = null, $hlsSettings = null, $enableAllowlistedIps = null, $dynamicAdInsertionType = null, $enableRelativePlaylistDelivery = null, $streamingFormat = null, $prefetchEnabled = null, $prefetchSettings = null, $enableForceCloseAdBreaks = null, $enableShortSegmentDropping = null, $ebnMultiBreakSchedulingEnabled = null, $customAssetKey = null, array $daiEncodingProfileIds = null, array $segmentUrlAuthenticationKeyIds = null, array $adBreakMarkups = null, $adBreakMarkupTypesEnabled = null, $adServingFormat = null, $liveStreamConditioning = null)
+    public function __construct($id = null, $name = null, $status = null, $creationDateTime = null, $lastModifiedDateTime = null, $startDateTime = null, $startDateTimeType = null, $endDateTime = null, $unlimitedEndDateTime = null, $totalEstimatedConcurrentUsers = null, ?array $contentUrls = null, ?array $adTags = null, $assetKey = null, $slateCreativeId = null, $dvrWindowSeconds = null, $enableDaiAuthenticationKeys = null, $adBreakFillType = null, $underfillAdBreakFillType = null, $adHolidayDuration = null, $enableMaxFillerDuration = null, $maxFillerDuration = null, $podServingSegmentDuration = null, $enableDurationlessAdBreaks = null, $defaultAdBreakDuration = null, ?array $streamCreateDaiAuthenticationKeyIds = null, ?array $sourceContentConfigurationIds = null, $prerollSettings = null, $hlsSettings = null, $enableAllowlistedIps = null, $dynamicAdInsertionType = null, $enableRelativePlaylistDelivery = null, $streamingFormat = null, $prefetchEnabled = null, $prefetchSettings = null, $enableForceCloseAdBreaks = null, $enableShortSegmentDropping = null, $customAssetKey = null, ?array $daiEncodingProfileIds = null, ?array $segmentUrlAuthenticationKeyIds = null, ?array $adBreakMarkups = null, $adBreakMarkupTypesEnabled = null, $adServingFormat = null, $liveStreamConditioning = null)
     {
       $this->id = $id;
       $this->name = $name;
@@ -313,7 +307,6 @@ class LiveStreamEvent
       $this->prefetchSettings = $prefetchSettings;
       $this->enableForceCloseAdBreaks = $enableForceCloseAdBreaks;
       $this->enableShortSegmentDropping = $enableShortSegmentDropping;
-      $this->ebnMultiBreakSchedulingEnabled = $ebnMultiBreakSchedulingEnabled;
       $this->customAssetKey = $customAssetKey;
       $this->daiEncodingProfileIds = $daiEncodingProfileIds;
       $this->segmentUrlAuthenticationKeyIds = $segmentUrlAuthenticationKeyIds;
@@ -333,7 +326,7 @@ class LiveStreamEvent
 
     /**
      * @param int $id
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setId($id)
     {
@@ -352,7 +345,7 @@ class LiveStreamEvent
 
     /**
      * @param string $name
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setName($name)
     {
@@ -370,7 +363,7 @@ class LiveStreamEvent
 
     /**
      * @param string $status
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setStatus($status)
     {
@@ -379,7 +372,7 @@ class LiveStreamEvent
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\DateTime
+     * @return \Google\AdsApi\AdManager\v202505\DateTime
      */
     public function getCreationDateTime()
     {
@@ -387,8 +380,8 @@ class LiveStreamEvent
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $creationDateTime
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $creationDateTime
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setCreationDateTime($creationDateTime)
     {
@@ -397,7 +390,7 @@ class LiveStreamEvent
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\DateTime
+     * @return \Google\AdsApi\AdManager\v202505\DateTime
      */
     public function getLastModifiedDateTime()
     {
@@ -405,8 +398,8 @@ class LiveStreamEvent
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setLastModifiedDateTime($lastModifiedDateTime)
     {
@@ -415,7 +408,7 @@ class LiveStreamEvent
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\DateTime
+     * @return \Google\AdsApi\AdManager\v202505\DateTime
      */
     public function getStartDateTime()
     {
@@ -423,8 +416,8 @@ class LiveStreamEvent
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $startDateTime
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $startDateTime
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setStartDateTime($startDateTime)
     {
@@ -442,7 +435,7 @@ class LiveStreamEvent
 
     /**
      * @param string $startDateTimeType
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setStartDateTimeType($startDateTimeType)
     {
@@ -451,7 +444,7 @@ class LiveStreamEvent
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\DateTime
+     * @return \Google\AdsApi\AdManager\v202505\DateTime
      */
     public function getEndDateTime()
     {
@@ -459,8 +452,8 @@ class LiveStreamEvent
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $endDateTime
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $endDateTime
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setEndDateTime($endDateTime)
     {
@@ -478,7 +471,7 @@ class LiveStreamEvent
 
     /**
      * @param boolean $unlimitedEndDateTime
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setUnlimitedEndDateTime($unlimitedEndDateTime)
     {
@@ -496,7 +489,7 @@ class LiveStreamEvent
 
     /**
      * @param int $totalEstimatedConcurrentUsers
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setTotalEstimatedConcurrentUsers($totalEstimatedConcurrentUsers)
     {
@@ -515,9 +508,9 @@ class LiveStreamEvent
 
     /**
      * @param string[]|null $contentUrls
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
-    public function setContentUrls(array $contentUrls = null)
+    public function setContentUrls(?array $contentUrls = null)
     {
       $this->contentUrls = $contentUrls;
       return $this;
@@ -533,9 +526,9 @@ class LiveStreamEvent
 
     /**
      * @param string[]|null $adTags
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
-    public function setAdTags(array $adTags = null)
+    public function setAdTags(?array $adTags = null)
     {
       $this->adTags = $adTags;
       return $this;
@@ -551,7 +544,7 @@ class LiveStreamEvent
 
     /**
      * @param string $assetKey
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setAssetKey($assetKey)
     {
@@ -569,7 +562,7 @@ class LiveStreamEvent
 
     /**
      * @param int $slateCreativeId
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setSlateCreativeId($slateCreativeId)
     {
@@ -588,7 +581,7 @@ class LiveStreamEvent
 
     /**
      * @param int $dvrWindowSeconds
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setDvrWindowSeconds($dvrWindowSeconds)
     {
@@ -606,7 +599,7 @@ class LiveStreamEvent
 
     /**
      * @param boolean $enableDaiAuthenticationKeys
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setEnableDaiAuthenticationKeys($enableDaiAuthenticationKeys)
     {
@@ -624,7 +617,7 @@ class LiveStreamEvent
 
     /**
      * @param string $adBreakFillType
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setAdBreakFillType($adBreakFillType)
     {
@@ -642,7 +635,7 @@ class LiveStreamEvent
 
     /**
      * @param string $underfillAdBreakFillType
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setUnderfillAdBreakFillType($underfillAdBreakFillType)
     {
@@ -660,7 +653,7 @@ class LiveStreamEvent
 
     /**
      * @param int $adHolidayDuration
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setAdHolidayDuration($adHolidayDuration)
     {
@@ -679,7 +672,7 @@ class LiveStreamEvent
 
     /**
      * @param boolean $enableMaxFillerDuration
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setEnableMaxFillerDuration($enableMaxFillerDuration)
     {
@@ -697,7 +690,7 @@ class LiveStreamEvent
 
     /**
      * @param int $maxFillerDuration
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setMaxFillerDuration($maxFillerDuration)
     {
@@ -716,7 +709,7 @@ class LiveStreamEvent
 
     /**
      * @param int $podServingSegmentDuration
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setPodServingSegmentDuration($podServingSegmentDuration)
     {
@@ -735,7 +728,7 @@ class LiveStreamEvent
 
     /**
      * @param boolean $enableDurationlessAdBreaks
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setEnableDurationlessAdBreaks($enableDurationlessAdBreaks)
     {
@@ -753,7 +746,7 @@ class LiveStreamEvent
 
     /**
      * @param int $defaultAdBreakDuration
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setDefaultAdBreakDuration($defaultAdBreakDuration)
     {
@@ -772,9 +765,9 @@ class LiveStreamEvent
 
     /**
      * @param int[]|null $streamCreateDaiAuthenticationKeyIds
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
-    public function setStreamCreateDaiAuthenticationKeyIds(array $streamCreateDaiAuthenticationKeyIds = null)
+    public function setStreamCreateDaiAuthenticationKeyIds(?array $streamCreateDaiAuthenticationKeyIds = null)
     {
       $this->streamCreateDaiAuthenticationKeyIds = $streamCreateDaiAuthenticationKeyIds;
       return $this;
@@ -790,16 +783,16 @@ class LiveStreamEvent
 
     /**
      * @param int[]|null $sourceContentConfigurationIds
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
-    public function setSourceContentConfigurationIds(array $sourceContentConfigurationIds = null)
+    public function setSourceContentConfigurationIds(?array $sourceContentConfigurationIds = null)
     {
       $this->sourceContentConfigurationIds = $sourceContentConfigurationIds;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\PrerollSettings
+     * @return \Google\AdsApi\AdManager\v202505\PrerollSettings
      */
     public function getPrerollSettings()
     {
@@ -807,8 +800,8 @@ class LiveStreamEvent
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\PrerollSettings $prerollSettings
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @param \Google\AdsApi\AdManager\v202505\PrerollSettings $prerollSettings
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setPrerollSettings($prerollSettings)
     {
@@ -817,7 +810,7 @@ class LiveStreamEvent
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\HlsSettings
+     * @return \Google\AdsApi\AdManager\v202505\HlsSettings
      */
     public function getHlsSettings()
     {
@@ -825,8 +818,8 @@ class LiveStreamEvent
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\HlsSettings $hlsSettings
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @param \Google\AdsApi\AdManager\v202505\HlsSettings $hlsSettings
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setHlsSettings($hlsSettings)
     {
@@ -844,7 +837,7 @@ class LiveStreamEvent
 
     /**
      * @param boolean $enableAllowlistedIps
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setEnableAllowlistedIps($enableAllowlistedIps)
     {
@@ -862,7 +855,7 @@ class LiveStreamEvent
 
     /**
      * @param string $dynamicAdInsertionType
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setDynamicAdInsertionType($dynamicAdInsertionType)
     {
@@ -880,7 +873,7 @@ class LiveStreamEvent
 
     /**
      * @param boolean $enableRelativePlaylistDelivery
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setEnableRelativePlaylistDelivery($enableRelativePlaylistDelivery)
     {
@@ -898,7 +891,7 @@ class LiveStreamEvent
 
     /**
      * @param string $streamingFormat
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setStreamingFormat($streamingFormat)
     {
@@ -916,7 +909,7 @@ class LiveStreamEvent
 
     /**
      * @param boolean $prefetchEnabled
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setPrefetchEnabled($prefetchEnabled)
     {
@@ -925,7 +918,7 @@ class LiveStreamEvent
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\PrefetchSettings
+     * @return \Google\AdsApi\AdManager\v202505\PrefetchSettings
      */
     public function getPrefetchSettings()
     {
@@ -933,8 +926,8 @@ class LiveStreamEvent
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\PrefetchSettings $prefetchSettings
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @param \Google\AdsApi\AdManager\v202505\PrefetchSettings $prefetchSettings
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setPrefetchSettings($prefetchSettings)
     {
@@ -952,7 +945,7 @@ class LiveStreamEvent
 
     /**
      * @param boolean $enableForceCloseAdBreaks
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setEnableForceCloseAdBreaks($enableForceCloseAdBreaks)
     {
@@ -970,29 +963,11 @@ class LiveStreamEvent
 
     /**
      * @param boolean $enableShortSegmentDropping
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setEnableShortSegmentDropping($enableShortSegmentDropping)
     {
       $this->enableShortSegmentDropping = $enableShortSegmentDropping;
-      return $this;
-    }
-
-    /**
-     * @return boolean
-     */
-    public function getEbnMultiBreakSchedulingEnabled()
-    {
-      return $this->ebnMultiBreakSchedulingEnabled;
-    }
-
-    /**
-     * @param boolean $ebnMultiBreakSchedulingEnabled
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
-     */
-    public function setEbnMultiBreakSchedulingEnabled($ebnMultiBreakSchedulingEnabled)
-    {
-      $this->ebnMultiBreakSchedulingEnabled = $ebnMultiBreakSchedulingEnabled;
       return $this;
     }
 
@@ -1006,7 +981,7 @@ class LiveStreamEvent
 
     /**
      * @param string $customAssetKey
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setCustomAssetKey($customAssetKey)
     {
@@ -1024,9 +999,9 @@ class LiveStreamEvent
 
     /**
      * @param int[]|null $daiEncodingProfileIds
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
-    public function setDaiEncodingProfileIds(array $daiEncodingProfileIds = null)
+    public function setDaiEncodingProfileIds(?array $daiEncodingProfileIds = null)
     {
       $this->daiEncodingProfileIds = $daiEncodingProfileIds;
       return $this;
@@ -1042,9 +1017,9 @@ class LiveStreamEvent
 
     /**
      * @param int[]|null $segmentUrlAuthenticationKeyIds
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
-    public function setSegmentUrlAuthenticationKeyIds(array $segmentUrlAuthenticationKeyIds = null)
+    public function setSegmentUrlAuthenticationKeyIds(?array $segmentUrlAuthenticationKeyIds = null)
     {
       $this->segmentUrlAuthenticationKeyIds = $segmentUrlAuthenticationKeyIds;
       return $this;
@@ -1060,9 +1035,9 @@ class LiveStreamEvent
 
     /**
      * @param string[]|null $adBreakMarkups
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
-    public function setAdBreakMarkups(array $adBreakMarkups = null)
+    public function setAdBreakMarkups(?array $adBreakMarkups = null)
     {
       $this->adBreakMarkups = $adBreakMarkups;
       return $this;
@@ -1078,7 +1053,7 @@ class LiveStreamEvent
 
     /**
      * @param boolean $adBreakMarkupTypesEnabled
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setAdBreakMarkupTypesEnabled($adBreakMarkupTypesEnabled)
     {
@@ -1096,7 +1071,7 @@ class LiveStreamEvent
 
     /**
      * @param string $adServingFormat
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setAdServingFormat($adServingFormat)
     {
@@ -1105,7 +1080,7 @@ class LiveStreamEvent
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamConditioning
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamConditioning
      */
     public function getLiveStreamConditioning()
     {
@@ -1113,8 +1088,8 @@ class LiveStreamEvent
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\LiveStreamConditioning $liveStreamConditioning
-     * @return \Google\AdsApi\AdManager\v202608\LiveStreamEvent
+     * @param \Google\AdsApi\AdManager\v202505\LiveStreamConditioning $liveStreamConditioning
+     * @return \Google\AdsApi\AdManager\v202505\LiveStreamEvent
      */
     public function setLiveStreamConditioning($liveStreamConditioning)
     {

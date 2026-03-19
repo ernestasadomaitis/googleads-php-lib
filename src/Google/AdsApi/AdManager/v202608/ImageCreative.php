@@ -1,12 +1,12 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202505;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-class ImageCreative extends \Google\AdsApi\AdManager\v202608\BaseImageCreative
+class ImageCreative extends \Google\AdsApi\AdManager\v202505\BaseImageCreative
 {
 
     /**
@@ -20,7 +20,7 @@ class ImageCreative extends \Google\AdsApi\AdManager\v202608\BaseImageCreative
     protected $thirdPartyImpressionTrackingUrls = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\CreativeAsset[] $secondaryImageAssets
+     * @var \Google\AdsApi\AdManager\v202505\CreativeAsset[] $secondaryImageAssets
      */
     protected $secondaryImageAssets = null;
 
@@ -28,27 +28,25 @@ class ImageCreative extends \Google\AdsApi\AdManager\v202608\BaseImageCreative
      * @param int $advertiserId
      * @param int $id
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202608\Size $size
+     * @param \Google\AdsApi\AdManager\v202505\Size $size
      * @param string $previewUrl
      * @param string[] $policyLabels
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202608\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @param string $thirdPartyDataDeclarationStatus
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202505\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      * @param boolean $adBadgingEnabled
-     * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
      * @param string $destinationUrl
      * @param string $destinationUrlType
      * @param boolean $overrideSize
-     * @param \Google\AdsApi\AdManager\v202608\CreativeAsset $primaryImageAsset
+     * @param \Google\AdsApi\AdManager\v202505\CreativeAsset $primaryImageAsset
      * @param string $altText
      * @param string[] $thirdPartyImpressionTrackingUrls
-     * @param \Google\AdsApi\AdManager\v202608\CreativeAsset[] $secondaryImageAssets
+     * @param \Google\AdsApi\AdManager\v202505\CreativeAsset[] $secondaryImageAssets
      */
-    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, array $policyLabels = null, array $appliedLabels = null, $lastModifiedDateTime = null, array $customFieldValues = null, $thirdPartyDataDeclaration = null, $thirdPartyDataDeclarationStatus = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $destinationUrl = null, $destinationUrlType = null, $overrideSize = null, $primaryImageAsset = null, $altText = null, array $thirdPartyImpressionTrackingUrls = null, array $secondaryImageAssets = null)
+    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, ?array $policyLabels = null, ?array $appliedLabels = null, $lastModifiedDateTime = null, ?array $customFieldValues = null, $thirdPartyDataDeclaration = null, $adBadgingEnabled = null, $destinationUrl = null, $destinationUrlType = null, $overrideSize = null, $primaryImageAsset = null, $altText = null, ?array $thirdPartyImpressionTrackingUrls = null, ?array $secondaryImageAssets = null)
     {
-      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $thirdPartyDataDeclarationStatus, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent, $destinationUrl, $destinationUrlType, $overrideSize, $primaryImageAsset);
+      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $adBadgingEnabled, $destinationUrl, $destinationUrlType, $overrideSize, $primaryImageAsset);
       $this->altText = $altText;
       $this->thirdPartyImpressionTrackingUrls = $thirdPartyImpressionTrackingUrls;
       $this->secondaryImageAssets = $secondaryImageAssets;
@@ -64,7 +62,7 @@ class ImageCreative extends \Google\AdsApi\AdManager\v202608\BaseImageCreative
 
     /**
      * @param string $altText
-     * @return \Google\AdsApi\AdManager\v202608\ImageCreative
+     * @return \Google\AdsApi\AdManager\v202505\ImageCreative
      */
     public function setAltText($altText)
     {
@@ -82,16 +80,16 @@ class ImageCreative extends \Google\AdsApi\AdManager\v202608\BaseImageCreative
 
     /**
      * @param string[]|null $thirdPartyImpressionTrackingUrls
-     * @return \Google\AdsApi\AdManager\v202608\ImageCreative
+     * @return \Google\AdsApi\AdManager\v202505\ImageCreative
      */
-    public function setThirdPartyImpressionTrackingUrls(array $thirdPartyImpressionTrackingUrls = null)
+    public function setThirdPartyImpressionTrackingUrls(?array $thirdPartyImpressionTrackingUrls = null)
     {
       $this->thirdPartyImpressionTrackingUrls = $thirdPartyImpressionTrackingUrls;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\CreativeAsset[]
+     * @return \Google\AdsApi\AdManager\v202505\CreativeAsset[]
      */
     public function getSecondaryImageAssets()
     {
@@ -99,10 +97,10 @@ class ImageCreative extends \Google\AdsApi\AdManager\v202608\BaseImageCreative
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\CreativeAsset[]|null $secondaryImageAssets
-     * @return \Google\AdsApi\AdManager\v202608\ImageCreative
+     * @param \Google\AdsApi\AdManager\v202505\CreativeAsset[]|null $secondaryImageAssets
+     * @return \Google\AdsApi\AdManager\v202505\ImageCreative
      */
-    public function setSecondaryImageAssets(array $secondaryImageAssets = null)
+    public function setSecondaryImageAssets(?array $secondaryImageAssets = null)
     {
       $this->secondaryImageAssets = $secondaryImageAssets;
       return $this;

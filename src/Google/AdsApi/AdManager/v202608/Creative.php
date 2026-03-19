@@ -1,6 +1,6 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202505;
 
 
 /**
@@ -25,7 +25,7 @@ abstract class Creative
     protected $name = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\Size $size
+     * @var \Google\AdsApi\AdManager\v202505\Size $size
      */
     protected $size = null;
 
@@ -40,29 +40,24 @@ abstract class Creative
     protected $policyLabels = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
+     * @var \Google\AdsApi\AdManager\v202505\AppliedLabel[] $appliedLabels
      */
     protected $appliedLabels = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
+     * @var \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
      */
     protected $lastModifiedDateTime = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[] $customFieldValues
+     * @var \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[] $customFieldValues
      */
     protected $customFieldValues = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
+     * @var \Google\AdsApi\AdManager\v202505\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      */
     protected $thirdPartyDataDeclaration = null;
-
-    /**
-     * @var string $thirdPartyDataDeclarationStatus
-     */
-    protected $thirdPartyDataDeclarationStatus = null;
 
     /**
      * @var boolean $adBadgingEnabled
@@ -70,26 +65,19 @@ abstract class Creative
     protected $adBadgingEnabled = null;
 
     /**
-     * @var boolean $selfDeclaredEuropeanUnionPoliticalContent
-     */
-    protected $selfDeclaredEuropeanUnionPoliticalContent = null;
-
-    /**
      * @param int $advertiserId
      * @param int $id
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202608\Size $size
+     * @param \Google\AdsApi\AdManager\v202505\Size $size
      * @param string $previewUrl
      * @param string[] $policyLabels
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202608\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @param string $thirdPartyDataDeclarationStatus
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202505\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      * @param boolean $adBadgingEnabled
-     * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
      */
-    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, array $policyLabels = null, array $appliedLabels = null, $lastModifiedDateTime = null, array $customFieldValues = null, $thirdPartyDataDeclaration = null, $thirdPartyDataDeclarationStatus = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null)
+    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, ?array $policyLabels = null, ?array $appliedLabels = null, $lastModifiedDateTime = null, ?array $customFieldValues = null, $thirdPartyDataDeclaration = null, $adBadgingEnabled = null)
     {
       $this->advertiserId = $advertiserId;
       $this->id = $id;
@@ -101,9 +89,7 @@ abstract class Creative
       $this->lastModifiedDateTime = $lastModifiedDateTime;
       $this->customFieldValues = $customFieldValues;
       $this->thirdPartyDataDeclaration = $thirdPartyDataDeclaration;
-      $this->thirdPartyDataDeclarationStatus = $thirdPartyDataDeclarationStatus;
       $this->adBadgingEnabled = $adBadgingEnabled;
-      $this->selfDeclaredEuropeanUnionPoliticalContent = $selfDeclaredEuropeanUnionPoliticalContent;
     }
 
     /**
@@ -116,7 +102,7 @@ abstract class Creative
 
     /**
      * @param int $advertiserId
-     * @return \Google\AdsApi\AdManager\v202608\Creative
+     * @return \Google\AdsApi\AdManager\v202505\Creative
      */
     public function setAdvertiserId($advertiserId)
     {
@@ -135,7 +121,7 @@ abstract class Creative
 
     /**
      * @param int $id
-     * @return \Google\AdsApi\AdManager\v202608\Creative
+     * @return \Google\AdsApi\AdManager\v202505\Creative
      */
     public function setId($id)
     {
@@ -154,7 +140,7 @@ abstract class Creative
 
     /**
      * @param string $name
-     * @return \Google\AdsApi\AdManager\v202608\Creative
+     * @return \Google\AdsApi\AdManager\v202505\Creative
      */
     public function setName($name)
     {
@@ -163,7 +149,7 @@ abstract class Creative
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\Size
+     * @return \Google\AdsApi\AdManager\v202505\Size
      */
     public function getSize()
     {
@@ -171,8 +157,8 @@ abstract class Creative
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\Size $size
-     * @return \Google\AdsApi\AdManager\v202608\Creative
+     * @param \Google\AdsApi\AdManager\v202505\Size $size
+     * @return \Google\AdsApi\AdManager\v202505\Creative
      */
     public function setSize($size)
     {
@@ -190,7 +176,7 @@ abstract class Creative
 
     /**
      * @param string $previewUrl
-     * @return \Google\AdsApi\AdManager\v202608\Creative
+     * @return \Google\AdsApi\AdManager\v202505\Creative
      */
     public function setPreviewUrl($previewUrl)
     {
@@ -208,16 +194,16 @@ abstract class Creative
 
     /**
      * @param string[]|null $policyLabels
-     * @return \Google\AdsApi\AdManager\v202608\Creative
+     * @return \Google\AdsApi\AdManager\v202505\Creative
      */
-    public function setPolicyLabels(array $policyLabels = null)
+    public function setPolicyLabels(?array $policyLabels = null)
     {
       $this->policyLabels = $policyLabels;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\AppliedLabel[]
+     * @return \Google\AdsApi\AdManager\v202505\AppliedLabel[]
      */
     public function getAppliedLabels()
     {
@@ -225,17 +211,17 @@ abstract class Creative
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[]|null $appliedLabels
-     * @return \Google\AdsApi\AdManager\v202608\Creative
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[]|null $appliedLabels
+     * @return \Google\AdsApi\AdManager\v202505\Creative
      */
-    public function setAppliedLabels(array $appliedLabels = null)
+    public function setAppliedLabels(?array $appliedLabels = null)
     {
       $this->appliedLabels = $appliedLabels;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\DateTime
+     * @return \Google\AdsApi\AdManager\v202505\DateTime
      */
     public function getLastModifiedDateTime()
     {
@@ -243,8 +229,8 @@ abstract class Creative
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @return \Google\AdsApi\AdManager\v202608\Creative
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @return \Google\AdsApi\AdManager\v202505\Creative
      */
     public function setLastModifiedDateTime($lastModifiedDateTime)
     {
@@ -253,7 +239,7 @@ abstract class Creative
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[]
+     * @return \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[]
      */
     public function getCustomFieldValues()
     {
@@ -261,17 +247,17 @@ abstract class Creative
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[]|null $customFieldValues
-     * @return \Google\AdsApi\AdManager\v202608\Creative
+     * @param \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[]|null $customFieldValues
+     * @return \Google\AdsApi\AdManager\v202505\Creative
      */
-    public function setCustomFieldValues(array $customFieldValues = null)
+    public function setCustomFieldValues(?array $customFieldValues = null)
     {
       $this->customFieldValues = $customFieldValues;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\ThirdPartyDataDeclaration
+     * @return \Google\AdsApi\AdManager\v202505\ThirdPartyDataDeclaration
      */
     public function getThirdPartyDataDeclaration()
     {
@@ -279,30 +265,12 @@ abstract class Creative
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @return \Google\AdsApi\AdManager\v202608\Creative
+     * @param \Google\AdsApi\AdManager\v202505\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
+     * @return \Google\AdsApi\AdManager\v202505\Creative
      */
     public function setThirdPartyDataDeclaration($thirdPartyDataDeclaration)
     {
       $this->thirdPartyDataDeclaration = $thirdPartyDataDeclaration;
-      return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getThirdPartyDataDeclarationStatus()
-    {
-      return $this->thirdPartyDataDeclarationStatus;
-    }
-
-    /**
-     * @param string $thirdPartyDataDeclarationStatus
-     * @return \Google\AdsApi\AdManager\v202608\Creative
-     */
-    public function setThirdPartyDataDeclarationStatus($thirdPartyDataDeclarationStatus)
-    {
-      $this->thirdPartyDataDeclarationStatus = $thirdPartyDataDeclarationStatus;
       return $this;
     }
 
@@ -316,29 +284,11 @@ abstract class Creative
 
     /**
      * @param boolean $adBadgingEnabled
-     * @return \Google\AdsApi\AdManager\v202608\Creative
+     * @return \Google\AdsApi\AdManager\v202505\Creative
      */
     public function setAdBadgingEnabled($adBadgingEnabled)
     {
       $this->adBadgingEnabled = $adBadgingEnabled;
-      return $this;
-    }
-
-    /**
-     * @return boolean
-     */
-    public function getSelfDeclaredEuropeanUnionPoliticalContent()
-    {
-      return $this->selfDeclaredEuropeanUnionPoliticalContent;
-    }
-
-    /**
-     * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
-     * @return \Google\AdsApi\AdManager\v202608\Creative
-     */
-    public function setSelfDeclaredEuropeanUnionPoliticalContent($selfDeclaredEuropeanUnionPoliticalContent)
-    {
-      $this->selfDeclaredEuropeanUnionPoliticalContent = $selfDeclaredEuropeanUnionPoliticalContent;
       return $this;
     }
 

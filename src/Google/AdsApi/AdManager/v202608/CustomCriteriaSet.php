@@ -23,7 +23,7 @@ class CustomCriteriaSet extends \Google\AdsApi\AdManager\v202608\CustomCriteriaN
      * @param string $logicalOperator
      * @param \Google\AdsApi\AdManager\v202608\CustomCriteriaNode[] $children
      */
-    public function __construct($logicalOperator = null, array $children = null)
+    public function __construct($logicalOperator = null, ?array $children = null)
     {
       $this->logicalOperator = $logicalOperator;
       $this->children = $children;
@@ -59,7 +59,7 @@ class CustomCriteriaSet extends \Google\AdsApi\AdManager\v202608\CustomCriteriaN
      * @param \Google\AdsApi\AdManager\v202608\CustomCriteriaNode[]|null $children
      * @return \Google\AdsApi\AdManager\v202608\CustomCriteriaSet
      */
-    public function setChildren(array $children = null)
+    public function setChildren(?array $children = null)
     {
       $this->children = $children;
       return $this;

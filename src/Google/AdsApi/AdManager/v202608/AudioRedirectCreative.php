@@ -1,21 +1,21 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202505;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-class AudioRedirectCreative extends \Google\AdsApi\AdManager\v202608\BaseAudioCreative
+class AudioRedirectCreative extends \Google\AdsApi\AdManager\v202505\BaseAudioCreative
 {
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\VideoRedirectAsset[] $audioAssets
+     * @var \Google\AdsApi\AdManager\v202505\VideoRedirectAsset[] $audioAssets
      */
     protected $audioAssets = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\VideoRedirectAsset $mezzanineFile
+     * @var \Google\AdsApi\AdManager\v202505\VideoRedirectAsset $mezzanineFile
      */
     protected $mezzanineFile = null;
 
@@ -23,21 +23,19 @@ class AudioRedirectCreative extends \Google\AdsApi\AdManager\v202608\BaseAudioCr
      * @param int $advertiserId
      * @param int $id
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202608\Size $size
+     * @param \Google\AdsApi\AdManager\v202505\Size $size
      * @param string $previewUrl
      * @param string[] $policyLabels
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202608\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @param string $thirdPartyDataDeclarationStatus
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202505\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      * @param boolean $adBadgingEnabled
-     * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
      * @param string $destinationUrl
      * @param string $destinationUrlType
      * @param int $duration
      * @param boolean $allowDurationOverride
-     * @param \Google\AdsApi\AdManager\v202608\ConversionEvent_TrackingUrlsMapEntry[] $trackingUrls
+     * @param \Google\AdsApi\AdManager\v202505\ConversionEvent_TrackingUrlsMapEntry[] $trackingUrls
      * @param int[] $companionCreativeIds
      * @param string $customParameters
      * @param string $adId
@@ -46,18 +44,18 @@ class AudioRedirectCreative extends \Google\AdsApi\AdManager\v202608\BaseAudioCr
      * @param string $vastPreviewUrl
      * @param string $sslScanResult
      * @param string $sslManualOverride
-     * @param \Google\AdsApi\AdManager\v202608\VideoRedirectAsset[] $audioAssets
-     * @param \Google\AdsApi\AdManager\v202608\VideoRedirectAsset $mezzanineFile
+     * @param \Google\AdsApi\AdManager\v202505\VideoRedirectAsset[] $audioAssets
+     * @param \Google\AdsApi\AdManager\v202505\VideoRedirectAsset $mezzanineFile
      */
-    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, array $policyLabels = null, array $appliedLabels = null, $lastModifiedDateTime = null, array $customFieldValues = null, $thirdPartyDataDeclaration = null, $thirdPartyDataDeclarationStatus = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $destinationUrl = null, $destinationUrlType = null, $duration = null, $allowDurationOverride = null, array $trackingUrls = null, array $companionCreativeIds = null, $customParameters = null, $adId = null, $adIdType = null, $skippableAdType = null, $vastPreviewUrl = null, $sslScanResult = null, $sslManualOverride = null, array $audioAssets = null, $mezzanineFile = null)
+    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, ?array $policyLabels = null, ?array $appliedLabels = null, $lastModifiedDateTime = null, ?array $customFieldValues = null, $thirdPartyDataDeclaration = null, $adBadgingEnabled = null, $destinationUrl = null, $destinationUrlType = null, $duration = null, $allowDurationOverride = null, ?array $trackingUrls = null, ?array $companionCreativeIds = null, $customParameters = null, $adId = null, $adIdType = null, $skippableAdType = null, $vastPreviewUrl = null, $sslScanResult = null, $sslManualOverride = null, ?array $audioAssets = null, $mezzanineFile = null)
     {
-      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $thirdPartyDataDeclarationStatus, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent, $destinationUrl, $destinationUrlType, $duration, $allowDurationOverride, $trackingUrls, $companionCreativeIds, $customParameters, $adId, $adIdType, $skippableAdType, $vastPreviewUrl, $sslScanResult, $sslManualOverride);
+      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $adBadgingEnabled, $destinationUrl, $destinationUrlType, $duration, $allowDurationOverride, $trackingUrls, $companionCreativeIds, $customParameters, $adId, $adIdType, $skippableAdType, $vastPreviewUrl, $sslScanResult, $sslManualOverride);
       $this->audioAssets = $audioAssets;
       $this->mezzanineFile = $mezzanineFile;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\VideoRedirectAsset[]
+     * @return \Google\AdsApi\AdManager\v202505\VideoRedirectAsset[]
      */
     public function getAudioAssets()
     {
@@ -65,17 +63,17 @@ class AudioRedirectCreative extends \Google\AdsApi\AdManager\v202608\BaseAudioCr
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\VideoRedirectAsset[]|null $audioAssets
-     * @return \Google\AdsApi\AdManager\v202608\AudioRedirectCreative
+     * @param \Google\AdsApi\AdManager\v202505\VideoRedirectAsset[]|null $audioAssets
+     * @return \Google\AdsApi\AdManager\v202505\AudioRedirectCreative
      */
-    public function setAudioAssets(array $audioAssets = null)
+    public function setAudioAssets(?array $audioAssets = null)
     {
       $this->audioAssets = $audioAssets;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\VideoRedirectAsset
+     * @return \Google\AdsApi\AdManager\v202505\VideoRedirectAsset
      */
     public function getMezzanineFile()
     {
@@ -83,8 +81,8 @@ class AudioRedirectCreative extends \Google\AdsApi\AdManager\v202608\BaseAudioCr
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\VideoRedirectAsset $mezzanineFile
-     * @return \Google\AdsApi\AdManager\v202608\AudioRedirectCreative
+     * @param \Google\AdsApi\AdManager\v202505\VideoRedirectAsset $mezzanineFile
+     * @return \Google\AdsApi\AdManager\v202505\AudioRedirectCreative
      */
     public function setMezzanineFile($mezzanineFile)
     {

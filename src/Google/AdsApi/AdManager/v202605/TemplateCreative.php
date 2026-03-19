@@ -1,12 +1,12 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202605;
+namespace Google\AdsApi\AdManager\v202508;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-class TemplateCreative extends \Google\AdsApi\AdManager\v202605\Creative
+class TemplateCreative extends \Google\AdsApi\AdManager\v202508\Creative
 {
 
     /**
@@ -35,7 +35,7 @@ class TemplateCreative extends \Google\AdsApi\AdManager\v202605\Creative
     protected $destinationUrl = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202605\BaseCreativeTemplateVariableValue[] $creativeTemplateVariableValues
+     * @var \Google\AdsApi\AdManager\v202508\BaseCreativeTemplateVariableValue[] $creativeTemplateVariableValues
      */
     protected $creativeTemplateVariableValues = null;
 
@@ -58,14 +58,13 @@ class TemplateCreative extends \Google\AdsApi\AdManager\v202605\Creative
      * @param int $advertiserId
      * @param int $id
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202605\Size $size
+     * @param \Google\AdsApi\AdManager\v202508\Size $size
      * @param string $previewUrl
      * @param string[] $policyLabels
-     * @param \Google\AdsApi\AdManager\v202605\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202605\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202605\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202605\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @param string $thirdPartyDataDeclarationStatus
+     * @param \Google\AdsApi\AdManager\v202508\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202508\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202508\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202508\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      * @param boolean $adBadgingEnabled
      * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
      * @param int $creativeTemplateId
@@ -73,14 +72,14 @@ class TemplateCreative extends \Google\AdsApi\AdManager\v202605\Creative
      * @param boolean $isNativeEligible
      * @param boolean $isSafeFrameCompatible
      * @param string $destinationUrl
-     * @param \Google\AdsApi\AdManager\v202605\BaseCreativeTemplateVariableValue[] $creativeTemplateVariableValues
+     * @param \Google\AdsApi\AdManager\v202508\BaseCreativeTemplateVariableValue[] $creativeTemplateVariableValues
      * @param string $sslScanResult
      * @param string $sslManualOverride
      * @param string $lockedOrientation
      */
-    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, array $policyLabels = null, array $appliedLabels = null, $lastModifiedDateTime = null, array $customFieldValues = null, $thirdPartyDataDeclaration = null, $thirdPartyDataDeclarationStatus = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $creativeTemplateId = null, $isInterstitial = null, $isNativeEligible = null, $isSafeFrameCompatible = null, $destinationUrl = null, array $creativeTemplateVariableValues = null, $sslScanResult = null, $sslManualOverride = null, $lockedOrientation = null)
+    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, ?array $policyLabels = null, ?array $appliedLabels = null, $lastModifiedDateTime = null, ?array $customFieldValues = null, $thirdPartyDataDeclaration = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $creativeTemplateId = null, $isInterstitial = null, $isNativeEligible = null, $isSafeFrameCompatible = null, $destinationUrl = null, ?array $creativeTemplateVariableValues = null, $sslScanResult = null, $sslManualOverride = null, $lockedOrientation = null)
     {
-      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $thirdPartyDataDeclarationStatus, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent);
+      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent);
       $this->creativeTemplateId = $creativeTemplateId;
       $this->isInterstitial = $isInterstitial;
       $this->isNativeEligible = $isNativeEligible;
@@ -102,7 +101,7 @@ class TemplateCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param int $creativeTemplateId
-     * @return \Google\AdsApi\AdManager\v202605\TemplateCreative
+     * @return \Google\AdsApi\AdManager\v202508\TemplateCreative
      */
     public function setCreativeTemplateId($creativeTemplateId)
     {
@@ -121,7 +120,7 @@ class TemplateCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param boolean $isInterstitial
-     * @return \Google\AdsApi\AdManager\v202605\TemplateCreative
+     * @return \Google\AdsApi\AdManager\v202508\TemplateCreative
      */
     public function setIsInterstitial($isInterstitial)
     {
@@ -139,7 +138,7 @@ class TemplateCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param boolean $isNativeEligible
-     * @return \Google\AdsApi\AdManager\v202605\TemplateCreative
+     * @return \Google\AdsApi\AdManager\v202508\TemplateCreative
      */
     public function setIsNativeEligible($isNativeEligible)
     {
@@ -157,7 +156,7 @@ class TemplateCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param boolean $isSafeFrameCompatible
-     * @return \Google\AdsApi\AdManager\v202605\TemplateCreative
+     * @return \Google\AdsApi\AdManager\v202508\TemplateCreative
      */
     public function setIsSafeFrameCompatible($isSafeFrameCompatible)
     {
@@ -175,7 +174,7 @@ class TemplateCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param string $destinationUrl
-     * @return \Google\AdsApi\AdManager\v202605\TemplateCreative
+     * @return \Google\AdsApi\AdManager\v202508\TemplateCreative
      */
     public function setDestinationUrl($destinationUrl)
     {
@@ -184,7 +183,7 @@ class TemplateCreative extends \Google\AdsApi\AdManager\v202605\Creative
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202605\BaseCreativeTemplateVariableValue[]
+     * @return \Google\AdsApi\AdManager\v202508\BaseCreativeTemplateVariableValue[]
      */
     public function getCreativeTemplateVariableValues()
     {
@@ -192,10 +191,10 @@ class TemplateCreative extends \Google\AdsApi\AdManager\v202605\Creative
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202605\BaseCreativeTemplateVariableValue[]|null $creativeTemplateVariableValues
-     * @return \Google\AdsApi\AdManager\v202605\TemplateCreative
+     * @param \Google\AdsApi\AdManager\v202508\BaseCreativeTemplateVariableValue[]|null $creativeTemplateVariableValues
+     * @return \Google\AdsApi\AdManager\v202508\TemplateCreative
      */
-    public function setCreativeTemplateVariableValues(array $creativeTemplateVariableValues = null)
+    public function setCreativeTemplateVariableValues(?array $creativeTemplateVariableValues = null)
     {
       $this->creativeTemplateVariableValues = $creativeTemplateVariableValues;
       return $this;
@@ -211,7 +210,7 @@ class TemplateCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param string $sslScanResult
-     * @return \Google\AdsApi\AdManager\v202605\TemplateCreative
+     * @return \Google\AdsApi\AdManager\v202508\TemplateCreative
      */
     public function setSslScanResult($sslScanResult)
     {
@@ -229,7 +228,7 @@ class TemplateCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param string $sslManualOverride
-     * @return \Google\AdsApi\AdManager\v202605\TemplateCreative
+     * @return \Google\AdsApi\AdManager\v202508\TemplateCreative
      */
     public function setSslManualOverride($sslManualOverride)
     {
@@ -247,7 +246,7 @@ class TemplateCreative extends \Google\AdsApi\AdManager\v202605\Creative
 
     /**
      * @param string $lockedOrientation
-     * @return \Google\AdsApi\AdManager\v202605\TemplateCreative
+     * @return \Google\AdsApi\AdManager\v202508\TemplateCreative
      */
     public function setLockedOrientation($lockedOrientation)
     {

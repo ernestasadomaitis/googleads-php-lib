@@ -1,12 +1,12 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202508;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-class AdExchangeCreative extends \Google\AdsApi\AdManager\v202608\HasHtmlSnippetDynamicAllocationCreative
+class AdExchangeCreative extends \Google\AdsApi\AdManager\v202508\HasHtmlSnippetDynamicAllocationCreative
 {
 
     /**
@@ -28,14 +28,13 @@ class AdExchangeCreative extends \Google\AdsApi\AdManager\v202608\HasHtmlSnippet
      * @param int $advertiserId
      * @param int $id
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202608\Size $size
+     * @param \Google\AdsApi\AdManager\v202508\Size $size
      * @param string $previewUrl
      * @param string[] $policyLabels
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202608\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
-     * @param string $thirdPartyDataDeclarationStatus
+     * @param \Google\AdsApi\AdManager\v202508\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202508\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202508\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202508\ThirdPartyDataDeclaration $thirdPartyDataDeclaration
      * @param boolean $adBadgingEnabled
      * @param boolean $selfDeclaredEuropeanUnionPoliticalContent
      * @param string $codeSnippet
@@ -43,9 +42,9 @@ class AdExchangeCreative extends \Google\AdsApi\AdManager\v202608\HasHtmlSnippet
      * @param boolean $isInterstitial
      * @param boolean $isAllowsAllRequestedSizes
      */
-    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, array $policyLabels = null, array $appliedLabels = null, $lastModifiedDateTime = null, array $customFieldValues = null, $thirdPartyDataDeclaration = null, $thirdPartyDataDeclarationStatus = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $codeSnippet = null, $isNativeEligible = null, $isInterstitial = null, $isAllowsAllRequestedSizes = null)
+    public function __construct($advertiserId = null, $id = null, $name = null, $size = null, $previewUrl = null, ?array $policyLabels = null, ?array $appliedLabels = null, $lastModifiedDateTime = null, ?array $customFieldValues = null, $thirdPartyDataDeclaration = null, $adBadgingEnabled = null, $selfDeclaredEuropeanUnionPoliticalContent = null, $codeSnippet = null, $isNativeEligible = null, $isInterstitial = null, $isAllowsAllRequestedSizes = null)
     {
-      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $thirdPartyDataDeclarationStatus, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent, $codeSnippet);
+      parent::__construct($advertiserId, $id, $name, $size, $previewUrl, $policyLabels, $appliedLabels, $lastModifiedDateTime, $customFieldValues, $thirdPartyDataDeclaration, $adBadgingEnabled, $selfDeclaredEuropeanUnionPoliticalContent, $codeSnippet);
       $this->isNativeEligible = $isNativeEligible;
       $this->isInterstitial = $isInterstitial;
       $this->isAllowsAllRequestedSizes = $isAllowsAllRequestedSizes;
@@ -61,7 +60,7 @@ class AdExchangeCreative extends \Google\AdsApi\AdManager\v202608\HasHtmlSnippet
 
     /**
      * @param boolean $isNativeEligible
-     * @return \Google\AdsApi\AdManager\v202608\AdExchangeCreative
+     * @return \Google\AdsApi\AdManager\v202508\AdExchangeCreative
      */
     public function setIsNativeEligible($isNativeEligible)
     {
@@ -79,7 +78,7 @@ class AdExchangeCreative extends \Google\AdsApi\AdManager\v202608\HasHtmlSnippet
 
     /**
      * @param boolean $isInterstitial
-     * @return \Google\AdsApi\AdManager\v202608\AdExchangeCreative
+     * @return \Google\AdsApi\AdManager\v202508\AdExchangeCreative
      */
     public function setIsInterstitial($isInterstitial)
     {
@@ -97,7 +96,7 @@ class AdExchangeCreative extends \Google\AdsApi\AdManager\v202608\HasHtmlSnippet
 
     /**
      * @param boolean $isAllowsAllRequestedSizes
-     * @return \Google\AdsApi\AdManager\v202608\AdExchangeCreative
+     * @return \Google\AdsApi\AdManager\v202508\AdExchangeCreative
      */
     public function setIsAllowsAllRequestedSizes($isAllowsAllRequestedSizes)
     {

@@ -29,7 +29,7 @@ class ForecastBreakdown
      * @param \Google\AdsApi\AdManager\v202608\DateTime $endTime
      * @param \Google\AdsApi\AdManager\v202608\ForecastBreakdownEntry[] $breakdownEntries
      */
-    public function __construct($startTime = null, $endTime = null, array $breakdownEntries = null)
+    public function __construct($startTime = null, $endTime = null, ?array $breakdownEntries = null)
     {
       $this->startTime = $startTime;
       $this->endTime = $endTime;
@@ -84,7 +84,7 @@ class ForecastBreakdown
      * @param \Google\AdsApi\AdManager\v202608\ForecastBreakdownEntry[]|null $breakdownEntries
      * @return \Google\AdsApi\AdManager\v202608\ForecastBreakdown
      */
-    public function setBreakdownEntries(array $breakdownEntries = null)
+    public function setBreakdownEntries(?array $breakdownEntries = null)
     {
       $this->breakdownEntries = $breakdownEntries;
       return $this;

@@ -17,7 +17,7 @@ class updateLiveStreamEventsResponse
     /**
      * @param \Google\AdsApi\AdManager\v202608\LiveStreamEvent[] $rval
      */
-    public function __construct(array $rval = null)
+    public function __construct(?array $rval = null)
     {
       $this->rval = $rval;
     }
@@ -34,7 +34,7 @@ class updateLiveStreamEventsResponse
      * @param \Google\AdsApi\AdManager\v202608\LiveStreamEvent[]|null $rval
      * @return \Google\AdsApi\AdManager\v202608\updateLiveStreamEventsResponse
      */
-    public function setRval(array $rval = null)
+    public function setRval(?array $rval = null)
     {
       $this->rval = $rval;
       return $this;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202505;
 
 
 /**
@@ -30,12 +30,12 @@ class Proposal
     protected $name = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\DateTime $startDateTime
+     * @var \Google\AdsApi\AdManager\v202505\DateTime $startDateTime
      */
     protected $startDateTime = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\DateTime $endDateTime
+     * @var \Google\AdsApi\AdManager\v202505\DateTime $endDateTime
      */
     protected $endDateTime = null;
 
@@ -50,12 +50,12 @@ class Proposal
     protected $isArchived = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\ProposalCompanyAssociation $advertiser
+     * @var \Google\AdsApi\AdManager\v202505\ProposalCompanyAssociation $advertiser
      */
     protected $advertiser = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\ProposalCompanyAssociation[] $agencies
+     * @var \Google\AdsApi\AdManager\v202505\ProposalCompanyAssociation[] $agencies
      */
     protected $agencies = null;
 
@@ -65,7 +65,7 @@ class Proposal
     protected $internalNotes = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\SalespersonSplit $primarySalesperson
+     * @var \Google\AdsApi\AdManager\v202505\SalespersonSplit $primarySalesperson
      */
     protected $primarySalesperson = null;
 
@@ -90,17 +90,17 @@ class Proposal
     protected $appliedTeamIds = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[] $customFieldValues
+     * @var \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[] $customFieldValues
      */
     protected $customFieldValues = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
+     * @var \Google\AdsApi\AdManager\v202505\AppliedLabel[] $appliedLabels
      */
     protected $appliedLabels = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\AppliedLabel[] $effectiveAppliedLabels
+     * @var \Google\AdsApi\AdManager\v202505\AppliedLabel[] $effectiveAppliedLabels
      */
     protected $effectiveAppliedLabels = null;
 
@@ -115,22 +115,17 @@ class Proposal
     protected $isSold = null;
 
     /**
-     * @var string $supplyPath
-     */
-    protected $supplyPath = null;
-
-    /**
-     * @var \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
+     * @var \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
      */
     protected $lastModifiedDateTime = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\ProposalMarketplaceInfo $marketplaceInfo
+     * @var \Google\AdsApi\AdManager\v202505\ProposalMarketplaceInfo $marketplaceInfo
      */
     protected $marketplaceInfo = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202608\BuyerRfp $buyerRfp
+     * @var \Google\AdsApi\AdManager\v202505\BuyerRfp $buyerRfp
      */
     protected $buyerRfp = null;
 
@@ -149,31 +144,30 @@ class Proposal
      * @param boolean $isProgrammatic
      * @param int $dfpOrderId
      * @param string $name
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $startDateTime
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $endDateTime
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $startDateTime
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $endDateTime
      * @param string $status
      * @param boolean $isArchived
-     * @param \Google\AdsApi\AdManager\v202608\ProposalCompanyAssociation $advertiser
-     * @param \Google\AdsApi\AdManager\v202608\ProposalCompanyAssociation[] $agencies
+     * @param \Google\AdsApi\AdManager\v202505\ProposalCompanyAssociation $advertiser
+     * @param \Google\AdsApi\AdManager\v202505\ProposalCompanyAssociation[] $agencies
      * @param string $internalNotes
-     * @param \Google\AdsApi\AdManager\v202608\SalespersonSplit $primarySalesperson
+     * @param \Google\AdsApi\AdManager\v202505\SalespersonSplit $primarySalesperson
      * @param int[] $salesPlannerIds
      * @param int $primaryTraffickerId
      * @param int[] $sellerContactIds
      * @param int[] $appliedTeamIds
-     * @param \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[] $customFieldValues
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $appliedLabels
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[] $effectiveAppliedLabels
+     * @param \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[] $customFieldValues
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[] $effectiveAppliedLabels
      * @param string $currencyCode
      * @param boolean $isSold
-     * @param string $supplyPath
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202608\ProposalMarketplaceInfo $marketplaceInfo
-     * @param \Google\AdsApi\AdManager\v202608\BuyerRfp $buyerRfp
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202505\ProposalMarketplaceInfo $marketplaceInfo
+     * @param \Google\AdsApi\AdManager\v202505\BuyerRfp $buyerRfp
      * @param boolean $hasBuyerRfp
      * @param boolean $deliveryPausingEnabled
      */
-    public function __construct($id = null, $isProgrammatic = null, $dfpOrderId = null, $name = null, $startDateTime = null, $endDateTime = null, $status = null, $isArchived = null, $advertiser = null, array $agencies = null, $internalNotes = null, $primarySalesperson = null, array $salesPlannerIds = null, $primaryTraffickerId = null, array $sellerContactIds = null, array $appliedTeamIds = null, array $customFieldValues = null, array $appliedLabels = null, array $effectiveAppliedLabels = null, $currencyCode = null, $isSold = null, $supplyPath = null, $lastModifiedDateTime = null, $marketplaceInfo = null, $buyerRfp = null, $hasBuyerRfp = null, $deliveryPausingEnabled = null)
+    public function __construct($id = null, $isProgrammatic = null, $dfpOrderId = null, $name = null, $startDateTime = null, $endDateTime = null, $status = null, $isArchived = null, $advertiser = null, ?array $agencies = null, $internalNotes = null, $primarySalesperson = null, ?array $salesPlannerIds = null, $primaryTraffickerId = null, ?array $sellerContactIds = null, ?array $appliedTeamIds = null, ?array $customFieldValues = null, ?array $appliedLabels = null, ?array $effectiveAppliedLabels = null, $currencyCode = null, $isSold = null, $lastModifiedDateTime = null, $marketplaceInfo = null, $buyerRfp = null, $hasBuyerRfp = null, $deliveryPausingEnabled = null)
     {
       $this->id = $id;
       $this->isProgrammatic = $isProgrammatic;
@@ -196,7 +190,6 @@ class Proposal
       $this->effectiveAppliedLabels = $effectiveAppliedLabels;
       $this->currencyCode = $currencyCode;
       $this->isSold = $isSold;
-      $this->supplyPath = $supplyPath;
       $this->lastModifiedDateTime = $lastModifiedDateTime;
       $this->marketplaceInfo = $marketplaceInfo;
       $this->buyerRfp = $buyerRfp;
@@ -214,7 +207,7 @@ class Proposal
 
     /**
      * @param int $id
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setId($id)
     {
@@ -233,7 +226,7 @@ class Proposal
 
     /**
      * @param boolean $isProgrammatic
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setIsProgrammatic($isProgrammatic)
     {
@@ -251,7 +244,7 @@ class Proposal
 
     /**
      * @param int $dfpOrderId
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setDfpOrderId($dfpOrderId)
     {
@@ -270,7 +263,7 @@ class Proposal
 
     /**
      * @param string $name
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setName($name)
     {
@@ -279,7 +272,7 @@ class Proposal
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\DateTime
+     * @return \Google\AdsApi\AdManager\v202505\DateTime
      */
     public function getStartDateTime()
     {
@@ -287,8 +280,8 @@ class Proposal
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $startDateTime
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $startDateTime
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setStartDateTime($startDateTime)
     {
@@ -297,7 +290,7 @@ class Proposal
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\DateTime
+     * @return \Google\AdsApi\AdManager\v202505\DateTime
      */
     public function getEndDateTime()
     {
@@ -305,8 +298,8 @@ class Proposal
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $endDateTime
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $endDateTime
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setEndDateTime($endDateTime)
     {
@@ -324,7 +317,7 @@ class Proposal
 
     /**
      * @param string $status
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setStatus($status)
     {
@@ -342,7 +335,7 @@ class Proposal
 
     /**
      * @param boolean $isArchived
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setIsArchived($isArchived)
     {
@@ -351,7 +344,7 @@ class Proposal
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\ProposalCompanyAssociation
+     * @return \Google\AdsApi\AdManager\v202505\ProposalCompanyAssociation
      */
     public function getAdvertiser()
     {
@@ -359,8 +352,8 @@ class Proposal
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\ProposalCompanyAssociation $advertiser
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @param \Google\AdsApi\AdManager\v202505\ProposalCompanyAssociation $advertiser
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setAdvertiser($advertiser)
     {
@@ -369,7 +362,7 @@ class Proposal
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\ProposalCompanyAssociation[]
+     * @return \Google\AdsApi\AdManager\v202505\ProposalCompanyAssociation[]
      */
     public function getAgencies()
     {
@@ -377,10 +370,10 @@ class Proposal
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\ProposalCompanyAssociation[]|null $agencies
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @param \Google\AdsApi\AdManager\v202505\ProposalCompanyAssociation[]|null $agencies
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
-    public function setAgencies(array $agencies = null)
+    public function setAgencies(?array $agencies = null)
     {
       $this->agencies = $agencies;
       return $this;
@@ -396,7 +389,7 @@ class Proposal
 
     /**
      * @param string $internalNotes
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setInternalNotes($internalNotes)
     {
@@ -405,7 +398,7 @@ class Proposal
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\SalespersonSplit
+     * @return \Google\AdsApi\AdManager\v202505\SalespersonSplit
      */
     public function getPrimarySalesperson()
     {
@@ -413,8 +406,8 @@ class Proposal
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\SalespersonSplit $primarySalesperson
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @param \Google\AdsApi\AdManager\v202505\SalespersonSplit $primarySalesperson
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setPrimarySalesperson($primarySalesperson)
     {
@@ -432,9 +425,9 @@ class Proposal
 
     /**
      * @param int[]|null $salesPlannerIds
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
-    public function setSalesPlannerIds(array $salesPlannerIds = null)
+    public function setSalesPlannerIds(?array $salesPlannerIds = null)
     {
       $this->salesPlannerIds = $salesPlannerIds;
       return $this;
@@ -450,7 +443,7 @@ class Proposal
 
     /**
      * @param int $primaryTraffickerId
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setPrimaryTraffickerId($primaryTraffickerId)
     {
@@ -469,9 +462,9 @@ class Proposal
 
     /**
      * @param int[]|null $sellerContactIds
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
-    public function setSellerContactIds(array $sellerContactIds = null)
+    public function setSellerContactIds(?array $sellerContactIds = null)
     {
       $this->sellerContactIds = $sellerContactIds;
       return $this;
@@ -487,16 +480,16 @@ class Proposal
 
     /**
      * @param int[]|null $appliedTeamIds
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
-    public function setAppliedTeamIds(array $appliedTeamIds = null)
+    public function setAppliedTeamIds(?array $appliedTeamIds = null)
     {
       $this->appliedTeamIds = $appliedTeamIds;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[]
+     * @return \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[]
      */
     public function getCustomFieldValues()
     {
@@ -504,17 +497,17 @@ class Proposal
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\BaseCustomFieldValue[]|null $customFieldValues
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @param \Google\AdsApi\AdManager\v202505\BaseCustomFieldValue[]|null $customFieldValues
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
-    public function setCustomFieldValues(array $customFieldValues = null)
+    public function setCustomFieldValues(?array $customFieldValues = null)
     {
       $this->customFieldValues = $customFieldValues;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\AppliedLabel[]
+     * @return \Google\AdsApi\AdManager\v202505\AppliedLabel[]
      */
     public function getAppliedLabels()
     {
@@ -522,17 +515,17 @@ class Proposal
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[]|null $appliedLabels
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[]|null $appliedLabels
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
-    public function setAppliedLabels(array $appliedLabels = null)
+    public function setAppliedLabels(?array $appliedLabels = null)
     {
       $this->appliedLabels = $appliedLabels;
       return $this;
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\AppliedLabel[]
+     * @return \Google\AdsApi\AdManager\v202505\AppliedLabel[]
      */
     public function getEffectiveAppliedLabels()
     {
@@ -540,10 +533,10 @@ class Proposal
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\AppliedLabel[]|null $effectiveAppliedLabels
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @param \Google\AdsApi\AdManager\v202505\AppliedLabel[]|null $effectiveAppliedLabels
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
-    public function setEffectiveAppliedLabels(array $effectiveAppliedLabels = null)
+    public function setEffectiveAppliedLabels(?array $effectiveAppliedLabels = null)
     {
       $this->effectiveAppliedLabels = $effectiveAppliedLabels;
       return $this;
@@ -559,7 +552,7 @@ class Proposal
 
     /**
      * @param string $currencyCode
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setCurrencyCode($currencyCode)
     {
@@ -577,7 +570,7 @@ class Proposal
 
     /**
      * @param boolean $isSold
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setIsSold($isSold)
     {
@@ -586,25 +579,7 @@ class Proposal
     }
 
     /**
-     * @return string
-     */
-    public function getSupplyPath()
-    {
-      return $this->supplyPath;
-    }
-
-    /**
-     * @param string $supplyPath
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
-     */
-    public function setSupplyPath($supplyPath)
-    {
-      $this->supplyPath = $supplyPath;
-      return $this;
-    }
-
-    /**
-     * @return \Google\AdsApi\AdManager\v202608\DateTime
+     * @return \Google\AdsApi\AdManager\v202505\DateTime
      */
     public function getLastModifiedDateTime()
     {
@@ -612,8 +587,8 @@ class Proposal
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\DateTime $lastModifiedDateTime
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @param \Google\AdsApi\AdManager\v202505\DateTime $lastModifiedDateTime
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setLastModifiedDateTime($lastModifiedDateTime)
     {
@@ -622,7 +597,7 @@ class Proposal
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\ProposalMarketplaceInfo
+     * @return \Google\AdsApi\AdManager\v202505\ProposalMarketplaceInfo
      */
     public function getMarketplaceInfo()
     {
@@ -630,8 +605,8 @@ class Proposal
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\ProposalMarketplaceInfo $marketplaceInfo
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @param \Google\AdsApi\AdManager\v202505\ProposalMarketplaceInfo $marketplaceInfo
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setMarketplaceInfo($marketplaceInfo)
     {
@@ -640,7 +615,7 @@ class Proposal
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202608\BuyerRfp
+     * @return \Google\AdsApi\AdManager\v202505\BuyerRfp
      */
     public function getBuyerRfp()
     {
@@ -648,8 +623,8 @@ class Proposal
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202608\BuyerRfp $buyerRfp
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @param \Google\AdsApi\AdManager\v202505\BuyerRfp $buyerRfp
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setBuyerRfp($buyerRfp)
     {
@@ -667,7 +642,7 @@ class Proposal
 
     /**
      * @param boolean $hasBuyerRfp
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setHasBuyerRfp($hasBuyerRfp)
     {
@@ -685,7 +660,7 @@ class Proposal
 
     /**
      * @param boolean $deliveryPausingEnabled
-     * @return \Google\AdsApi\AdManager\v202608\Proposal
+     * @return \Google\AdsApi\AdManager\v202505\Proposal
      */
     public function setDeliveryPausingEnabled($deliveryPausingEnabled)
     {

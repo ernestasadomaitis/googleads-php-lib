@@ -1,6 +1,6 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202605;
+namespace Google\AdsApi\AdManager\v202508;
 
 
 /**
@@ -60,7 +60,7 @@ class Company
     protected $creditStatus = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202605\AppliedLabel[] $appliedLabels
+     * @var \Google\AdsApi\AdManager\v202508\AppliedLabel[] $appliedLabels
      */
     protected $appliedLabels = null;
 
@@ -80,27 +80,17 @@ class Company
     protected $thirdPartyCompanyId = null;
 
     /**
-     * @var int $verifiedExchangeAdvertiserId
-     */
-    protected $verifiedExchangeAdvertiserId = null;
-
-    /**
-     * @var int $verifiedExchangeBrandId
-     */
-    protected $verifiedExchangeBrandId = null;
-
-    /**
-     * @var \Google\AdsApi\AdManager\v202605\DateTime $lastModifiedDateTime
+     * @var \Google\AdsApi\AdManager\v202508\DateTime $lastModifiedDateTime
      */
     protected $lastModifiedDateTime = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202605\ChildPublisher $childPublisher
+     * @var \Google\AdsApi\AdManager\v202508\ChildPublisher $childPublisher
      */
     protected $childPublisher = null;
 
     /**
-     * @var \Google\AdsApi\AdManager\v202605\ViewabilityProvider $viewabilityProvider
+     * @var \Google\AdsApi\AdManager\v202508\ViewabilityProvider $viewabilityProvider
      */
     protected $viewabilityProvider = null;
 
@@ -115,17 +105,15 @@ class Company
      * @param string $externalId
      * @param string $comment
      * @param string $creditStatus
-     * @param \Google\AdsApi\AdManager\v202605\AppliedLabel[] $appliedLabels
+     * @param \Google\AdsApi\AdManager\v202508\AppliedLabel[] $appliedLabels
      * @param int $primaryContactId
      * @param int[] $appliedTeamIds
      * @param int $thirdPartyCompanyId
-     * @param int $verifiedExchangeAdvertiserId
-     * @param int $verifiedExchangeBrandId
-     * @param \Google\AdsApi\AdManager\v202605\DateTime $lastModifiedDateTime
-     * @param \Google\AdsApi\AdManager\v202605\ChildPublisher $childPublisher
-     * @param \Google\AdsApi\AdManager\v202605\ViewabilityProvider $viewabilityProvider
+     * @param \Google\AdsApi\AdManager\v202508\DateTime $lastModifiedDateTime
+     * @param \Google\AdsApi\AdManager\v202508\ChildPublisher $childPublisher
+     * @param \Google\AdsApi\AdManager\v202508\ViewabilityProvider $viewabilityProvider
      */
-    public function __construct($id = null, $name = null, $type = null, $address = null, $email = null, $faxPhone = null, $primaryPhone = null, $externalId = null, $comment = null, $creditStatus = null, array $appliedLabels = null, $primaryContactId = null, array $appliedTeamIds = null, $thirdPartyCompanyId = null, $verifiedExchangeAdvertiserId = null, $verifiedExchangeBrandId = null, $lastModifiedDateTime = null, $childPublisher = null, $viewabilityProvider = null)
+    public function __construct($id = null, $name = null, $type = null, $address = null, $email = null, $faxPhone = null, $primaryPhone = null, $externalId = null, $comment = null, $creditStatus = null, ?array $appliedLabels = null, $primaryContactId = null, ?array $appliedTeamIds = null, $thirdPartyCompanyId = null, $lastModifiedDateTime = null, $childPublisher = null, $viewabilityProvider = null)
     {
       $this->id = $id;
       $this->name = $name;
@@ -141,8 +129,6 @@ class Company
       $this->primaryContactId = $primaryContactId;
       $this->appliedTeamIds = $appliedTeamIds;
       $this->thirdPartyCompanyId = $thirdPartyCompanyId;
-      $this->verifiedExchangeAdvertiserId = $verifiedExchangeAdvertiserId;
-      $this->verifiedExchangeBrandId = $verifiedExchangeBrandId;
       $this->lastModifiedDateTime = $lastModifiedDateTime;
       $this->childPublisher = $childPublisher;
       $this->viewabilityProvider = $viewabilityProvider;
@@ -158,7 +144,7 @@ class Company
 
     /**
      * @param int $id
-     * @return \Google\AdsApi\AdManager\v202605\Company
+     * @return \Google\AdsApi\AdManager\v202508\Company
      */
     public function setId($id)
     {
@@ -177,7 +163,7 @@ class Company
 
     /**
      * @param string $name
-     * @return \Google\AdsApi\AdManager\v202605\Company
+     * @return \Google\AdsApi\AdManager\v202508\Company
      */
     public function setName($name)
     {
@@ -195,7 +181,7 @@ class Company
 
     /**
      * @param string $type
-     * @return \Google\AdsApi\AdManager\v202605\Company
+     * @return \Google\AdsApi\AdManager\v202508\Company
      */
     public function setType($type)
     {
@@ -213,7 +199,7 @@ class Company
 
     /**
      * @param string $address
-     * @return \Google\AdsApi\AdManager\v202605\Company
+     * @return \Google\AdsApi\AdManager\v202508\Company
      */
     public function setAddress($address)
     {
@@ -231,7 +217,7 @@ class Company
 
     /**
      * @param string $email
-     * @return \Google\AdsApi\AdManager\v202605\Company
+     * @return \Google\AdsApi\AdManager\v202508\Company
      */
     public function setEmail($email)
     {
@@ -249,7 +235,7 @@ class Company
 
     /**
      * @param string $faxPhone
-     * @return \Google\AdsApi\AdManager\v202605\Company
+     * @return \Google\AdsApi\AdManager\v202508\Company
      */
     public function setFaxPhone($faxPhone)
     {
@@ -267,7 +253,7 @@ class Company
 
     /**
      * @param string $primaryPhone
-     * @return \Google\AdsApi\AdManager\v202605\Company
+     * @return \Google\AdsApi\AdManager\v202508\Company
      */
     public function setPrimaryPhone($primaryPhone)
     {
@@ -285,7 +271,7 @@ class Company
 
     /**
      * @param string $externalId
-     * @return \Google\AdsApi\AdManager\v202605\Company
+     * @return \Google\AdsApi\AdManager\v202508\Company
      */
     public function setExternalId($externalId)
     {
@@ -303,7 +289,7 @@ class Company
 
     /**
      * @param string $comment
-     * @return \Google\AdsApi\AdManager\v202605\Company
+     * @return \Google\AdsApi\AdManager\v202508\Company
      */
     public function setComment($comment)
     {
@@ -321,7 +307,7 @@ class Company
 
     /**
      * @param string $creditStatus
-     * @return \Google\AdsApi\AdManager\v202605\Company
+     * @return \Google\AdsApi\AdManager\v202508\Company
      */
     public function setCreditStatus($creditStatus)
     {
@@ -330,7 +316,7 @@ class Company
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202605\AppliedLabel[]
+     * @return \Google\AdsApi\AdManager\v202508\AppliedLabel[]
      */
     public function getAppliedLabels()
     {
@@ -338,10 +324,10 @@ class Company
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202605\AppliedLabel[]|null $appliedLabels
-     * @return \Google\AdsApi\AdManager\v202605\Company
+     * @param \Google\AdsApi\AdManager\v202508\AppliedLabel[]|null $appliedLabels
+     * @return \Google\AdsApi\AdManager\v202508\Company
      */
-    public function setAppliedLabels(array $appliedLabels = null)
+    public function setAppliedLabels(?array $appliedLabels = null)
     {
       $this->appliedLabels = $appliedLabels;
       return $this;
@@ -357,7 +343,7 @@ class Company
 
     /**
      * @param int $primaryContactId
-     * @return \Google\AdsApi\AdManager\v202605\Company
+     * @return \Google\AdsApi\AdManager\v202508\Company
      */
     public function setPrimaryContactId($primaryContactId)
     {
@@ -376,9 +362,9 @@ class Company
 
     /**
      * @param int[]|null $appliedTeamIds
-     * @return \Google\AdsApi\AdManager\v202605\Company
+     * @return \Google\AdsApi\AdManager\v202508\Company
      */
-    public function setAppliedTeamIds(array $appliedTeamIds = null)
+    public function setAppliedTeamIds(?array $appliedTeamIds = null)
     {
       $this->appliedTeamIds = $appliedTeamIds;
       return $this;
@@ -394,7 +380,7 @@ class Company
 
     /**
      * @param int $thirdPartyCompanyId
-     * @return \Google\AdsApi\AdManager\v202605\Company
+     * @return \Google\AdsApi\AdManager\v202508\Company
      */
     public function setThirdPartyCompanyId($thirdPartyCompanyId)
     {
@@ -403,45 +389,7 @@ class Company
     }
 
     /**
-     * @return int
-     */
-    public function getVerifiedExchangeAdvertiserId()
-    {
-      return $this->verifiedExchangeAdvertiserId;
-    }
-
-    /**
-     * @param int $verifiedExchangeAdvertiserId
-     * @return \Google\AdsApi\AdManager\v202605\Company
-     */
-    public function setVerifiedExchangeAdvertiserId($verifiedExchangeAdvertiserId)
-    {
-      $this->verifiedExchangeAdvertiserId = (!is_null($verifiedExchangeAdvertiserId) && PHP_INT_SIZE === 4)
-          ? floatval($verifiedExchangeAdvertiserId) : $verifiedExchangeAdvertiserId;
-      return $this;
-    }
-
-    /**
-     * @return int
-     */
-    public function getVerifiedExchangeBrandId()
-    {
-      return $this->verifiedExchangeBrandId;
-    }
-
-    /**
-     * @param int $verifiedExchangeBrandId
-     * @return \Google\AdsApi\AdManager\v202605\Company
-     */
-    public function setVerifiedExchangeBrandId($verifiedExchangeBrandId)
-    {
-      $this->verifiedExchangeBrandId = (!is_null($verifiedExchangeBrandId) && PHP_INT_SIZE === 4)
-          ? floatval($verifiedExchangeBrandId) : $verifiedExchangeBrandId;
-      return $this;
-    }
-
-    /**
-     * @return \Google\AdsApi\AdManager\v202605\DateTime
+     * @return \Google\AdsApi\AdManager\v202508\DateTime
      */
     public function getLastModifiedDateTime()
     {
@@ -449,8 +397,8 @@ class Company
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202605\DateTime $lastModifiedDateTime
-     * @return \Google\AdsApi\AdManager\v202605\Company
+     * @param \Google\AdsApi\AdManager\v202508\DateTime $lastModifiedDateTime
+     * @return \Google\AdsApi\AdManager\v202508\Company
      */
     public function setLastModifiedDateTime($lastModifiedDateTime)
     {
@@ -459,7 +407,7 @@ class Company
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202605\ChildPublisher
+     * @return \Google\AdsApi\AdManager\v202508\ChildPublisher
      */
     public function getChildPublisher()
     {
@@ -467,8 +415,8 @@ class Company
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202605\ChildPublisher $childPublisher
-     * @return \Google\AdsApi\AdManager\v202605\Company
+     * @param \Google\AdsApi\AdManager\v202508\ChildPublisher $childPublisher
+     * @return \Google\AdsApi\AdManager\v202508\Company
      */
     public function setChildPublisher($childPublisher)
     {
@@ -477,7 +425,7 @@ class Company
     }
 
     /**
-     * @return \Google\AdsApi\AdManager\v202605\ViewabilityProvider
+     * @return \Google\AdsApi\AdManager\v202508\ViewabilityProvider
      */
     public function getViewabilityProvider()
     {
@@ -485,8 +433,8 @@ class Company
     }
 
     /**
-     * @param \Google\AdsApi\AdManager\v202605\ViewabilityProvider $viewabilityProvider
-     * @return \Google\AdsApi\AdManager\v202605\Company
+     * @param \Google\AdsApi\AdManager\v202508\ViewabilityProvider $viewabilityProvider
+     * @return \Google\AdsApi\AdManager\v202508\Company
      */
     public function setViewabilityProvider($viewabilityProvider)
     {
