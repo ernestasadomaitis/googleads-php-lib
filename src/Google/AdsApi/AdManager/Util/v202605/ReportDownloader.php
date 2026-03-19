@@ -68,8 +68,8 @@ class ReportDownloader
         ReportService $reportService,
         $reportJobId,
         $pollTimeSeconds = null,
-        ??Client $httpClient = null,
-        ??GuzzleHttpClientFactory $httpClientFactory = null
+        ?Client $httpClient = null,
+        ?GuzzleHttpClientFactory $httpClientFactory = null
     ) {
         $this->logger = $reportService->getAdsSession()
             ->getReportDownloaderLogger();
