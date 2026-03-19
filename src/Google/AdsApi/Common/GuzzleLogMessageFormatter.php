@@ -67,8 +67,8 @@ final class GuzzleLogMessageFormatter
         array $additionalSummaryInfo,
         $shouldLogResponsePayload,
         $redactedResponsePayloadMessage = null,
-        ??MessageFormatter $summaryMessageFormatter = null,
-        ??MessageFormatter $detailedMessageFormatter = null
+        ?MessageFormatter $summaryMessageFormatter = null,
+        ?MessageFormatter $detailedMessageFormatter = null
     ) {
         $this->requestHttpHeadersToScrub = $requestHttpHeadersToScrub;
         $this->additionalSummaryInfo = $additionalSummaryInfo;
@@ -103,7 +103,7 @@ final class GuzzleLogMessageFormatter
      */
     public function formatSummary(
         RequestInterface $request,
-        ??ResponseInterface $response = null
+        ?ResponseInterface $response = null
     ) {
         return sprintf(
             '%s %s',
@@ -175,8 +175,8 @@ final class GuzzleLogMessageFormatter
      */
     private function scrubAndFormatDetailedMessage(
         RequestInterface $request,
-        ??ResponseInterface $response = null,
-        ??Exception $error = null
+        ?ResponseInterface $response = null,
+        ?Exception $error = null
     ) {
         $requestHeaders = LogMessageScrubbers::scrubHttpHeadersArray(
             $request->getHeaders(),

@@ -59,7 +59,7 @@ class GetAllContent
                 $totalResultSetSize = $page->getTotalResultSetSize();
                 $i = $page->getStartIndex();
                 foreach ($page->getResults() as $content) {
-                    $bundleIds = $content->getContentBundleIds() ?? [];
+                    $bundleIds = $content->getContentBundleIds() ? [];
                     printf(
                       "%d) Content with ID %d and name '%s' belonging to
                       bundle IDs %s was found.%s",
