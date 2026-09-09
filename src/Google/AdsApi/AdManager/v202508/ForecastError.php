@@ -1,12 +1,12 @@
 <?php
 
-namespace Google\AdsApi\AdManager\v202608;
+namespace Google\AdsApi\AdManager\v202508;
 
 
 /**
  * This file was generated from WSDL. DO NOT EDIT.
  */
-class BillingError extends \Google\AdsApi\AdManager\v202608\ApiError
+class ForecastError extends \Google\AdsApi\AdManager\v202508\ApiError
 {
 
     /**
@@ -16,7 +16,7 @@ class BillingError extends \Google\AdsApi\AdManager\v202608\ApiError
 
     /**
      * @param string $fieldPath
-     * @param \Google\AdsApi\AdManager\v202608\FieldPathElement[] $fieldPathElements
+     * @param \Google\AdsApi\AdManager\v202508\FieldPathElement[] $fieldPathElements
      * @param string $trigger
      * @param string $errorString
      * @param string $reason
@@ -37,7 +37,7 @@ class BillingError extends \Google\AdsApi\AdManager\v202608\ApiError
 
     /**
      * @param string $reason
-     * @return \Google\AdsApi\AdManager\v202608\BillingError
+     * @return \Google\AdsApi\AdManager\v202508\ForecastError
      */
     public function setReason($reason)
     {
